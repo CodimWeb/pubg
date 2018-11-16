@@ -1,0 +1,68 @@
+.header__menu
+	margin: 38px 0 0 65px
+	&-link
+		white-space: nowrap
+		font-size: 1.125rem
+		border-bottom: 0.125rem solid $primary-100
+		&:hover
+			border-color: $primary-100
+
+	.header__login-item
+		display: flex
+		.btn
+			width: 50%
+			@include border-radius(0)
+		.btn.vklogin__link-mob
+			margin-right: 1px
+
+.navbar-expand-lg .navbar-nav.header__menu .nav-link.header__menu-link
+	color: white
+	&:hover
+		color: $secondary-100
+
+.header__menu-item.nav-item.active
+	.header__menu-link.nav-link
+		color: $secondary-100
+
+.navbar-expand-lg .nav-link.header__menu-link
+	position: relative
+	padding: 6px 7px 13px 6px;
+	font-family: $font-regular
+	font-size: 16px;
+	&::before
+		@include pseudo
+		width: 2rem
+		height: 3rem
+		background: url("../img/icons/sprite.png") 0 0 no-repeat
+		top: 3px
+		left: -49px
+.nav-link.header__menu-link.home
+	display: none
+	
+.nav-link.header__menu-link.home::before
+	background-position: -443px -68px
+	left: -43px
+	
+.nav-link.header__menu-link.pvp::before
+	background-position: -440px -10px
+	left: -52px
+
+.nav-link.header__menu-link.bro::before
+	background-position: -481px -10px
+
+.nav-link.header__menu-link.trades::before
+	background-position: -517px -10px
+	left: -49px
+
+.nav-link.header__menu-link.top::before
+	background-position: -482px -62px
+	left: -49px
+	top: -2px
+
+.nav-link.header__menu-link.coins::before
+	background-position: -560px -12px
+
+.nav-link.header__menu-link.faq::before
+	background-position: -600px -10px
+	width: 3rem
+	left: -54px

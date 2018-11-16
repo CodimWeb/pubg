@@ -1,0 +1,583 @@
+//modal new
+
+.modal
+  &-dialog
+    max-width: 788px
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.8)
+  &-content
+    display: block
+    background-image: url(../img/modals/modal-content-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    position: relative
+    padding: 61px 40px 64px
+  &-bg
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background: url(../img/modals/modal-bg.png) no-repeat top center /cover
+  &-body
+    flex: 0 0 auto
+    position: relative
+    z-index: 2
+    padding: 0
+  &-title
+    font-size: 31px
+    color: $tertiary-400
+    line-height: 1.1
+    position: relative
+    margin-bottom: 15px
+    padding-right: 35px
+  .close
+    position: absolute
+    right: 0
+    top: 7px
+    width: 23px
+    height: 21px
+    background: url(../img/modals/modal-close.png) no-repeat center
+    cursor: pointer
+    opacity: 1
+    transition: 0.3s ease-in-out
+    &:hover
+      opacity: 0.8
+  &-banner
+    width: 100%
+  &-footer
+    padding: 0
+    display: block
+    background: #c9c9c9
+    position: relative
+    z-index: 10
+    &__title
+      font-size: 30px
+      line-height: 1
+      color: $tertiary-400
+      margin-bottom: 25px
+
+.modal-casewin__item
+  display: flex
+  align-items: flex-start
+  margin: 50px 0 44px
+  &__media
+    width: 50%
+    min-width: 50%
+    padding-right: 4px
+  &__picture
+    width: 100%
+    max-width: 264px
+    height: 164px
+    background: url(../img/modals/casewin-item-bg.jpg) no-repeat center /cover
+    position: relative
+    margin-left: auto
+    img
+      position: absolute
+      top: -2px
+      left: 50%
+      transform: translateX(-50%)
+      max-width: 80%
+  &__desc
+    width: 50%
+    min-width: 50%
+    padding-left: 31px
+  &__name
+    font-size: 31px
+    color: $tertiary-400
+    margin: 2px 0 17px
+.modal-hint
+  font-size: 20px
+  color: $tertiary-400
+  line-height: 1
+  text-align: center
+  a
+    display: inline-block
+    border-bottom: 1px solid $tertiary-400
+    color: $tertiary-400
+
+.modal-casewin-group
+  .modal-content
+    padding: 52px 46px 64px 81px
+
+  .modal-casewin__list
+    display: flex
+    flex-wrap: wrap
+    .modal-casewin__item
+      width: 50%
+      min-width: 50%
+      margin: 15px 0 4px
+      &__media
+        padding-right: 16px
+      &__picture
+        height: 95px
+      &__desc
+        padding-left: 0
+        margin-left: -3px
+        .btn-modal 
+          margin-left: -5px
+          font-size: 16px
+          padding: 8px 14px 9px 20px
+      &__name
+        font-size: 21px
+        line-height: 23px
+        min-height: 46px
+        margin: 4px 0 5px 5px
+  .btn-sell-all
+    padding: 10px
+    margin-top: 60px
+    margin-bottom: 17px
+    min-width: 300px
+.modal-balance
+  .modal-content
+    padding: 51px 45px 0
+  .modal-title
+    margin-bottom: 19px
+  .modal-footer
+    margin: 0 -45px
+    padding: 17px 32px
+
+.form-balance
+  &__title
+    font-size: 25px
+    line-height: 1
+    margin-bottom: 17px
+    color: $tertiary-400
+  &__panel
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #747474
+    border-radius: 10px
+    padding: 13px 40px 9px 17px
+    position: relative
+    box-shadow: 3px 3px 5px 1px #5b5c5c
+    margin-bottom: 28px
+  &__field-wrap
+    position: relative
+    max-width: 400px
+    margin-top: -11px
+    .balance-field-rouble
+      font-size: 34px
+      color: #fff
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-33%)
+      pointer-events: none
+  &__field
+    background: transparent
+    border: none
+    transition: 0s linear
+    color: #fff
+    width: 75px
+    max-width: 370px
+    height: 66px
+    font-size: 60px
+    line-height: 50px
+    position: relative
+    z-index: 3
+    padding: 0 34px 0 10px
+    &::placeholder
+      color: #fff
+    &:focus
+      background: transparent !important
+      color: #fff !important
+      outline: none !important
+      box-shadow: none !important
+      transition: 0s linear
+  &__field-width
+    min-width: 75px
+    max-width: 100%
+  &__field-text
+    display: inline-block
+    max-width: 370px
+    overflow: hidden
+    height: 60px
+    line-height: 60px
+    padding: 6px 34px 6px 12px
+    font-size: 60px
+    position: absolute
+    left: 0
+    top: 0
+    opacity: 0
+  &__info
+    padding-top: 3px
+  &__info__title
+    font-size: 15px
+    line-height: 1
+    margin-bottom: 5px
+  &__info__calc
+    font-size: 25px
+    line-height: 1
+    margin-bottom: 0
+    .fa-ruble-sign
+      font-size: 14px
+    #tooltip
+      display: inline-block
+      transform: translateY(-7px)
+      cursor: pointer
+    .balance-bold
+      font-family: $font-bold
+  &__select
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #7f7f7f
+    padding-bottom: 22px
+    &__title
+      font-size: 25px
+      line-height: 1
+      color: $tertiary-400
+    &__list
+      display: flex
+      justify-content: space-between
+      flex: 1
+      padding-left: 15px
+    &__item
+      &.btn.btn-modal
+        width: 92px
+        min-width: 92px
+        line-height: 20px
+        padding: 0 0 6px
+  &__promocode
+    padding-bottom: 40px
+    &__checkbox
+      display: none
+      &:checked + .form-balance__promocode__label
+        &:before
+          background-image: url(../img/modals/icon-check.svg)
+          background-size: 70%
+          background-position: center center
+          background-repeat: no-repeat          
+    &__label  
+      display: inline-block
+      padding-left: 39px
+      position: relative
+      margin: 18px 0 15px
+      &:before
+        content: ''
+        position: absolute
+        left: 4px
+        top: 4px
+        width: 19px
+        height: 19px
+        background-color: #fff
+        box-shadow: inset 1px 1px 3px 1px #a4a4a4
+        cursor: pointer
+    &__tooltip
+      display: inline-block
+      margin-left: 7px
+      transform: translateY(-3px)
+    &__body
+      display: none
+      justify-content: space-between
+      &.active
+        display: flex
+    &__info
+      padding-right: 10px
+      padding-left: 10px
+    &__status
+      min-width: 350px
+      font-size: 22px
+      line-height: 1
+      background: #747474
+      text-align: center
+      border-radius: 6px
+      padding: 7px 10px
+      color: #fff
+    &__status-desc
+      font-size: 15px
+      color: $tertiary-400
+      line-height: 1
+      margin: 10px 0 27px 8px
+    &__deactivate
+      padding-left: 10px
+      .btn.btn-modal
+        min-width: 290px
+        width: 100%
+        padding: 5px 10px
+        font-size: 22px
+        font-family: $font-regular
+    .btn-pay
+      min-width: 310px
+
+.exchange-skin
+  display: flex
+  align-items: flex-start
+  margin-left: 0 !important
+  &__photo
+    margin-right: 5px
+  &__desc
+    margin-left: -19px
+    p
+      font-size: 20px
+      line-height: 1
+      margin-bottom: 15px
+      color: $tertiary-400
+      &:nth-child(2)
+        margin-bottom: 20px
+.modal-success-pay
+  .modal-dialog
+    max-width: 700px
+  .modal-content
+    padding-top: 46px
+  .success-pay-icon
+    display: inline-block
+    vertical-align: bottom
+  .btn.btn-modal
+    min-width: 310px
+
+.pay-report
+  padding-top: 50px
+  margin-bottom: 106px
+  &__body
+    border-top: 1px solid #7f7f7f
+    border-bottom: 1px solid #7f7f7f
+    padding: 9px 0 17px
+    margin-bottom: 27px
+  &__row
+    display: flex
+    align-items: center
+    font-size: 28px
+    line-height: 1
+    color: #000
+    margin-bottom: 12px
+    >div
+      &:nth-child(1)
+        width: 60%
+        min-width: 60%
+      &:nth-child(2)
+        width: 100px
+        min-width: 100px
+      &:nth-child(3)
+        flex: 1
+        .coin
+          display: inline-block
+          margin-left: -24px
+          &:first-child
+            margin-left: 0
+    .fa-ruble-sign
+      font-size: 16px
+
+
+.offset-bottom-4
+  margin-bottom: 40px 
+.offset-bottom-6
+  margin-bottom: 60px 
+.offset-top-5
+  margin-top: -49px
+
+
+
+  
+  
+  // // Modal OLD
+
+
+// .modal
+// 	.modal-body
+// 		padding: 0 1.5625rem
+// 	.modal-content
+//     border: none
+//     @include border-radius(0.3125rem)
+//     overflow: hidden
+//     @include gradient(top, bottom, $primary-100, $primary-100)
+// 	.modal-header .close
+//     margin: .75rem .75rem 0 0
+//     position: relative
+//     opacity: .85
+//     width: 1rem
+//     height: 1rem
+//     &:before, &:after
+//       @include pseudo
+//       height: 4px
+//       width: 17px
+//       background: #fff !important
+//     &:before
+//       webkit-transform: rotate(45deg)
+//       transform: rotate(45deg)
+//     &:after
+//       webkit-transform: rotate(-45deg)
+//       transform: rotate(-45deg)
+//     &:focus
+//       outline: none
+      
+// .modal-sides
+//   .modal-dialog
+//     max-width: 600px
+
+  
+//   .modal-content
+//     display: flex
+//     flex-direction: row
+//     @include border-radius(18px)
+//     background: $primary-100
+//   .modal-side__left
+//     background: url(../img/modals/modal-sides.png) 0 0 no-repeat
+//     width: 190px
+//     height: 421px
+
+//   .modal-side__right
+//     width: 410px
+//     .close
+//       margin: .75rem .75rem 0 0
+//       position: relative
+//       opacity: .85
+//       width: 1.2rem
+//       height: 1.2rem
+//       &:before, &:after
+//         @include pseudo
+//         height: 2px
+//         width: 12px
+//         top: 8px
+//         right: 4px
+//         background: $primary-100 !important
+//       &:before
+//         webkit-transform: rotate(45deg)
+//         transform: rotate(45deg)
+//       &:after
+//         webkit-transform: rotate(-45deg)
+//         transform: rotate(-45deg)
+//       &:focus
+//         outline: none 
+
+
+// // VK win
+// .vkwin
+//   text-align: center
+//   .modal-header
+//     padding: 1rem 1.5rem
+//     flex-direction: column
+//     p
+//       font-size: .95rem
+//       margin: .5rem 0
+//       padding: 0
+//     .close
+//       top: .5rem
+//       position: absolute
+//       right: .5rem
+//       margin: 0
+//       padding: 0
+//       width: 1rem
+//       height: 1rem
+
+//       &::after, &::before
+//         height: 1px
+//     @include gradient(top, bottom, $primary-100, $primary-100)
+//     border: none
+//     text-transform: uppercase
+//     &::after
+//       @include pseudo
+//       top: 0
+//       width: 219px
+//       height: 118px
+//       filter: saturate(2)
+//       background: url(../img/modals/modal__win/modal__win-vkbig.png) 0 0 no-repeat
+//     .modal-title
+//       font-size: 1.5625rem
+//       color: $secondary-100
+//       line-height: 1.2
+//       z-index: 1
+//   .modal-dialog
+//     max-width: 530px
+//   .modal-body
+//     padding: 0 1rem 2rem 1rem
+//     background: url(../img/modals/modal__win/modal__win-bg.png) 0 -200px no-repeat
+//   .vkwin__content
+//     margin-top: 1.25rem
+//   .vkwin__item
+//     display: flex
+//     justify-content: center
+//     .iteamblock
+//       max-width: 290px
+//       min-width: 290px
+//       .picture
+//         img
+//           max-width: 290px
+//           min-width: 290px
+//           max-height: 100%
+//   .vkwin__btn-review
+//     box-shadow: 0 5px 13px 0 rgba(0,0,0, .5)
+//     padding: 0.85rem 3.75rem
+//     position: relative
+//     z-index: 2
+//     &::after
+//       @include pseudo
+//       top: 0
+//       width: 66px
+//       height: 36px
+//       top: 7px
+//       right: 30px
+//       z-index: -1
+//       filter: saturate(2)
+//       background: url(../img/modals/modal__win/modal__win-vkmin.png) 0 0 no-repeat
+
+// .noty
+//   position: fixed
+//   z-index: 1030
+//   &--sm
+//     left: 282px
+//     top: 23px
+//     width: 392px
+//     min-height: 200px
+//     background-image: url(../img/modals/noty-bg.jpg)
+//     padding: 25px
+//     box-shadow: 4px 7px 8px 2px rgba(0, 0, 0, 0.8);
+//   &__body--sm
+//     padding-right: 12px
+//   &__item
+//     border-bottom: 1px solid #fff
+//     padding: 0 20px 22px 20px
+//     margin-bottom: 33px
+//     &:last-child
+//       border-bottom: 1px solid transparent
+//   &__title
+//     font-size: 10px
+//     color: #fff
+//     margin: 0
+//     line-height: 12px
+//   &__subtitle
+//     font-size: 15px
+//     color: #fff
+//     margin: 0
+//   &__close
+//     position: absolute
+//     top: 29px
+//     right: 21px
+//     width: 12px
+//     height: 10px
+//     background-image: url(../img/modals/noty-close.png)
+//     cursor: pointer
+//   &--lg
+//     top: 0
+//     left: 260px
+//     z-index: 1031
+//     width: 414px
+//     height: 100%
+//     background-image: url(../img/modals/noty-lg-bg.jpg)
+//     padding: 47px 27px 5px 26px
+//   &__body--lg
+//     padding-right: 36px
+//     height: 100%
+//     width: 100%
+//     overflow-y: auto
+//     &::-webkit-scrollbar-track
+//       width: 7px
+//       background: transparent
+//     &::-webkit-scrollbar-thumb
+//       background: #9a9a9a
+//       width: 7px
+//   &__close--lg
+//     background-image: url(../img/modals/noty-close-lg.png)
+//     width: 21px
+//     height: 21px
+//     top: 12px
+//     right: 12px
+//   &__title--lg
+//     font-size: 14px
+//     line-height: 16px
+//     color: #bcbcbc
+//   &__message--lg
+//     font-size: 22px
+//     margin-bottom: 0

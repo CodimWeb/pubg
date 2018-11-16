@@ -1,0 +1,93 @@
+.toast-title
+  font-weight: 700
+
+.toast-message
+  font-size: 0.875rem
+  font-family: $font-medium
+  a, label
+    color: #FFF
+  a:hover
+    color: #CCC
+    text-decoration: none
+
+.toast-close-button
+  position: relative
+  right: -.95em
+  top: -.8em
+  float: right
+  font-size: 20px
+  font-weight: 700
+  color: #FFF
+  -webkit-text-shadow: 0 1px 0 #fff
+  text-shadow: 0 1px 0 #fff
+  opacity: .9
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80)
+  filter: alpha(opacity = 80)
+  line-height: 1
+  &:focus, &:hover
+    color: #000
+    text-decoration: none
+    cursor: pointer
+    opacity: .4
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40)
+    filter: alpha(opacity = 40)
+
+.rtl .toast-close-button
+  left: -.3em
+  float: left
+  right: 0.3em
+
+button.toast-close-button
+  padding: 0
+  cursor: pointer
+  background: 0 0
+  border: 0
+  -webkit-appearance: none
+
+.toast-top-center
+  top: 0
+  right: 0
+  width: 100%
+
+.toast-bottom-center
+  bottom: 0
+  right: 0
+  width: 100%
+
+.toast-top-full-width
+  top: 0
+  right: 0
+  width: 100%
+
+.toast-bottom-full-width
+  bottom: 0
+  right: 0
+  width: 100%
+
+.toast-top-left
+  top: 12px
+  left: 12px
+
+.toast-top-right
+  top: 12px
+  right: 12px
+
+.toast-bottom-right
+  right: 12px
+  bottom: 12px
+
+.toast-bottom-left
+  bottom: 12px
+  left: 12px
+  
+.toast-success
+  background: $primary-100
+.toast-error
+  background: $primary-100
+  
+#toast-container>div
+  padding: 0.9375rem 1.5625rem
+  height: auto
+  text-align: left
+  opacity: .95
+  

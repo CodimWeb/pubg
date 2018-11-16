@@ -1,0 +1,676 @@
+<!--  Чтобы установить все пакеты и зависимости, выполните команду ===> npm i <=== в папке проекта. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <title>TastyDrop.ru - Партнерская программа</title>
+    <meta property="vk:title" content="TastyDrop - Кейсы Dota 2">
+    <meta property="vk:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="vk:text" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="vk:url" content="http://tastydrop.ru/">
+    <meta property="vk:image" content="http://tastydrop.ru/img/logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TastyDrop - Кейсы Dota 2">
+    <meta property="og:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="og:site_name" content="TastyDrop.ru">
+    <meta property="og:url" content="http://tastydrop.ru">
+    <meta property="og:image" content="http://tastydrop.ru/img/logo.jpg"/>
+    <meta name="keywords" content="cундуки дота 2,открытие сундуков дота 2,бесплатные сундуки дота 2,дешевые сундуки дота 2,магазин сундуков дота 2,дота сундуки на сайте,сундуки дота 2 купить,выгодные сундуки в дота 2,dota2 drop,кейсы dota2,opencase dota2,dota2 open case,открытие кейсов дота2"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="yandex-verification" content="5677850f9eee42e3" />
+    <meta name="yandex-verification" content="ac50c770d3629eb6" />
+    <meta name="verification" content="c54f5f8a49b7aaa610854a9a200924" />
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
+<!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+    <!-- Bootstrap -->
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+<!--<link rel="stylesheet" href="css/mobile.css">-->
+
+  </head>
+  <body>
+    
+    <!-- START HEADER -->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+
+        <!-- logo-->
+        <a href="/" title="Главная" class="logo navbar-brand"><img src="/img/logo/logo.png" alt="cундуки дота 2"/></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          
+          <!-- header menu-->        
+          <ul class="header__menu header__menu-responsive navbar-nav">
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link profile__link-mob" href="/topweek">Профиль</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link balance__link-mob" data-toggle="modal" data-target="#pay">Пополнить баланс</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link top" href="/topweek">ТОП</a>
+            </li>
+            <li class="header__menu-item nav-item active">
+              <a class="header__menu-link nav-link faq" href="/faq">FAQ</a>
+            </li>
+            <li class="header__menu-item nav-item">
+             <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198431877266/inventory/" target="_blank">БОТ #1</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198433191622/inventory/" target="_blank">БОТ #2</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198432794721/inventory/" target="_blank">БОТ #3</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link logout__link-mob" href="" target="_blank">Выйти</a>
+            </li>
+            <li class="header__menu-item nav-item more"> <a class="header__menu-link nav-link" href="#">...</a>
+              <ul class="list-unstyled" id="overflow"></ul>
+            </li>
+          </ul>    
+
+        </div>
+
+        <!-- header banner -->
+        <div class="header__banner">
+            <a href="" class="header__banner-link"></a>
+        </div>
+
+        <!-- profile header card -->
+        <div class="header__profile header__profile-card card">
+          <div class="card-body">
+            <a href="//profile.html" class="header__profile-ava">
+                <img src="img/profile/no-avatar.png" class="" alt="Аватар"/>           
+            </a>
+            <div class="header__profile-data">
+              <a href="#" class="header__profile-username">Username</a>
+              <div class="header__profile-balance">
+                <div class="balance__rub"><span class="balance">1235445 </span> <i class="fas fa-ruble-sign"></i></div>
+                <div class="balance__adv">
+                  <span class="sep">|</span> <span class="bonus bonus__coin">1223456 </span><span class="bonus-curr bonus-curr__coin"></span>
+                </div>
+              </div>
+            </div>
+            <div class="header__profile-btns">
+              <div class="profile-btn">
+                <a href="/profile.html" class="myprofile-btn btn btn-primary btn-sm">Мой профиль</a>
+                <a href="logout" class="logout-btn btn btn-primary btn-sm"></a>
+              </div>
+              
+              <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить балас</a>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </nav>
+
+      <!-- Statistics -->
+      <div id="stat" class="footer__stat">
+        <div class="container">
+          <div class="row">
+            <div class="col"><p>Открыто кейсов</p><span id="opened2">13324345</span></div>
+            <div class="col"><p>Пользователей</p><span id="users2">456567</span></div>
+            <div class="col"><p>Онлайн</p><span id="online2">343</span></div>
+            <div class="col"><p>Аркан сегодня</p><span id="arcanes2">89</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DropHistory -->
+      <div class="drophistory">
+        <div class="drophistory__btns">
+            <a type="td" class="tdsw btn btn-xs top_drop">Топ-Дроп</a>
+            <a type="ld" class="tdsw btn btn-xs live_drop">Лайв-Дроп</a>
+        </div>
+        <div class="items">
+          <div id='toplivedrop' class="items-inner">
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXP7g1bJ4Q1lgheXknVSffiw8fWbE5jLAJDiaqkPw9m2v3MdC99_8u_kpS0h_bgO73YmG9U-vp9hejF_ILyt0e3uRY5PQa1JunJI0RpNEbQ_QDqxLvqgZO7u5-YnyRquyMjtirVnhe30BpPPOI71vfPSl-ZVKNKAuDcUWcwXHvM/113fx75f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXP7g1bJ4Q1lgheXknVSffixc7XWlx6MTtAt7ShLhVlwczacDlL7dKiq5eKmfPxIb7DqWde6cF4hO7S9p7wjVqLpxIuNDztd4SRJ1JqNw6BqFW6wejv0ZfuvpuYziNn7CV3t32PyxW1iU4ZPONqheveFwtQU7c0aA/113fx75f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Uncommon"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Common"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Common"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Uncommon"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+           </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Mythical"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Rare"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+        </div>
+      </div>
+
+    </header>
+    <!-- END HEADER -->
+    
+    <!-- START MAIN -->
+    <main role="main">
+
+      <!-- Сontent -->
+
+      <div class="container">
+        <div class="heading heading__border heading__border-primary"><span class="line__l"></span><h2 style="width:64%"><span class="heading__icon i-referal"></span>Партнерская программа</h2><span class="line__r"></span></div>
+        
+        <!-- Referal invite -->
+        <div class="refersl">
+          <div class="profile profile-card referal-card card">
+            <div class="card-body">
+
+              <div class="profile__blocks">
+                <div class="referal__invite">
+                  <div class="referal__invite-title">
+                    <h3>ЕСТЬ ИНВАЙТ-КОД?</h3>
+                  </div>
+                  <div class="referal__invite-info">
+                    <div class="input-group">
+                      <input type="url" id="url" name="tradelink" class="form-control" value="" placeholder="">
+                      <div class="input-group-prepend">
+                        <button id="tradesave" type="submit" class="btn btn-primary btn-sm input-group-text"><i class="fas fa-check"></i></button>
+                      </div>
+                    </div>
+                    <p>Инвайт-код можно получить от друга и ввести лишь 1 раз. <br>Вы не можете вводить свой код.</p>
+                  </div>
+                </div>
+                <div class="referal__inviteact">
+                  <div class="referal__inviteact-title">
+                    <h3>ВАШ ИНВАЙТ-КОД</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="input-group">
+                        <input type="url" id="steamlogin" name="steamlogin" class="form-control" value="">
+                        <div class="input-group-prepend">
+                          <button id="steamloginsave" type="submit" class="btn btn-primary btn-sm input-group-text"><i class="fa fa-check" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                      <div class="referal__inviteact-btns">
+                        <a  href="" class="btn btn-primary btn-sm">Применить</a><a class="btn btn-primary btn-sm" href="">Копировать</a>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <p>Делитесь своим кодом с друзьями и получайте бонусы за каждое их пополнение. Вы можете изменить свой инвайт-код на более удобный и запоминающийся. Код может состоять только из цифр и латинских букв.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Referal statistics -->
+        <div class="referal__statistics">
+          <h3 class="referal__heading">Статистика</h3>
+          <div class="card">
+            <div class="card-body">
+              <ul class="d-flex list-unstyled">
+                <li class="">
+                  <h4>ВАШ УРОВЕНЬ</h4>
+                  <div class="referal__level">
+                    1
+                  </div>
+                </li>
+                <li class="">
+                  <h4>ПРИГЛАШЕНО рефералов</h4>
+                  <div class="referal__referals">
+                    6
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:20%"></div>
+                  </div>
+                  <div id="progress-label" class="progress-label">0 / 25</div>
+                </li>
+                <li class="">
+                  <h4>ПРОЦЕНТ ПРИБЫЛИ</h4>
+                  <div class="referal__percentage">
+                    1%
+                  </div>
+                </li>
+                <li class="">
+                  <h4>БОНУС рефералам</h4>
+                  <div class="referal__bonus">
+                    10 <i class="fas fa-ruble-sign"></i>
+                  </div>
+                </li>
+                <li class="">
+                  <h4>ВАША ПРИБЫЛЬ</h4>
+                  <div class="referal__profit">
+                    143.1 <i class="fas fa-ruble-sign"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Referal levels -->
+        <div class="referal__levels referal__levels-desctop d-none d-md-block">
+          <table class="table referal__levels-table">
+            <thead>
+              <tr>
+                <th class="referal__levels-title" >ПАРТНЕРСКИЕ УРОВНИ</th>
+                <th scope="col"><span>1</span></th>
+                <th scope="col"><span>2</span></th>
+                <th scope="col"><span>3</span></th>
+                <th scope="col"><span>4</span></th>
+                <th scope="col"><span>5</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >для достижения  уровня</td>
+                <td>0 РЕФ</td>
+                <td>25 РЕФ</td>
+                <td>50 РЕФ</td>
+                <td>100 РЕФ</td>
+                <td>175 РЕФ</td>
+              </tr>
+              <tr>
+                <td>процент прибыли</td>
+                <td>1%</td>
+                <td>2%</td>
+                <td>3%</td>
+                <td>4%</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <td>бонус рефералам</td>
+                <td>10 <i class="fas fa-ruble-sign"></i></td>
+                <td>10 <i class="fas fa-ruble-sign"></i></td>
+                <td>15 <i class="fas fa-ruble-sign"></i></td>
+                <td>20 <i class="fas fa-ruble-sign"></i></td>
+                <td>25 <i class="fas fa-ruble-sign"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="referal__levels referal__levels-mobile d-sm-block d-md-none">
+          <div class=" referal__levels-table">
+            <h4 class="referal__levels-title">ПАРТНЕРСКИЕ УРОВНИ</h4>
+              <div class="referal__levels-table">
+                <div class="referal__levels-block">
+                  <span>1</span>
+                  <h5 >для достижения  уровня</h5>
+                  <p>0 РЕФ</p>
+                  <h5>процент прибыли</h5>
+                  <p>1%</p>
+                  <h5>бонус рефералам</h5>
+                  <p>10 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+                <div class="referal__levels-block">
+                 <span>2</span>
+                  <h5>для достижения  уровня</h5>
+                  <p>2 РЕФ</p>
+                  <h5>процент прибыли</h5>
+                  <p>2%</p>
+                  <h5>бонус рефералам</h5>
+                  <p>10 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+                <div class="referal__levels-block">
+                 <span>3</span>
+                  <h5>для достижения  уровня</h5>
+                  <p>50 РЕФ</p>
+                  <h5>процент прибыли</h5>
+                  <p>3%</p>
+                  <h5>бонус рефералам</h5>
+                  <p>15 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+                <div class="referal__levels-block">
+                 <span>4</span>
+                  <h5>для достижения  уровня</h5>
+                  <p>100 РЕФ</p>
+                  <h5>процент прибыли</h5>
+                  <p>4%</p>
+                  <h5>бонус рефералам</h5>
+                  <p>20 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+                <div class="referal__levels-block">
+                 <span>5</span>
+                  <h5>для достижения  уровня</h5>
+                  <p>175 РЕФ</p>
+                  <h5>процент прибыли</h5>
+                  <p>5%</p>
+                  <h5>бонус рефералам</h5>
+                  <p>25 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Referal your referal -->
+        <div class="referal__yourreferals">
+          <h3 class="referal__heading">Ваши рефералы</h3>
+          <table class="table referal__yourreferals-table">
+          <tbody>
+            <tr>
+              <td>Пользователь</td>
+              <td>Вложено</td>
+              <td>Ваша прибыль</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+            </tr>
+
+            </tbody>
+         </table>
+        </div>
+
+        <!-- Content this case -->  
+        <div class="faq-cards mt-4">
+          <!-- Title -->        
+          <div class="heading heading__border heading__border-primary"><span class="line__l"></span><h2 style="width:33%"><span class="heading__icon i-faq"></span> Вопрос-ответ</h2><span class="line__r"></span></div>
+
+          <div  class="mb-4">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <div class="card-header__title " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span>Вопрос №1:</span> У меня не открываются кейсы! Написано, что недостаточно вещей. Как это? И когда их будет достаточно?
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+                <div class="card-body">
+                  Кейсы всегда должны содержать в себе все предметы, которые там перечислены.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                 <div class="card-header__title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <span>Вопрос №1:</span> У меня не открываются кейсы! Написано, что недостаточно вещей. Как это? И когда их будет достаточно?
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="">
+                <div class="card-body">
+                  <b>Предложения обмена отправляются практически моментально. Если Вы его не получили, значит дело в одном из следующих пунктов: </b> <br>
+                  - У Вас заблокирован обмен (заходили с нового устройства, меняли недавно пароль/почту, изменяли настройки безопасности Steam Guard, имеете VAC-бан, и т.д.). Чтобы таких проблем не было, всегда рекомендуем проверять возможность принимать трейды. Сделать это можно <a href="https://market.dota2.net/check/" target="_blank" class="purple">здесь </a><br>
+                  - У Вас не подключен мобильный аутентификатор<br>
+                  - У Вас скрыт инвентарь в <a href="http://steamcommunity.com/profiles/76561198093592464/edit/settings/#inventoryPrivacySetting_private" target="_blank" class="purple"> настройках приватности Steam </a><br>
+                  - Проверьте свою trade-ссылку в <a href="http://tastydrop.ru/profile" target="_blank" class="purple"> профиле </a>и в <a href="http://steamcommunity.com/profiles/76561198093592464/tradeoffers/privacy#trade_offer_access_url" targer="_blank" class="purple">настройках Steam</a> - они должны совпадать <br>
+                  - У бота возникли проблемы со связью Steam. Такое бывает  довольно часто, проблема в самом Steam. Просто попробуйте отправить обмен ещё раз. <br>
+                  Во всех вышеперечисленных случаях забрать свой предмет Вы не сможете, поэтому напоминаем ещё раз — проверяйте доступность обменов, прежде чем выводить вещи.
+                  Также возможно, что предложение к Вам всё-тааки пришло, но Вы не успели принять его в течение 3-х минут, отменили его, либо сделали боту встречное предложение. В таком случае предмет автоматически продаётся, а на баланс засчитывается его полная стоимость.
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <div class="card-header__title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <span>Вопрос №1:</span> У меня не открываются кейсы! Написано, что недостаточно вещей. Как это? И когда их будет достаточно?
+                  </div>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="">
+                <div class="card-body">
+                  Кейсы всегда должны содержать в себе все предметы, которые там перечислены.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <footer>
+
+      <!-- Statistics -->
+      <div id="stat" class="footer__stat">
+        <div class="container">
+          <div class="row">
+            <div class="col"><p>Открыто кейсов</p><span id="opened2">13324345</span></div>
+            <div class="col"><p>Пользователей</p><span id="users2">456567</span></div>
+            <div class="col"><p>Онлайн</p><span id="online2">343</span></div>
+            <div class="col"><p>Аркан сегодня</p><span id="arcanes2">89</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Info -->
+      <div class="footer__info">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+              <img class="footer__logo" src="img/logo/logo-footer.png" alt="Tastydrop">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__menu">
+              <ul class="footer__menu list-unstyled">
+                <li><a href="#">Лайв-трейды ботов</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Cоглашение</a></li>
+                <li><a href="#">Условия участия в стимулирующем мероприятии</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__pay">
+              <div class="footer__pay">
+                <h5>Мы принимаем</h5><img class="pay-img" src="img/footer/pay.png" alt="Мы принимаем">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__vk">
+              <div id="vk_groups" >vk</div>
+            </div>
+          </div>
+
+          <!-- Back to top -->
+          <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+      </div>
+        
+    </footer>
+    <!-- END FOOTER -->
+
+<!-- START MODALS -->
+<div class="modal form__balance fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="margin-top: 30px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Пополнение баланса</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="payform">
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="paysum">Заплачу</label>
+                            <input id="paysum" type="number" class="form-control" placeholder="" value="1000">
+                            <input id="bpercent" type="hidden" value="0">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="payget">Получу</label>
+                            <div class="form-control paybag__get">
+                                <div id="payget" class="paybag__get-amount">1050</div>
+                                <span><small class="paybag__get-bonus"><span id="paybag__get-bonus">50</span> <i class="fas fa-ruble-sign"></i> - бонус</small> | <small class="paybag__get-promo"><span id="paybag__get-promo">0</span> <i class="fas fa-ruble-sign"></i> - промокод</small></span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group paybag__promocode">
+                            <div class="paybag__promocode-inactive">
+                                <button class="promoinact">У меня есть промокод </button>
+                            </div>
+                            <div class="paybag__promocode-active">
+                                <input id="promocode" type="url" placeholder="ПРОМОКОД" class="form-control">
+                                <button class="btn btn-primary promoact" >Применить промокод </button>
+                            </div>
+                            <div class="paybag__promocode-activated">
+                                <p class="paybag__promocode-info"><small>Активирован промокод:</small> TASTY_PROMO10 <span>(10%)</span></p>    
+                                <button class="btn btn-primary promoactivated">Применить другой </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  </div>
+                <div class="modal-body"> 
+                  <div class="row">
+                    <div class="col">
+                      <div class="paybag__btns">
+                        <button class="btn btn-primary paybag__pay" data-case="vp_dac" type="button" data-dismiss="modal">Пополнить</button>
+                        <div class="paybag__sep"></div>
+                        <button class="btn btn-primary paybag__skins" type="button" data-dismiss="modal">Оплатить скинами</button>
+                      </div>
+                    </div>  
+                  </div>
+              </div>
+            </form>
+            <div class="modal-footer">
+                <div class="bonusnew">
+                    <div class="bonus__title">
+                        <h4 class="">Бонусы<br>при пополнении</h4>
+                    </div>
+                    <div class="bonus__info">
+                        <ul class="list-unstyled">
+                            <li>от <span>1000 <i class="fas fa-ruble-sign"></i></span> - бонус <span>5%</span></li>
+                            <li>от <span>3000 <i class="fas fa-ruble-sign"></i></span> - бонус <span>10%</span></li>
+                            <li>от <span>5000 <i class="fas fa-ruble-sign"></i></span> - бонус <span>15%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Preloader -->
+    <div class="loader">
+      <div class="loader_inner"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/libs.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.js"></script>
+
+
+  </body>
+</html>

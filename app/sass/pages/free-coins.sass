@@ -1,0 +1,153 @@
+.free-coins
+	padding: 149px 0 0 0
+	background-image: url(../img/freecoins-bg.jpg)
+	background-position: -47px -55px
+	.content__wrap
+		padding: 0 30px 180px
+		background: rgba(0, 0, 0, 0.7)
+	&__header
+		overflow: hidden
+		margin-bottom: 85px
+		&__panel
+			position: relative
+			margin-top: 32px
+		.btn-secondary
+			position: absolute
+			top: 50%
+			right: 34px;
+			transform: translateY(-47%)
+			font-size: 22px
+			border: 2px solid #fff
+			width: 242px
+			color: #fff
+			&:hover,
+			&:active
+				border-color: #fff
+				color: #1a1a1a
+
+	&__title 
+		text-align: center
+		font-size: 40px
+		line-height: 1
+		color: #fff
+		font-family: $font-bold
+	&__partners
+		display: flex
+		align-items: center
+		padding-left: 13px
+		margin-bottom: 106px
+	&__partners__label
+		font-size: 30px
+		color: #fff
+		line-height: 1
+		margin: 0
+	&__link
+		font-size: 20px
+		color: #fff
+		flex: 1
+		max-width: 436px
+		border-radius: 6px
+		background: #757575
+		padding: 6px 10px
+		margin: 0 10px
+		text-align: center
+		&::placeholder
+			color: #fff
+	&__action 
+		display: flex
+		.btn-primary
+			width: 245px
+			padding: 9px 0
+			border-color: #fff
+			font-size: 22px
+			&:nth-child(2)
+				margin-left: 13px
+			&:hover
+				border-color: #e69904
+				color: #fff
+	&__data
+		display: flex
+		align-items: flex-start
+		color: #fff
+
+	&__table
+		flex: 1
+		margin-right: 39px
+		margin-top: 8px
+		padding-left: 10px
+		&__row
+			display: flex
+			align-items: center
+			padding: 22px 0
+			position: relative
+			>div
+				font-size: 30px
+				&:nth-child(1)
+					width: 19%
+					min-width: 19%
+				&:nth-child(2)
+					width: 23%
+					min-width: 23%
+				&:nth-child(3)
+					width: 29%
+					min-width: 29%
+				&:nth-child(4)
+					width: 29%
+					min-width: 29%
+				.fa-ruble-sign
+					font-size: 17px
+				.free-coins__level
+					width: 100%
+					max-width: 138px
+					height: 102px
+					background-image: url(../img/freecoins/level-bg.png)
+					background-repat: no-repeat
+					font-size: 85px
+					line-height: 102px
+					font-family: $font-secondary
+					text-shadow: 4px 2px #000
+					text-align: center
+			&:after
+				content: ''
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				height: 2px
+				background: #fff
+		&__header
+			padding-bottom: 13px
+			padding-top: 0
+			>div
+				font-size: 20px
+			&:after
+				box-shadow: 0 0 6px 4px #835e1a
+				border-radius: 3px
+
+	&__user
+		width: 25.7%
+		min-width: 25.7%
+		padding: 7px 40px 15px 31px
+		background: #0d0d0d
+		&__header
+			font-size: 30px
+			padding-bottom: 48px
+		&__row
+			display: flex;
+			padding-left: 5px
+			margin-bottom: 40px
+		&__cell
+			line-height: 1.1
+			&:nth-child(1)
+				width: 195px
+				font-size: 22px
+				line-height: 26px
+			&:nth-child(2)
+				flex: 1
+				text-align: right
+				font-size: 28px
+				line-height: 24px
+				.fa-ruble-sign
+					font-size: 17px
+
+	

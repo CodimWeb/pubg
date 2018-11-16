@@ -1,0 +1,166 @@
+// Referals
+.profile-card 
+	.card-body
+		background: $primary-100
+		// Referal Invite
+		.referal__invite
+			border: none
+		.referal__invite-info
+			p
+				color: $tertiary-100
+		.referal__inviteact
+			border-color: $primary-100
+			p
+				color: $tertiary-100
+				margin-left: -1rem
+			.btn
+				@include border-radius(0.125rem)
+				margin-right: .358rem
+				text-transform: uppercase
+				font-size: 0.8125rem
+				padding-left: 1rem
+				padding-right: 1rem
+
+// Referal statistics		
+.profile-card .card-body .referal__inviteact p
+	margin: -.5rem 0 0 0
+
+.referal
+	&__heading
+		font-size: 1.375rem
+		text-transform: uppercase
+	.card-body
+		background: $primary-100
+	
+	&__statistics
+		margin-top: 3rem
+		.card-body
+			padding: 1rem 0
+		
+		h4
+			color: $secondary-100
+			font-size: 0.8125rem
+			text-transform: uppercase
+			text-align: center
+		ul 
+			justify-content: space-between
+			display: flex
+			margin: 0
+			li
+				text-align: center
+				width: 20%
+				padding: 0 1rem
+				border-right: 2px solid $primary-100
+				&:last-child
+					border: none
+		.referal__level
+			width: 5rem
+			height: 5rem
+			line-height: 5rem
+			@include border-radius(3rem)
+			background: $primary-100
+			margin: auto
+			text-align: center
+			font-family: $font-bold
+			font-size: 0.8125rem
+		.referal__referals, .referal__percentage, .referal__bonus, .referal__profit
+			font-size: 3rem
+			font-family: $font-bold
+			svg
+				height: 2.7rem
+		
+
+	&__levels
+		margin-top: 3rem
+		&-table
+			td, th
+				vertical-align: middle !important
+				border-color: $primary-100
+				background: $primary-100
+				text-align: center
+				text-transform: uppercase
+			td
+				font-size: 1.25rem
+				font-family: $font-bold
+			span
+				width: 5rem
+				height: 5rem
+				line-height: 5rem
+				@include border-radius(3rem)
+				background: $primary-100
+				margin: auto
+				justify-content: center
+				display: flex
+				font-family: $font-bold
+				font-size: 1.25rem
+			td:first-child
+				text-align: left
+				text-transform: uppercase
+				color: $tertiary-100
+				font-size: 0.875rem
+				font-family: $font-regular
+			th:first-child
+				font-size: 0.875rem
+				color: $secondary-100
+				
+			th.referal__levels-title
+				color: $light-color
+				font-size: 1.375rem
+				padding: 0
+				text-transform: uppercase
+				text-align: left
+	
+	&__levels-mobile 
+		text-align: center
+		span
+			color: $light-color	
+			margin: 1rem auto 
+			display: flex	
+		.referal__levels-block
+			background: $primary-100
+			padding: .5rem
+			margin: .5rem
+			@include border-radius(.25rem)
+			h5
+				text-transform: uppercase
+				color: #cab8ea
+				font-size: 0.875rem
+				font-family: $font-regular
+			p
+				font-family: $font-bold
+	
+			
+		
+	&__yourreferals
+		margin-top: 3rem
+		.referal__yourreferals-table
+			tr:nth-child(2n+1) td
+				text-transform: uppercase
+				vertical-align: middle
+				text-align: center
+				background: $primary-100
+				color: $light-color
+				padding: .5rem
+				font-family: $font-bold
+				&:first-child
+					@include border-radius-s(0.3125rem, 0, 0, 0.3125rem)
+				&:last-child
+					@include border-radius-s(0, 0.3125rem, 0.3125rem, 0)
+			tr:nth-child(2n) td
+				padding: .3rem
+				background: none
+			tr:first-child td
+				text-transform: uppercase
+				vertical-align: middle
+				font-family: $font-medium
+				text-align: center
+				background: $primary-100
+				color: #7a7981
+				padding: .5rem
+				&:first-child
+					@include border-radius-s(0.3125rem, 0, 0, 0.3125rem)
+				&:last-child
+					@include border-radius-s(0, 0.3125rem, 0.3125rem, 0)
+
+main .referal__levels-mobile .referal__levels-table td
+		color: red !important

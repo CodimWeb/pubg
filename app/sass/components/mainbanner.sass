@@ -1,0 +1,105 @@
+.main-banner
+	background: url("../img/banner.jpg") no-repeat
+	padding: 0
+	background-size: cover
+	background-position: center -2px
+	margin-top: 0
+	max-width: 100%
+	height: 100%
+	position: relative
+	&::before
+			@include pseudo
+			background: url("../img/header-bg.png") 0 -224px no-repeat
+			background-size: cover
+			max-width: 100%
+			width: 100%
+			height: 100%
+			height: 430px
+	.carousel-item
+		text-align: center
+	.header__login
+		display: none
+	.main-banner__content
+		padding-top: 243px
+		padding-bottom: 18rem
+		display: flex
+		position: relative
+		justify-content: space-between
+		h3
+			font-size: 2.0625rem
+			font-family: $font-regular
+			font-weight: bold
+			margin-bottom: 12px
+		li
+			color: $light-color
+			position: relative
+			margin-bottom: 48px
+		li::before
+			@include pseudo
+			width: 3rem
+			height: 5.9375rem
+			left: 0
+			background: url("../img/icons/sprite.png") 0 0 no-repeat
+
+		p
+			font-size: 1.25rem
+			font-weight: bold
+			padding-bottom: 2rem
+			line-height: 26px
+			padding-right: 20px
+		.main-banner__img
+			position: relative
+			margin-right: 45px
+			margin-top: -20px
+			background: $primary-100
+			@include border-radius(0.3125rem)
+			flex-direction: column
+			text-align: center
+			justify-content: center
+			align-items: center
+			display: flex
+			min-height: 44.3125rem
+			img
+				@include pseudo
+				margin-left: 228px
+				top: -159px
+				z-index: 1
+		.main-banner__left
+			flex-basis: 1
+			margin-right: 15%
+			padding-left: 167px
+			li:first-child
+				&::before
+					width: 96px
+					height: 60px
+					left: -114px
+					background-position: 0 -62px
+			li:last-child
+				&::before
+					width: 96px
+					height: 90px
+					left: -106px
+					top: 7px
+					background-position: -108px -60px
+		.main-banner__right
+			flex-basis: 1
+			margin-left: 15%
+			li:first-child
+				&::before
+					width: 94px
+					height: 80px
+					left: -6rem
+					background-position: -201px -57px
+			li:last-child
+				&::before
+					width: 96px
+					height: 90px
+					left: -6rem
+					background-position: -298px -55px
+			li
+				position: relative
+
+
+
+.carousel .carousel-item
+	text-align: center

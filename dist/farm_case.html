@@ -1,0 +1,657 @@
+<!--  Чтобы установить все пакеты и зависимости, выполните команду ===> npm i <=== в папке проекта. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <title>TastyDrop.ru - Фарм кейс</title>
+    <meta property="vk:title" content="TastyDrop - Кейсы Dota 2">
+    <meta property="vk:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="vk:text" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="vk:url" content="http://tastydrop.ru/">
+    <meta property="vk:image" content="http://tastydrop.ru/img/logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TastyDrop - Кейсы Dota 2">
+    <meta property="og:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
+    <meta property="og:site_name" content="TastyDrop.ru">
+    <meta property="og:url" content="http://tastydrop.ru">
+    <meta property="og:image" content="http://tastydrop.ru/img/logo.jpg"/>
+    <meta name="keywords" content="cундуки дота 2,открытие сундуков дота 2,бесплатные сундуки дота 2,дешевые сундуки дота 2,магазин сундуков дота 2,дота сундуки на сайте,сундуки дота 2 купить,выгодные сундуки в дота 2,dota2 drop,кейсы dota2,opencase dota2,dota2 open case,открытие кейсов дота2"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="yandex-verification" content="5677850f9eee42e3" />
+    <meta name="yandex-verification" content="ac50c770d3629eb6" />
+    <meta name="verification" content="c54f5f8a49b7aaa610854a9a200924" />
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
+<!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+    <!-- Bootstrap -->
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+<!--<link rel="stylesheet" href="css/mobile.css">-->
+
+  </head>
+  <body>
+    
+    <!-- START HEADER -->
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+
+        <!-- logo-->
+        <a href="/" title="Главная" class="logo navbar-brand"><img src="/img/logo/logo.png" alt="cундуки дота 2"/></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          
+          <!-- header menu-->        
+          <ul class="header__menu navbar-nav mr-auto">
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link profile__link-mob" href="/topweek">Профиль</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link balance__link-mob" data-toggle="modal" data-target="#pay">Пополнить баланс</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link top" href="/topweek">ТОП</a>
+            </li>
+            <li class="header__menu-item nav-item active">
+              <a class="header__menu-link nav-link faq" href="/faq">FAQ</a>
+            </li>
+            <li class="header__menu-item nav-item">
+             <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198431877266/inventory/" target="_blank">БОТ #1</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198433191622/inventory/" target="_blank">БОТ #2</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link inventory" href="http://steamcommunity.com/profiles/76561198432794721/inventory/" target="_blank">БОТ #3</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link logout__link-mob" href="" target="_blank">Выйти</a>
+            </li>
+          </ul>    
+
+        </div>
+        <!-- profile header card -->
+          <div class="header__profile header__profile-card card">
+            <div class="card-body">
+              <a href="//profile.html" class="header__profile-ava">
+                  <img src="img/profile/no-avatar.png" class="" alt="Аватар"/>           
+              </a>
+              <div class="header__profile-data">
+                <a href="#" class="header__profile-username">Username</a>
+                <div class="header__profile-balance">
+                  <div class="balance__rub"><span class="balance">1234 </span> <i class="fas fa-ruble-sign"></i></div>
+                  <div class="balance__adv">
+                    <span class="sep">|</span> <span class="bonus bonus__coin">1234 </span><span class="bonus-curr bonus-curr__coin"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="header__profile-btns">
+                <div class="profile-btn">
+                  <a href="/profile.html" class="myprofile-btn btn btn-primary btn-sm">Мой профиль</a>
+                  <a href="logout" class="logout-btn btn btn-primary btn-sm"></a>
+                </div>
+                
+                <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить балас</a>
+              </div>
+            </div>
+          </div>
+
+      </nav>
+
+      <!-- Statistics -->
+      <div id="stat" class="footer__stat">
+        <div class="container">
+          <div class="row">
+            <div class="col"><p>Открыто кейсов</p><span id="opened2">13324345</span></div>
+            <div class="col"><p>Пользователей</p><span id="users2">456567</span></div>
+            <div class="col"><p>Онлайн</p><span id="online2">343</span></div>
+            <div class="col"><p>Аркан сегодня</p><span id="arcanes2">89</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DropHistory -->
+      <div class="drophistory">
+        <div class="drophistory__btns">
+            <a type="td" class="tdsw btn btn-xs top_drop">Топ-Дроп</a>
+            <a type="ld" class="tdsw btn btn-xs live_drop">Лайв-Дроп</a>
+        </div>
+        <div class="items">
+          <div id='toplivedrop' class="items-inner">
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXP7g1bJ4Q1lgheXknVSffiw8fWbE5jLAJDiaqkPw9m2v3MdC99_8u_kpS0h_bgO73YmG9U-vp9hejF_ILyt0e3uRY5PQa1JunJI0RpNEbQ_QDqxLvqgZO7u5-YnyRquyMjtirVnhe30BpPPOI71vfPSl-ZVKNKAuDcUWcwXHvM/113fx75f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXP7g1bJ4Q1lgheXknVSffixc7XWlx6MTtAt7ShLhVlwczacDlL7dKiq5eKmfPxIb7DqWde6cF4hO7S9p7wjVqLpxIuNDztd4SRJ1JqNw6BqFW6wejv0ZfuvpuYziNn7CV3t32PyxW1iU4ZPONqheveFwtQU7c0aA/113fx75f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Uncommon"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Common"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Common"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Uncommon"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Arcana"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+           </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Immortal"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Mythical"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Legendary"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+            <a href="#" class="item-history">
+              <img src="//steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrhWfcUaVxeJMf_eVFQ8rHtf5SVapIaOI1Xa1VMVTNdJqK3sM0oyr6Q1NEWW4W_ZHZ4R0-cusiE_uWlbTJ2N4j-NZ16KS2ZiDNOGB60aILFIyhLF3DZkRyh4CYDBmmzI3cqwlMwRK-Fps4FPzXLd7p-Mol3x27uY5PrLqxyG2JiVpQHhSCg/100fx68f" class="item-history-pic" alt="Дроп">
+              <div class="rarity Rare"></div>
+              <div class="history-weapon-hover"> <img src="img/temp-1.png"><span class="item-history__user">TRUSTNO1 tastydrop.ru</span></div>
+            </a>
+        </div>
+      </div>
+
+    </header>
+    <!-- END HEADER -->
+    
+    <!-- START MAIN -->
+    <main role="main">
+      <!-- Сontent -->
+
+      <div class="container">
+
+        <div class="case-wrap freecase">
+
+          <!-- Card case -->  
+          <div class="card card-case">
+            <div class="card-body">
+              <div class="row no-gutters">
+                <div class="card-case__info col">
+                  <div class="card-case__img card-case__img-green"><img class="img-fluid" src="img/cases/ai_case_active.png" alt=""></div>
+                  <div class="card-case__desc">
+                    <h5 class="card-title card-case__title">FREE TASTYCASE</h5>
+                    <p class="card-text card-case__text">Не хочешь тратить кучу денег на кейсы? Тогда ты по адресу! Free Tasty Case — это кейс, в котором каждые 3 часа раздаются вещи. </p>
+                    <p class="card-text card-case__text">Нужно всего лишь авторизоваться, открыть 1 любой другой кейс и нажать "принять участие". По истечению времени будет выбран победитель, который получит вещь. </p>
+                  </div>
+                </div>
+                <div class="card-case__counter col-md-4">
+                  <div class="case__count ticker" data-time="1523317032000">
+                    <div class="countdown"> 
+                      <div class="digits">00</div><span class="delimiter">:</span> 
+                      <div class="digits">01 </div><span class="secs delimiter">:</span> 
+                      <div class="secs digits"> 15 </div>
+                    </div>
+                    <a href="" class="btn btn-primary d-block btn-participate">Принять участие</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Open this case -->  
+          <div id="scrollerContainer" class="carousel__opencase">
+            <div id="carouselLine"></div>
+            <div id="carouselOver"></div>
+            <div id="aCanvas">
+              <div class="rulwith">
+                <div id="casesCarusel" class="rolling">
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>  
+                  <div class="iteamblock">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons case -->  
+          <div class="btns__opencase">
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <button type="button" class="btn btn-default btn__demo">Демо-открытие</button>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <button type="button" class="btn btn-primary btn__open">Недостаточно 95 <i class="fas fa-ruble-sign"></i></button>
+              </div>
+              <div class="col-md-6 col-sm-12 btns__login">
+                 <a href="/login/vk" class="btn btn-primary btn-vklogin"><i class="fab fa-vk"></i> | &nbsp;Войти через VK </a>
+              </div>
+              <div class="col-md-6 col-sm-12 btns__login">
+                  <a href="/login/steam"  class="btn btn-primary btn-steamlogin"><i class="fab fa-steam"></i> | &nbsp;Войти через Steam </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="framecases">
+            <div class="framecases-header">
+
+              <div class="framecases-header__opencase">
+                <div class="btn-fast">
+                 <span>Открыть</span><br>обычно
+                </div>
+                <div class="block__price">
+                  <div class="price">35 <i class="fa fa-rub">Р</i></div>
+                  <div class="price__qual-open">48 открытий</div>
+                </div>
+                <div class="btn-speed">
+                  <span>Открыть</span><br>быстро
+                </div>
+              </div>
+              
+              <!-- Недостаточно средств -->
+              <div class="framecases-header__opencase header__opencase-nomoney">          
+                <div class="block__price">
+                  <div class="price"><span>Недостаточно средств</span> 35 <i class="fa fa-rub">Р</i></div>
+                  <a  href="#" class="price__qual-addmoney btn btn-primary">Пополнить баланс</a>
+                </div>
+              </div>
+              
+            </div>
+              <!-- Выбрать число открытий -->
+            <div class="framecases-content">
+              <div class="block-opening container">
+                <p>Режим Фарма - несколько открытий подряд:</p>
+                <div class="row">
+                  <div class="col-md-3">10</div>
+                  <div class="col-md-3">25</div>
+                  <div class="col-md-3">50</div>
+                  <div class="col-md-3">100</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="#" class="yourself">или ввести количество самому</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Ввести свое значение">
+                      </div>
+                      <button type="submit" class="btn btn-default">Применить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- Content this case -->  
+          <div class="content__opencase">
+            <!-- Title -->        
+            <div class="heading heading__border heading__border-primary"><span class="line__l"></span><h2 style="width:48%"><span class="heading__icon i-items"></span> СОДЕРЖИМОЕ КЕЙСА</h2><span class="line__r"></span></div>
+            <!-- Items -->  
+            <div class="items items__opencase">
+              <div class="row">
+                <div class="opencase-drops dropsasc">
+                  
+                </div>
+                <div class="opencase-dropss dropsdesc">
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                  <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                    <div class="picture Mythical">
+                      <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                    </div>
+                    <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+                  </a>
+                </div>
+                
+
+              </div>
+            </div> 
+          </div>
+
+          <!-- LastDrop Winner -->
+          <div class="freecase__lastdrop text-center">
+            <h3 class="heading heading__content heading__content-primary">ПОСЛЕДНИЙ ДРОП</h3>
+            <div class="freecase__lastdrop-content d-flex flex-column align-items-center">
+              <a href="http://steamcommunity.com/market/listings/570/Sea Rake's Bridle" class="iteamblock" target="_blank">
+                <div class="picture Mythical">
+                  <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcUhpRpPRwPDS-W_3PDbVlxwGg1au7W3PwZsnODEcC9J09SzlYS0nvr5PKnFl2du5MRjjeyPotmkiga3r0RlYjrwLIXAdFQ9M1vS_1W4k7zsh5W7vZrIwHFqsiEk5WGdwUIcXXbZ7A/135fx90f">
+                </div>
+                <div class="name Mythical"><span>Sea Rake's BridleSea Rake's BridleSea Rake's Bridle</span></div>
+              </a>
+              <p class="freecase__lastdrop-win">
+                <h5 class="heading">Поздравляем <a href="#">
+                <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/91/91f8225ec13aceefc01f3683806372ab1878efe5_full.jpg" width= "32px">
+                <span>Lucky</span></h5>
+                
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Last Participants -->
+          <div class="freecase__lastparts pb-4">
+            <h3 class="heading heading__content heading__content-primary  text-center">Последние участники (Всего 126)</h3>
+            <table class="table ">
+              <tbody>
+                <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>
+                    <a class="lastparts__user" href="#">
+                      <img class="lastparts__user-ava" width="32px" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e8/e824b0ffa457c500c149a69698747fa12b9a6c0a_full.jpg">&nbsp;
+                      <strong class="lastparts__user-name">SorryGuys</strong>
+                    </a>
+                  </td>
+                  <td class="text-right">
+                    <small>Время регистрации: (2018-04-19 23:17:13)</small>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            
+          </div>
+
+
+        </div>
+      
+      </div>
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <footer>
+
+      <!-- Statistics -->
+      <div id="stat" class="footer__stat">
+        <div class="container">
+          <div class="row">
+            <div class="col"><p>Открыто кейсов</p><span id="opened2">13324345</span></div>
+            <div class="col"><p>Пользователей</p><span id="users2">456567</span></div>
+            <div class="col"><p>Онлайн</p><span id="online2">343</span></div>
+            <div class="col"><p>Аркан сегодня</p><span id="arcanes2">89</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Info -->
+      <div class="footer__info">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+              <img class="footer__logo" src="img/logo/logo-footer.png" alt="Tastydrop">
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__menu">
+              <ul class="footer__menu list-unstyled">
+                <li><a href="#">Лайв-трейды ботов</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Cоглашение</a></li>
+                <li><a href="#">Условия участия в стимулирующем мероприятии</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__pay">
+              <div class="footer__pay">
+                <h5>Мы принимаем</h5><img class="pay-img" src="img/footer/pay.png" alt="Мы принимаем">
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3" id="footer__vk">
+              <div id="vk_groups" >vk</div>
+            </div>
+          </div>
+
+          <!-- Back to top -->
+          <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+      </div>
+        
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- Preloader -->
+    <div class="loader">
+      <div class="loader_inner"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/libs.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.js"></script>
+
+
+  </body>
+</html>

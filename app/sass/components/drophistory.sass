@@ -1,0 +1,118 @@
+.drophistory
+    margin-top: 19px
+    .items
+        .items-inner
+            display: flex
+            justify-content: space-between
+            padding: 0 0 0 27px
+            .item-history:nth-child(odd)
+                background: url("../img/drops/drops__bg.jpg") no-repeat
+            .item-history
+                position: relative
+                display: flex
+                z-index: 316
+                background-size: 100%
+                flex-basis: 1
+                min-width: 245px
+                max-height: 132px
+                margin: .3% 10px
+                background: url("../img/drops/drops__bg2.jpg") no-repeat
+                justify-content: center
+                img
+                    order: 2
+                    margin: auto
+                    z-index: 316
+                    width: auto
+                    max-width: 200px
+                .rarity
+                    width: 13px
+                    margin-left: 0
+                    position: absolute
+                    left: 0
+                    top: 0
+                    height: 100%
+                    transform: translateX(-10px)
+            .item-history:hover
+                .history-weapon-hover
+                    opacity: 1
+                    visibility: visible
+                    z-index: 500
+                    transition: all .3s
+                    transform: translateY(0px)
+
+            .history-weapon-hover
+                transition: all .3s
+                word-wrap: break-word
+                opacity: 0
+                visibility: hidden
+                display: flex
+                flex-direction: column
+                position: absolute
+                background: #b7b6b6
+                color: $primary-100
+                padding: 0.625rem
+                width: 220px
+                height: auto
+                margin: 125px auto 0 0px
+                text-align: center
+                line-height: 1
+                z-index: 500
+                transform: translateY(-50px)
+                &::before
+                    left: 50%
+                    margin-left: -10px
+                    +arrow(1.5rem, 9px, up, #b7b6b6)
+                    @include pseudo
+                    top: -9px
+                &:hover
+                    a
+                      color: black
+                    .item-history__user
+                        color: $secondary-100
+                .item-history__desc
+                    display: flex
+                    flex-direction: column
+                .item-history__name
+                    font-size: 17px
+                    font-weight: bold
+                    color: $primary-100
+                .item-history__seria
+                    font-size: 13px
+                .item-history__user
+                    font-size: 18px
+                    font-weight: bold
+
+                .item-history__category
+                    font-size: 12px
+                    box-shadow: none !important
+
+                .item-history__img
+                    background: url("../img/drops/drops-bg__case.png") no-repeat
+                    background-size: cover
+                img
+                    min-height: auto
+                    margin: auto
+                    min-width: 70%
+                &:hover
+                    img
+                        transform: scale(1.2)
+                
+// Drophistory Rarity
+.drophistory .rarity.Green
+  background: #32d555
+  box-shadow: none
+.drophistory .item-history__category.Green
+  color: #32d555
+ 
+.drophistory .rarity.Blue
+  background: #3292d5
+  box-shadow: none
+.drophistory .item-history__category.Blue
+  color: #3292d5
+ 
+.drophistory .rarity.Purple
+  background: #a132d5
+  box-shadow: none
+.drophistory .item-history__category.Purple
+  color: #a132d5
+ 

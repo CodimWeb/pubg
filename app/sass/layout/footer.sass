@@ -1,0 +1,141 @@
+.footer__menu
+	margin: 20px 0 0 1rem
+	li a
+		color: $light-color
+		display: flex
+		line-height: 1
+		font-size: 1.15rem
+		padding: .5rem 0
+		font-weight: bold
+		&:hover
+			color: $secondary-100
+			border-color: $secondary-100
+
+// Footer
+footer
+	margin: 0 0 0  258px
+	height: 200px
+	position: relative
+	&::before
+		@include pseudo
+		background: url("../img/footer/footer-bg.png") 0 0 no-repeat
+		background-size: cover
+		max-width: 100%
+		width: 100%
+		height: 100%
+		height: 360px
+		background-position: center center
+		top: -144px
+
+	.container
+		max-width: 1240px
+	
+	// Info
+	.footer__info
+		padding: 70px 30px 40px 110px
+		overflow: hidden
+		.footer__logo
+			margin-top: 2.25rem
+		p
+			color: $tertiary-300
+			font-size: 25px
+			font-weight: 700
+			line-height: 1.2
+		.footer__info-copyright
+			color: $tertiary-300
+			font-size: 1.5625rem
+			text-transform: uppercase
+			margin-bottom: 26px
+		.footer__info-ssl
+			margin-top: 2rem
+			position: relative
+			padding-left: 55px
+			font-weight: bold
+			&::before
+				@include pseudo
+				background: url("../img/icons/sprite.png")  -398px -67px no-repeat
+				width: 35px
+				height: 45px
+				left: 5px
+				top: -15px
+
+		.footer__pay
+			padding-left: 14px
+			h5
+				color: $tertiary-300
+				font-size: 1.5625rem
+				font-weight: bold
+				margin-bottom: 41px
+
+
+
+// Header Statistics
+.footer__stat
+	display: flex
+	text-align: left
+	flex: 1
+	max-width: 1185px
+	margin-top: -8px
+	
+	div
+		position: relative
+
+		&::before
+			@include pseudo
+			background: url("../img/icons/sprite.png") -126px 0 no-repeat
+			width: 68px
+			height: 53px
+			left: -5rem
+			top: .44rem
+	p
+		color: $tertiary-100
+		margin-top: -2px
+		margin-bottom: 0
+		font-size: 1.2rem
+		font-weight: bold
+		line-height: 1
+
+	span
+		font-size: 2.5rem
+		color: $tertiary-100
+		font-family: $font-secondary
+		line-height: 1
+
+div.footer__stat-users
+	width: 25.5%
+	padding-left: 108px
+div.footer__stat-users::before
+	left: 23px
+
+div.footer__stat-opened
+	width: 21.8%
+	padding-left: 80px
+div.footer__stat-opened::before
+	background-position: -205px 0
+	width: 50px
+	left: 21px
+
+div.footer__stat-createcases
+	width: 23.3%
+	padding-left: 93px
+div.footer__stat-createcases::before
+	background-position: -264px 0
+	width: 58px
+	left: 21px
+
+div.footer__stat-pvpbattles
+	width: 19%
+	padding-left: 87px
+div.footer__stat-pvpbattles::before
+	background-position: -332px 0
+	width: 51px
+	left: 22px
+
+div.footer__stat-online
+	width: 10.2%
+	padding-left: 74px
+div.footer__stat-online::before
+	background-position: -392px 0
+	width: 38px
+	left: 22px
+

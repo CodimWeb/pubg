@@ -1,0 +1,90 @@
+// Buttons
+.btn, .btn.btn-default
+  border: 2px solid  $tertiary-200
+  @include border-radius(3em)
+  padding: 0.5rem
+  background: $tertiary-200
+  color: $light-color
+  line-height: 1
+  font-family: $font-medium
+  &:hover
+  	opacity: .8
+    outline: none
+  	transition: all .3s
+    
+.btn:active, .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show > .btn.dropdown-toggle, .btn.focus, .btn:focus, .btn:not(:disabled):not(.disabled).active:focus, .btn:not(:disabled):not(.disabled):active:focus, .show>.btn.dropdown-toggle:focus
+.btn.btn-default:active, .btn.btn-default:not(:disabled):not(.disabled).active, .btn.btn-default:not(:disabled):not(.disabled):active, .show > .btn.btn-default.dropdown-toggle, .btn.btn-default.focus, .btn:focus, .btn.btn-default:not(:disabled):not(.disabled).active:focus, .btn.btn-default:not(:disabled):not(.disabled):active:focus, .show>.btn.btn-default.dropdown-toggle:focus
+  background-color: $secondary-100
+  border: 2px solid $secondary-100
+  box-shadow: none
+  background: $secondary-100
+.btn-primary
+  color: $primary-100
+  background-color: $light-color
+  background: $light-color
+  &:hover
+    opacity: 1
+    color: $light-color
+    background-color: $secondary-100
+    background: $secondary-100
+
+.btn-primary:active, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle, .btn-primary.focus, .btn-primary:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus
+  background-color: $secondary-100
+  border: none
+  background: $secondary-100
+
+.btn-secondary
+  background: none
+  color: $tertiary-200
+  border: 2px solid $tertiary-200
+  
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+  background: $light-color
+  color: $primary-100
+.btn.btn-secondary:hover, .btn.btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus
+  border: 2px solid $secondary-100
+  color: $secondary-100
+  background: $light-color
+
+.btn.btn-sm
+  padding: 0.375rem 
+  font-size: 0.6875rem
+
+.btn.btn-border 
+  border: 2px solid $light-color
+  background: $primary-100
+  &:hover
+    border: 2px solid $secondary-100
+    color: $secondary-100
+
+.btn.btn-modal
+  background: #1e1d1d
+  padding: 12px 50px
+  border-radius: 30px
+  font-size: 25px
+  font-family: $font-bold
+  border-color: #1e1d1d
+  max-width: 300px
+  .fa-ruble-sign
+    font-size: 0.7em
+.btn.btn-modal.btn-md
+  padding: 6px 50px 11px 59px
+.btn.btn-modal.btn-modal-light
+  background: #3e3d3d
+  border-color: #3e3d3d
+.btn.btn-show-detail
+  width: 18px
+  height: 18px
+  border: none
+  background: transparent
+  padding: 0
+  img
+    filter: grayscale(100%)
+  &:hover
+    img
+      filter: grayscale(0)
+.link-warning
+  font-size: 14px
+  line-height: 16px
+  color: #f9a666
+  text-decoration: underline

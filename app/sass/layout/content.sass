@@ -1,0 +1,292 @@
+// ==== Global ===== //
+
+body
+  font-size: $base-fontsize
+  font-family: $font-regular
+  background-color: #e8e8e8
+  overflow-x: hidden
+
+
+//transition
+a, button, li, ul, img
+  transition: all .3s
+
+
+p, ul li, ol li
+  color: $light-color
+
+// Links  
+a
+  color: $light-color
+  &:hover
+    text-decoration: none
+    color: $light-color
+p a 
+  color: $secondary-100
+  
+// Icons
+// svg.fa-ruble-sign
+//   width: .65rem !important
+// Heading
+h2, h3, h4, h5
+  color: $light-color
+  font-family: $font-bold
+
+h2.heading
+    font-size: 2rem
+
+// Videos
+.opencase-video.video-responsive
+  margin-bottom: 30px
+  iframe
+    max-width: 560px
+    max-height: 315px
+    left: 50%
+    margin-left: -280px
+
+.video-responsive
+  position: relative
+  padding-bottom: 315px
+  height: 0
+  overflow: hidden
+  text-align: center
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+// Progress bar
+.progress
+  margin-top: 0.9375rem
+  height: 1.375rem
+  @include border-radius(5rem)
+  background: green
+  .progress-bar
+    background: $primary-100
+.progress-label
+  margin-top: -23px
+  margin-bottom: 23px
+  display: flex
+  justify-content: center
+  font-size: 0.875rem
+  font-family: $font-bold
+   
+// Scropll Bar
+\::-webkit-scrollbar
+  width: 7px
+
+\::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(10, 10, 10, 0.3)
+  border-radius: 5px
+  background: $primary-100
+
+\::-webkit-scrollbar-thumb
+  border-radius: 5px
+  background: $primary-100
+  -webkit-box-shadow: inset 0 0 6px rgba(10, 10, 10, 0.5)
+   
+// Cards
+.card
+  background: none
+  border: none
+  .card-body
+    @include border-radius(0.3125rem)
+    background-color: $primary-100
+    overflow: hidden
+    color: $light-color
+    font-family: $font-regular
+    
+// Form
+input:focus, .form-control:focus
+  border: none
+  outline: none
+  box-shadow: none
+  background: $primary-100
+  color: $light-color
+  
+input[type=number]
+  &::-webkit-inner-spin-button,  &::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+  -moz-appearance: textfield
+
+.form-control
+  background: $primary-100
+  border: none
+  @include border-radius(0.3125rem)
+  color: $light-color
+  transition: all .3s
+  &:focus
+    background: $light-color !important
+    color: $primary-100 !important
+    transition: all .3s
+
+.input-group .btn.input-group-text
+    @include border-radius-s(0, 0.125rem, 0, 0.125rem)
+.multiselect-container>li>a
+		color: #000
+.btns__opencase .btn.multiselect
+	padding: 0 8px
+	font-size: 1rem
+	min-height: 27px
+	min-width: 62px
+	text-align: left
+	margin: 3px 0 0 47px
+	font-weight: normal
+	padding-left: 1rem
+	padding-right: 2rem
+	.btns__opencase-btn
+		font-family: $font-regular
+	p
+		font-size: 1.125rem
+	.caret
+			width: 1.2rem
+			height: 1.3rem
+			border-radius: 3rem
+			display: inline-flex
+			position: absolute
+			top: 3px
+			right: 3px
+			background: #e8e8e8
+			&::before
+					display: inline-block
+					width: 0
+					height: 0
+					margin-top: 9px
+					margin-left: .255em
+					vertical-align: .255em
+					content: ""
+					border-top: .3em solid #383838
+					border-right: .3em solid transparent
+					border-bottom: 0
+					border-left: .3em solid transparent
+
+.multiselect-container.dropdown-menu
+		border-radius: 0
+		min-width: 65px
+		text-align: center
+		li a
+			label
+				min-width: 100%
+				display: block
+				margin: 0
+				padding: .15rem .3rem !important
+				&:hover
+					background: $secondary-100
+
+.show>.btn.multiselect.btn-outline-primary.dropdown-toggle:focus
+		background: #818180
+		box-shadow: none
+
+.dropdown-toggle:after
+		display: none
+
+.modal-backdrop
+  background: $primary-100
+.modal-backdrop.show
+  opacity: .9
+  
+main
+  margin: 1.25rem 0 0  258px
+  padding: 0
+  //noinspection ALL
+
+  .responsiveTabs .panel-group.visible-xs
+      display: none
+
+.main-content
+		position: relative
+		&::before
+				@include pseudo
+				background: url("../img/header-bg.png") 0 -240px no-repeat
+				background-size: cover
+				max-width: 100%
+				width: 100%
+				height: 100%
+				height: 140px
+
+.back-to-top
+  display: none !important
+
+.main-top
+  display: flex
+  justify-content: space-between
+  padding: 21px 16px 10px 27px
+  // margin-top: - 1.5rem
+
+.content__wrap
+  background: rgba(0, 0, 0, .4)
+  height: 100%
+  width: 97%
+  min-height: 800px
+  margin: -3rem auto 3rem auto
+  justify-content: flex-start
+
+.content
+  position: relative
+  z-index: 100
+  margin-top: -7rem
+  .content__header
+    display: flex
+    justify-content: space-between
+    padding-top: 12px
+    .cases__action
+      z-index: 100
+      right: 1.5rem
+      margin: 0 -14px
+      .btn
+        font-size: 25px
+        margin: 0 20px
+        padding: 7px 12px 11px
+    .heading
+      font-weight: bold
+      z-index: 100
+      color: #151515
+      font-size: 42px
+      margin: 0
+  .content__header
+  	.heading--indent
+  		text-indent: 27px
+  &::after
+    @include pseudo
+    background: url("../img/content-bg-bott.png") no-repeat
+    background-size: cover
+    max-width: 100%
+    width: 100%
+    height: 100%
+    height: 294px
+    bottom: -100px
+    background-position: top center
+    z-index: -1
+  &::before
+    @include pseudo
+    background: url("../img/content-bg-top.png") no-repeat
+    background-size: cover
+    max-width: 100%
+    width: 100%
+    height: 100%
+    height: 294px
+    background-position: top center
+    z-index: -1
+    top: -100px
+.page__case .case__header
+  h1
+    font-size: 35px
+    margin-bottom: 0
+    transform: translateY(-10px)
+  .btn.btn-secondary
+    color: white
+    border: 1px solid white
+    font-weight: bold
+    font-size: 22px
+    padding: 10px 37px 11px
+  .btn.btn-secondary--lg
+    padding: 10px 46px 11px
+  .btn.btn-secondary:hover
+    color: #1a1a1a
+
+.content__dont-bottom
+  &::after
+    display: none

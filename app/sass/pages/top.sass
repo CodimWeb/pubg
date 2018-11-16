@@ -1,0 +1,424 @@
+.page__topweek
+	background: url("../img/topweek/topweek-bg.jpg") no-repeat
+	padding: 149px 0 0 0
+	background-attachment: fixed
+	background-size: 100%
+	.content__wrap
+		background: rgba(0, 0, 0, 0.7)
+		padding-bottom: 120px
+	.case__header
+		padding: 32px 62px 12px 72px
+		margin-bottom: 21px
+
+.topweek__title
+	font-size: 40px
+	font-family: $font-bold
+	padding: 27px 0 0
+	text-align: center
+
+.top
+	&__counter
+		flex: 1
+		max-width: 670px
+		border-radius: 50px
+		padding: 5px 50px
+		background: #6f6f6f
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__counter__label
+		color: #fff
+		font-size: 30px
+		font-family: $font-regular
+		margin: 0 10px 0 0
+
+	&__counter-timer
+		
+		span
+			color: #fff
+			font-size: 30px
+			font-family: $font-regular
+			margin: 0
+			position: relative
+	&__select-wrap
+		.btn.multiselect.btn-outline-primary.dropdown-toggle
+			font-size: 26px
+			padding: 10px 60px 10px 25px
+			min-width: 320px
+			&:after
+				border-top: 9px solid #fff
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				margin: 0
+				top: 19px
+				right: 17px
+			&:before
+				content: ''
+				width: 1px
+				height: 100%
+				position: absolute
+				right: 40px
+				top: 0
+				background: #403636
+		.btn.multiselect.btn-outline-primary.dropdown-toggle:focus,
+		.btn.multiselect.btn-outline-primary.dropdown-toggle:active
+			background: #000 !important
+			box-shadow: none
+	&__select
+		text-align: center
+		justify-content: center
+		margin-top: 30px
+		h4
+			text-transform: uppercase
+			font-size: 1.25rem
+			color: #fff
+			margin-bottom: 1rem
+		.multiselect-native-select
+			.btn-outline-primary
+				font-size: 1.275rem
+				padding-left: 2.5rem
+				padding-right: 5.2rem
+				border-radius: 50px
+				background: #000
+				border: none
+				font-family: $font-third
+				color: #fff
+			.caret
+				width: 3.1rem
+				height: 3.1rem
+			.dropdown-toggle::after
+				color: $primary-100
+				@include pseudo
+				top: 1.4rem
+				right: 1.1rem
+				border-width: 6px
+		.multiselect-container.dropdown-menu
+			left: 0
+			right: 40px
+			height: 180px
+			border-radius: 8px
+			overflow-y: auto
+			background: #000
+			li
+				background: #000
+				color: #fff
+				font-size: 26px
+				font-family: $font-third
+				border-bottom: 1px solid #403636
+				&.bg-light
+					background: #000 !important
+					color: #fff
+				&:first-child
+					border-radius: 8px 8px 0 0
+				&:last-child
+					border-radius: 0 0 8px 8px
+					border-bottom: none
+				a 
+					color: #fff
+			&[x-placement="top-start"]
+				margin-bottom: 10px
+			&[x-placement="bottom-start"]
+				margin-top: 10px
+
+			&::-webkit-scrollbar-thumb
+				background: #9a9a9a
+		
+	// &__week-table
+	// 	thead th
+	// 		vertical-align: middle
+	// 		text-align: center
+	// 		background: $primary-100
+	// 		color: #7a7981
+	// 		padding: .5rem
+	// 		&:first-child
+	// 			@include border-radius-s(0.3125rem, 0, 0, 0.3125rem)
+	// 		&:last-child
+	// 			@include border-radius-s(0, 0.3125rem, 0.3125rem, 0)
+				
+	// 	tbody td
+	// 		text-align: center
+	// 		background: $primary-100
+	// 		padding: 0.5rem 
+	// 		font-family: $font-medium
+	// 		font-size: 1.3rem
+	// 		border-bottom: 4px solid $primary-100
+	// 		&:first-child
+	// 			background: $primary-100
+	// 			width: 1.375rem
+				
+	// 	.top__week-self td
+	// 		border-bottom: none
+	// 		@include gradient(top, bottom, $primary-100, $primary-100)
+	// 		&:first-child
+	// 			@include border-radius-s(0.3125rem, 0, 0, 0.3125rem)
+	// 		&:last-child
+	// 			@include border-radius-s(0, 0.3125rem, 0.3125rem, 0)
+	// 	.top__week-left
+	// 		margin-left: -30%
+	// 		text-align: left
+	// 		strong
+	// 			color: #ff1668
+	// 	.top__week-user
+	// 		align-items: center
+	// 		display: flex
+	// 		padding-left: 4.125rem
+	// 		.top__week-ava
+	// 			width: 64px
+	// 			height: 64px
+	// 			display: flex
+	// 			overflow: hidden
+	// 			@include border-radius(3rem)
+	// 			margin-right: 10px
+	// 			img
+	// 				width: 64px
+	// 				height: auto
+	// 		&:hover
+	// 			img
+	// 				transform: scale(1.3)
+			
+	// 		.top__week-name
+	// 			display: flex
+	// 			&:hover
+	// 				color: $secondary-100
+					
+	// 	.top__week-item
+	// 		img
+	// 			width: auto
+	// 			max-height: 65px
+		
+	// 	.top__week-earned
+	// 		position: relative
+	// 		// background: #63253c
+	// 		display: inline
+	// 		// @include border-radius(0.125rem)
+	// 		.bonus.bonus__coin
+	// 			// color: $light-color
+	// 			// text-shadow: 0 0 14px $light-color
+	// 			text-shadow: none
+	// 			font-size: 1.35rem
+	// 			padding-left: 28px
+	// 			font-family: $font-medium
+	// 		.bonus-curr
+	// 			position: absolute
+	// 			top: 4px
+
+	// 	.top__week-price
+	// 		text-align: left
+	// 		padding-left: 2.8125rem
+
+	// .top__week-table tbody .w-tr td
+		background: none
+		border-bottom: none
+		height: 1.75rem
+		
+	&__week-table
+		max-width: 1010px
+		margin: 0 auto
+		&--self
+			margin-bottom: 25px
+			.top__week-name
+				margin: 23px 0 0 !important
+			.top__week-coins
+				margin: 23px 0 0 !important
+		&__tr
+			display: flex
+			border-bottom: 2px solid #fff
+			font-size: 30px
+			padding: 20px 0 24px
+			&--label
+				font-size: 25px
+				border-color: transparent
+				position: relative
+				padding-bottom: 11px
+				padding-top: 0
+				.top__week-table__td
+					min-height: 0
+				&:after
+					content: ''
+					position: absolute
+					left: 0
+					right: 0
+					bottom: 0
+					height: 2px
+					background: #fff
+					box-shadow: 0 0 6px 4px #835e1a
+			&:last-child
+				border-bottom: none
+		&__td
+			min-height: 70px
+			&:nth-child(1)
+				width: 18%
+				min-width: 18%
+				padding-left: 15px
+			&:nth-child(2)
+				width: 33%
+				min-width: 33%
+			&:nth-child(3)
+				width: 29%
+				min-width: 29%
+				font-family: $font-bold
+				text-align: center
+			&:nth-child(4)
+				width: 20%
+				min-width: 20%
+		.top__week-ava
+			width: 124px
+			height: 124px
+			display: flex
+			overflow: hidden
+			border-radius: 50%
+			margin-right: 10px
+			img
+				width: 124px
+				height: auto
+			&:hover
+				img
+					transform: scale(1.3)
+		.top__week-name
+			font-family: $font-bold
+			margin: 40px 0 0
+			display: block
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		.top__week__place
+			font-size: 20px
+			font-family: $font-bold
+			margin: 0
+		.top__week-coins
+			margin: 40px 0 0
+		.review__block-items
+			min-width: 0
+			margin-right: 0
+		.reviews__item
+			font-size: 16px
+			margin-left: auto
+			.iteamblock
+				min-height: 0
+				max-width: 140px
+				min-width: 140px
+				width: 140px
+				.picture
+					max-height: 100px
+					img
+						position: relative
+						z-index: 2
+						max-width: 100%
+					&:before
+						content: ''
+						width: 230px
+						height: 136px
+						background: url(../img/reviews/item-bg.png) no-repeat
+						z-index: 1
+						left: -84px
+						top: 15px
+						background-size: contain
+			&:hover
+				.reviews__item-info
+					margin: 100px 0 0
+			
+	// Top Rarity
+	.Immortal, .Immortal_casetopflakes
+		border: 2px solid #e4ae33
+		box-shadow: none
+
+	.Legendary, .Legendary_casetopflakes
+	  border: 2px solid #d32ce6
+	  box-shadow: none
+	    
+	.Mythical, .Mythical_casetopflakes
+	  border: 2px solid #8847ff
+	  box-shadow: none
+	  
+	.Rare, .Rare_casetopflakes
+	  border: 2px solid #4b69ff
+	  box-shadow: none
+	    
+	.Arcana, .Arcana_casetopflakes
+	  border: 2px solid #ade55c
+	  box-shadow: none
+	   
+	.Uncommon, .Uncommon_casetopflakes
+	  border: 2px solid #5e98d9
+	  box-shadow: none
+	   
+	.Common, .Common_casetopflakes
+	  box-shadow: none
+	  border: 2px solid #6b88a8
+	  
+	
+
+#flakes_week 
+	tr:nth-child(1)
+		@include gradient(left, right, #cca445, #5c4821)
+		td
+
+			background: none
+			border-bottom: 4px solid #5c4821
+		td:first-child
+			background: #dfb944
+		.top__week-earned
+			padding: 0.2rem 0.625rem	
+			background: #63253c
+			@include border-radius(0.125rem)
+			.bonus.bonus__coin
+				color: $light-color
+				padding-right: 0
+				text-shadow: 0 0 14px $light-color
+			.bonus-curr
+				top: 6px
+				
+	tr:nth-child(2)
+		@include gradient(left, right, #8c8c8c, #302f32)
+		td
+			background: none
+			border-bottom: 4px solid #302f32
+		td:first-child
+			background: #a6a6a6
+		.top__week-earned
+			padding: 0.2rem 0.625rem	
+			background: #55163e
+			@include border-radius(0.125rem)
+			.bonus.bonus__coin
+				color: $light-color
+				padding-right: 0
+				text-shadow: 0 0 14px $light-color
+			.bonus-curr
+				top: 6px
+	
+	tr:nth-child(3)
+		@include gradient(left, right, #864d4d, #432525)
+		td
+			background: none
+			border-bottom: 4px solid #432525
+		td:first-child
+			background: #a25c5c
+		.top__week-earned
+			padding: 0.2rem 0.625rem	
+			background: #55163e
+			@include border-radius(0.125rem)
+			.bonus.bonus__coin
+				color: $light-color
+				padding-right: 0
+				text-shadow: 0 0 14px $light-color
+			.bonus-curr
+				top: 6px
+				
+
+#flakes_week
+	tr:last-child
+		td:last-child
+			@include border-radius-s(0, 0, 0.3125rem, 0)
+		td:first-child
+			@include border-radius-s(0, 0, 0, 0.3125rem)
+		td
+			border-bottom: none
+	tr:nth-child(1)
+		td:last-child
+			@include border-radius-s(0, 0.3125rem, 0, 0)
+		td:first-child
+			@include border-radius-s(0.3125rem, 0, 0, 0m)
+				
+
+	

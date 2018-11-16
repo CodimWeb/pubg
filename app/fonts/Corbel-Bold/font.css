@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Corbel-Bold';
+  src: url('Corbel-Bold.eot');
+  src: url('Corbel-Bold.woff') format('woff'),
+       url('Corbel-Bold.ttf') format('truetype'),
+       url('Corbel-Bold.svg#Corbel-Bold') format('svg'),
+       url('Corbel-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
