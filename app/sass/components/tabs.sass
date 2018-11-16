@@ -3,26 +3,27 @@
 	.nav-tabs
 		border: none
 		display: flex
-		@include border-radius(0.3125rem)
-		min-height: 4.375rem
+		border-radius: 6px 6px 0 0
 		overflow: hidden
+		box-shadow: 0 5px 56px -15px #1f1f21
+		position: relative
+		z-index: 2
 		.nav-item
 			flex-grow: 1
 			.nav-link
-				@include border-radius(0)
-				background: $primary-100
+				border-radius: 0
+				background: #32303f
+				background-image: linear-gradient(to bottom, #32303f 0, #252331 100%)
+				background-attachment: fixed
 				border: none
-				color: $light-color
+				color: #9997a0
+				font-size: 18px
 				font-family: $font-bold
-				font-size: 1.375rem
-				padding: .65rem 0
+				padding: 26px 0
 				text-align: center
-				height: 3.75rem
 				&.active
-					@include border-radius-s(0, 0, 0.3125rem, 0.3125rem)
-					@include gradient(top, bottom, $primary-100, $primary-100)
-					padding-top: 1rem
-					height: 4rem
+					background-image: linear-gradient(to bottom, #3f3d4e 0, #252330 100%)
+					color: #f9a666
 					&:hover
 						transition: all .3s
 						@include gradient(bottom, top, $primary-100, $primary-100)

@@ -267,7 +267,8 @@
 //1300px 
 @media (max-width: 1300px)
 	.main-content::before
-		background: url(../img/header-bg.png) 0 -250px no-repeat
+		background: url(../img/header-bg.png) 0 -110px no-repeat
+		background-size: cover
 	// Reviews
 	#reviews .review__block-items .reviews__case img
 		width: 10rem
@@ -887,6 +888,8 @@
 	main #main-banner .main-banner__content
 		padding-bottom: 1rem
 	//page case
+	.main-content::before
+		background-position: 0 -90px
 	.page__case__content
 		background-position: 0 0
 	.page__case .case__header
@@ -1262,9 +1265,49 @@
 	footer .footer__info .footer__info-ssl::before
 		top: -9px
 	//page case
-		.btns__opencase-select
-			margin-bottom: 15px
-
+	.page__case small
+		font-size: 16px
+	.page__case .case__header h1
+		font-size: 30px
+		margin-bottom: 5px
+	.carousel__opencase::before
+		width: 120%
+		transform: translateX(-10%)
+		bottom: -8px
+	.btns__opencase-select
+		margin-bottom: 15px
+	.content::before
+		height: 134px
+	.main-content::before
+		background-position: 0 -68px
+		background-size: cover
+		height: 80px
+	.page__case__content
+		padding-top: 120px
+	.content__wrap
+		min-height: 0
+	.page__case .content__opencase .content__header
+		margin-bottom: 0
+	.page__case .content__opencase .content__header .heading
+		margin-top: -50px
+		margin-bottom: 0
+		font-size: 40px
+		line-height: 42px
+	.items__opencase .row .iteamblock
+		min-width: calc(33.333% - 20px)
+		max-width: calc(33.333% - 20px)
+		min-height: 140px
+		margin: 0 10px 24px
+		padding-bottom: 20px
+	.iteamblock .name
+		height: 20px
+		line-height: 20px
+		border-width: 17px
+		background: rgba(255, 255, 255, 0.85)
+	.iteamblock .name span
+		font-size: 14px
+		line-height: 20px
+	
 
 //680px								
 @media (max-width: 680px)
@@ -1320,7 +1363,7 @@
 	footer .footer__info
 		margin-top: 2rem 
 
-//580px
+//560px
 @media (max-width: 560px)
 	header .navbar-brand
 		max-width: 150px
@@ -1418,6 +1461,19 @@
 		margin-top: 60px
 	.content::before
 		height: 144px
+	//page case
+	.carousel__opencase .rulwith
+		padding: 15px 0
+	.carousel__opencase #casesCarusel .iteamblock
+		padding: 0 15px
+	.desc__opecase p
+		font-size: 18px
+	.page__case .content__opencase .content__header .heading
+		font-size: 36px
+		line-height: 40px
+	.items__opencase .row .iteamblock 
+		min-width: calc(50% - 20px)
+		max-width: calc(50% - 20px)
 
 
 //520px								
@@ -1564,6 +1620,8 @@
 		font-size: 14px
 	main .main-top
 		padding-top: 31px
+		position: relative
+		z-index: 2
 	.footer__stat div
 		margin: 0 9px 11px
 	.main-top .footer__stat div span
@@ -1629,7 +1687,7 @@
 		margin-left: 9px
 	.main-banner::before
 		height: 105px
-		background-position: -22px -58px
+		background-position: 0 -58px
 	main #main-banner .main-banner__content
 		padding-top: 56px
 		flex-wrap: wrap
@@ -1827,6 +1885,67 @@
 		height: 33px
 	footer .footer__info .footer__info-copyright
 		font-size: 14px
+	//page case
+	.page__case__content
+		padding-left: 12px
+		padding-right: 12px
+	.page__case__content .content__wrap
+		width: 100%
+	.main-content
+		margin-top: -24px
+	.main-content::before
+		background-position: 0 -29px
+	.page__case .case__header
+		padding: 17px 10px 29px 10px
+	.page__case small
+		margin-bottom: 7px
+	.page__case .case__header h1
+		font-size: 25px
+		margin-bottom: 2px
+	.page__case .case__header .btn.btn-secondary
+		padding: 9px 32px 10px
+	.carousel__opencase
+		margin: 0 -40px 18px
+	.carousel__opencase #casesCarusel .iteamblock
+		padding: 0 8px
+	.carousel__opencase #carouselLine
+		top: -2px
+		bottom: -21px
+	.carousel__opencase::before
+		bottom: -13px
+	main .btns__opencase
+		margin-bottom: 16px
+	.btns__opencase-title
+		margin-left: 17px
+	.btns__opencase .btn.multiselect
+		margin-top: 5px
+		margin-left: 24px
+	.btns__opencase-select
+		margin-bottom: 18px
+	.desc__opecase
+		padding: 0 30px
+	.desc__opecase p
+		font-size: 20px
+		line-height: 25px
+	.page__case .content__opencase .content__header
+		padding-top: 2px
+	.page__case .content__opencase .content__header .heading
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 25px
+		line-height: 30px
+	.content__opencase
+		padding: 40px 12px 0
+		transform: translateY(-49px)
+	.items__opencase .row .iteamblock
+		min-height: 110px
+		max-height: 110px
+		margin: 0 10px 20px
+		display: flex
+	.items__opencase .iteamblock .picture
+		margin: auto
+	.items__opencase .row .iteamblock img
+		max-width: 80px
 
 //360							
 @media (max-width: 360px)
