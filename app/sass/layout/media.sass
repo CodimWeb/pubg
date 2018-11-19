@@ -155,7 +155,26 @@
 		padding-top: 0
 	.items__opencase .row .iteamblock img
 		max-width: 140px
-	
+	.profile__steps .profile__steps-tradelink
+		padding-left: 80px
+		flex: 0 0 39.5%
+		max-width: 39.5%
+	.profile__steps .profile__steps-tradelink:before
+		left: 20px
+	.profile__steps .step:after
+		right: 20px
+	.profile__steps .profile__steps-balance
+		padding-left: 80px
+		flex: 0 0 36.2%
+		max-width: 36.2%
+	.profile__steps .profile__steps-balance:before
+		left: 20px
+	.profile__steps .profile__steps-skins
+		padding-left: 82px
+		flex: 0 0 24.3%
+		max-width: 24.3%
+	.profile__steps .profile__steps-skins:before
+		left: 18px
 //1440px	
 @media (max-width: 1440px)
 	#reviews .review__block-items .reviews__case img
@@ -257,12 +276,61 @@
 		padding: 15px 70px 15px 20px
 	.review__block-items h4
 		font-size: 17px
-
 	// page case
 	.btns__opencase .btn
 		padding: 15px 75px
 		font-size: 22px
 		margin: 16px 0 45px 0
+	//profile
+	.profile__steps h3
+		font-size: 20px
+	.profile__steps a
+		font-size: 16px
+	.profile__steps .profile__steps-tradelink
+		flex: 0 0 38.5%
+		max-width: 38.5%
+	.profile__steps .profile__steps-balance
+		flex: 0 0 34.2%
+		max-width: 34.2%
+	.profile__steps .profile__steps-skins
+		flex: 0 0 26.3%
+		max-width: 26.3%
+	.profile-card .card-body
+		padding: 35px 15px 35px 15px
+	.profile-card .card-body .profile__user
+		width: 35%
+		min-width: 35%
+	.profile-card .card-body .profile__blocks
+		width: 65%
+		min-width: 65%
+	.profile-card .card-body .profile__tradelink,
+	.profile-card .card-body .profile__steamlogin
+		padding: 0 10px
+	.profile-card .card-body .profile__tradelink .profile__tradelink-title h3,
+	.profile-card .card-body .profile__steamlogin .profile__steamlogin-title h3
+		font-size: 14px
+		text-transform: none
+	.link-warning
+		font-size: 13px
+	.profile-card .card-body .profile__tradelink .input-group .form-control,
+	.profile-card .card-body .profile__steamlogin .input-group .form-control
+		height: 44px
+		padding-right: 50px
+	.profile-card .card-body .profile__tradelink .input-group .btn,
+	.profile-card .card-body .profile__steamlogin .input-group .btn
+		width: 46px
+		height: 44px
+		&:before
+			top: 16px
+			left: 16px
+	.banner
+		min-height: 140px
+	.banner::before
+		width: 35%
+	.items__block-tabs .profile__items .iteamblock
+		min-width: 23%
+		max-width: 23%
+	
 
 //1300px 
 @media (max-width: 1300px)
@@ -297,38 +365,9 @@
 
 	// Main
 	main	
-		// Opencase Carousel
-		// .carousel__opencase
-		// 	width: 1122px
-		// 	margin-left: -561px
-		// 	position: absolute
-		// 	left: 50%
-
-		// Case	
 		.card-case
 			&__banner
 				min-width: auto
-				
-		// Profile page
-		.profile__steps .step:after
-			display: none
-	
-		.profile__steps 
-			.profile__steps-balance
-				width: 30%	
-				
-		.profile-card 
-				.card-body
-					background: none
-					.profile__steamlogin .profile__steamlogin-title, .profile__tradelink .profile__tradelink-title
-						flex-direction: column
-						.btn
-							margin-top: .5rem
-							align-self: flex-start
-					.profile__ava
-						@include border-radius(0.3125re0m)
-						img
-							@include border-radius(0.3125rem)
 		// Main Banner
 		#main-banner
 			flex-direction: column
@@ -338,6 +377,41 @@
 	.items__opencase .row .iteamblock
 		max-width: calc(25% - 26px)
 		min-width: calc(25% - 26px)
+	//profile
+	.profile__steps .step:after
+		display: none
+
+	.profile__steps 
+		.profile__steps-balance
+			width: 30%	
+			
+	.profile-card 
+			.card-body
+				.profile__steamlogin .profile__steamlogin-title, .profile__tradelink .profile__tradelink-title
+					flex-direction: column
+					.btn
+						margin-top: .5rem
+						align-self: flex-start
+				.profile__ava
+					@include border-radius(0.3125re0m)
+					img
+						@include border-radius(0.3125rem)
+	.page__profile .content__wrap
+		padding: 60px 15px
+	.profile__steps
+		margin: 60px 0 30px
+	.profile__steps h3
+		font-size: 19px
+	.profile__steps .row
+		justify-content: space-between
+	.profile__steps .profile__steps-tradelink,
+	.profile__steps .profile__steps-balance,
+	.profile__steps .profile__steps-skins
+		flex-grow: 1
+		flex: 0 0 auto
+		max-width: 100%
+	.profile__steps .profile__steps-skins
+		margin-right: 20px
 				
 //1210px
 @media (max-width: 1210px)

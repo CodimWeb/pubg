@@ -26,8 +26,13 @@
 					color: #f9a666
 					&:hover
 						transition: all .3s
-						@include gradient(bottom, top, $primary-100, $primary-100)
-	
+						background-image: linear-gradient(to bottom, #3f3d4e 0, #252330 100%)
 				&:hover
 					transition: all .3s
-					background: $primary-100
+					background-image: linear-gradient(to bottom, #353246 0, #292733 100%)
+	.tab-pane
+		background: #24222f
+		padding: 30px
+		.items-banner img
+			border-radius: 6px
+			width: 100%

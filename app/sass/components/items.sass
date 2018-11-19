@@ -69,32 +69,40 @@
     position: absolute
     top: 0
     left: 0
-    z-index: 2
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    padding-bottom: 5px
+    background: linear-gradient(to right, rgba(171, 30, 74, 0.1) 0%, #a5274a 50%, rgba(171, 30, 74, 0.1) 100%)
     width: 100%
     color: #fff
-    height: 1.625rem
+    height: 30px
     font-family: $font-bold
-    font-size: 0.8rem
-    line-height: 1.625rem
+    line-height: 30px
     padding-left: 0.3125rem
     svg
       width: .55rem
-
+    .fa-ruble-sign
+      margin-left: 3px
+      transform: translateY(1px)
   .status
     position: absolute
     top: 0
     right: 0
     z-index: 2
-    height: 1.625rem
-    line-height: 1.9rem
+    height: 30px
+    line-height: 30px
     padding: 0 0.3125rem 0 2rem
     svg
-      background: white
-      color: #604cde
-      width: 1rem
-      height: 1rem
-      @include border-radius(2px)
+      background: transparent
+      color: #f9a666
+      width: 15px
+      height: 20px
       padding: 2px
+      vertical-align: middle
+      transform: translateY(-2px)
   .status.completed
     svg
       color: #b71c7e
@@ -106,33 +114,41 @@
     transform: translate3d(-50%, -50%, 0)
     opacity: 0
 
+  .stbtns
+    display: flex
+    flex-direction: column-reverse
+    justify-content: flex-start
+    align-items: flex-end
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+
 
 // Btns Item     
 .btn.btn-item
-  display: flex
   justify-content: center
   align-items: center
-  position: absolute
-  top: 2rem
-  right: 0
+  position: static
   display: block
-  font-family: $font-bold
-  font-size: 0.6875rem
+  font-size: 12px
   padding: 0 .3rem
   text-transform: uppercase
-  color: $light-color
+  color: #fff
   height: 2rem
-  @include border-radius(0)
-  background: rgba(96, 76, 222, .75 )
+  border-radius: 0
+  border: none
+  background: rgba(93, 107, 185, 0.8)
+  margin: 5px 0
   &:hover
     opacity: 1
-    background: rgba(96, 76, 222, 1 )
+    background: rgba(93, 107, 185, 1)
 .btn.btn-item.btn-pickup
-  top: 4.375rem
-  background: rgba(183, 28, 126, .75 )
+  color: #fff
+  background: rgba(188, 93, 93, 0.7)
   &:hover
     color: $light-color
-    background: rgba(183, 28, 126, 1 )
+    background: #bc5d5d
 
 .selled 
   color: $tertiary-100
@@ -244,18 +260,17 @@
   display: flex
   position: relative
   .bonus
-    font-size: .875rem
-    color: $secondary-100
+    font-size: 18px
     font-family: $font-bold
-    text-shadow: 0 0 14px $secondary-100
     position: relative
-    padding-right: 1.5rem
+    padding-right: 24px
   .bonus-curr 
-    background: url(../img/profile/bonus-curr.png) 0 0 no-repeat
-    width: 1.1875rem
-    height: 1.3125rem
+    background: url(../img/profile/bonus-curr.png) center no-repeat
+    background-size: contain
+    width: 16px
+    height: 20px
     position: absolute
-    top: 0
+    top: 2px
     right: 0
   .sep  
     margin: -1px .3rem 0 .3rem
@@ -263,6 +278,6 @@
     color: $primary-100
 
   .bonus.bonus__coin
-    color: #ff1668
-    text-shadow: 0 0 14px #ff1668
+    color: #fff
+    //text-shadow: 0 0 14px #ff1668
 
