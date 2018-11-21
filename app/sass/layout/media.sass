@@ -298,11 +298,11 @@
 	.profile-card .card-body
 		padding: 35px 15px 35px 15px
 	.profile-card .card-body .profile__user
-		width: 35%
-		min-width: 35%
+		width: 36%
+		min-width: 36%
 	.profile-card .card-body .profile__blocks
-		width: 65%
-		min-width: 65%
+		width: 64%
+		min-width: 64%
 	.profile-card .card-body .profile__tradelink,
 	.profile-card .card-body .profile__steamlogin
 		padding: 0 10px
@@ -388,7 +388,6 @@
 	.profile-card 
 			.card-body
 				.profile__steamlogin .profile__steamlogin-title, .profile__tradelink .profile__tradelink-title
-					flex-direction: column
 					.btn
 						margin-top: .5rem
 						align-self: flex-start
@@ -412,6 +411,16 @@
 		max-width: 100%
 	.profile__steps .profile__steps-skins
 		margin-right: 20px
+	.profile-card .card-body .profile__ava
+		margin-right: 22px
+	.profile-card .card-body .profile__username
+		font-size: 22px
+	.profile-card .card-body .profile__referal
+		font-size: 14px
+	.banner__title
+		font-size: 24px
+	.banner__text
+		font-size: 18px
 				
 //1210px
 @media (max-width: 1210px)
@@ -730,7 +739,12 @@
 	// Footer
 	footer
 		.footer__stat
-			display: none		
+			display: none
+	//profile
+	.items__block-tabs .tab-pane
+		display: none
+	.items-banner
+		margin-top: 25px
 
 
 //991px
@@ -757,20 +771,30 @@
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		
-	// Panels
-	.panel-title a
-		font-size: 1rem	
 			
     // Profile
-		.header__profile-username
-			margin-top: 0
-		.header__profile-balance, .header__author
-			width: 80%
-		.header__profile-btns
-			display: none
-		
-			
+	.page__profile
+		padding-top: 149px
+	.header__profile-username
+		margin-top: 0
+	.header__profile-balance, .header__author
+		width: 80%
+	.header__profile-btns
+		display: none
+	.profile-card .card-body .profile__user
+		width: 100%
+		min-width: 100%
+		padding: 0 10px
+		margin-bottom: 25px
+	.profile-card .card-body .profile__blocks
+		width: 100%
+		min-width: 100%
+	.items__block-tabs .profile__items
+		margin: -1.5% -1.5% 0
+	.items__block-tabs .profile__items .iteamblock
+		min-width: 30.333%
+		max-width: 30.333%
+		margin: 0 1.5% 1.5%
 	// Statistics
 	.footer__stat div
 		margin-right: 35px
@@ -830,18 +854,8 @@
 				margin: 0 auto 1.875rem auto
 			.card-case__banner 
 				margin-top: 1.875rem
-				
-		.items__block-tabs
-			background: none
-			.profile__items
-				padding-top: 1rem
 		
 		// Referals
-		.profile__blocks
-			flex-direction: column
-			.profile__tradelink, .profile__steamlogin
-				width: 100%
-				border: none
 		.profile-card .card-body .referal__invite
 			margin-bottom: 1.5rem
 		.profile-card .card-body .referal__invite, .profile-card .card-body .referal__inviteact
@@ -1162,10 +1176,14 @@
 				left: 25%
 
 		// Profile page
+		.page__profile .content__wrap
+			padding: 30px 15px
 		.profile-card
 			.card-body
+				padding: 20px 15px
 				.profile__user
 					padding: 1.25rem
+					align-items: center
 					.profile__ava
 						margin-right: 1rem
 						img
@@ -1181,6 +1199,11 @@
 						flex-direction: row
 						.btn
 							margin-top: -.8rem
+		.profile-card .card-body .profile__blocks .profile__tradelink
+			margin-bottom: 25px
+		.items__block-tabs .panel-group .panel .panel-heading .panel-title a
+			font-size: 18px
+			padding: 17px 0
 
 		.opencase-btn
 			margin-top: 0
@@ -1194,7 +1217,22 @@
 		display: flex
 	.responsiveTabs .all_items-desctop, .responsiveTabs .loadmore-desctop, main .all_items-desctop, main .loadmore-desctop
 		display: none
-
+	.all_items-table td.item__actions .btn
+		font-size: 10px
+	.items-banner
+		position: relative
+		height: 100px
+		overflow: hidden
+	.items-banner img
+		position: absolute
+		height: 100%
+		right: -130px
+		max-width: 200%
+		width: auto
+	.profile-sale-items
+		margin: 30px 0
+		padding: 18px 0
+	
 	// Top
 	.top .top__week-table
 		.top__week-price
@@ -1435,7 +1473,23 @@
 	#reviews .reviews__item, #reviews .reviews__case
 		margin: 0 4rem
 	footer .footer__info
-		margin-top: 2rem 
+		margin-top: 2rem
+	//profile
+	.page__profile .content__wrap
+		padding: 40px 10px
+	.items__block-tabs .panel-body
+		padding: 20px 10px
+	.all_items-table td.item__actions .btn
+		display: block
+		height: auto
+		margin: 8px 0
+	.items__block-tabs .table td
+		padding: 10px 5px
+	.items__block-tabs .table .item__picture
+		min-width: 80px
+		height: 70px
+		line-height: 70px
+		margin-right: 12px
 
 //560px
 @media (max-width: 560px)
@@ -1548,6 +1602,9 @@
 	.items__opencase .row .iteamblock 
 		min-width: calc(50% - 20px)
 		max-width: calc(50% - 20px)
+	//page profile
+	.page__profile
+		padding-top: 125px
 
 
 //520px								

@@ -101,12 +101,16 @@
 			flex-direction: column
 			display: flex
 			margin-right: 5px
-			min-width: 12.22rem
+			min-width: 0
+			width: calc(100% - 120px)
 		.profile__username
 			margin-top: 0.3125rem
 			font-size: 1.5rem
 			cursor: default
 			font-family: $font-bold
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
 		.profile__action
 			width: 100%
 			display: flex
@@ -116,8 +120,8 @@
 			margin-top: 15px
 		.profile__balance
 			position: relative
-			padding-right: 41px
-			font-size: 15px
+			padding-right: 35px
+			font-size: 14px
 			line-height: 18px
 			color: #b8b6c2
 			&:before
@@ -126,13 +130,13 @@
 				height: 17px
 				background: #3d3a4c
 				position: absolute
-				right: 20px
+				right: 16px
 				top: 2px
 		.profile__balance, .profile__units, .profile__open
 			span
 				font-family: $font-bold
 				color: #fff
-				font-size: 20px
+				font-size: 18px
 				.fa-ruble-sign
 					font-size: 14px
 			.btn-balance
@@ -152,7 +156,7 @@
 		.profile__units
 			position: relative
 			display: flex
-			font-size: 15px
+			font-size: 14px
 			line-height: 18px
 			color: #b8b6c2
 			span
@@ -163,9 +167,11 @@
 					display: flex
 					width: 1.8125rem
 					height: 1.375rem
+					margin-left: 3px
+					background: url(../img/profile/bonus-curr.png) center no-repeat
 		.profile__open
 			width: 100%
-			font-size: 15px
+			font-size: 14px
 			line-height: 18px
 			color: #b8b6c2
 			margin-top: 10px
@@ -295,8 +301,8 @@
 	width: 100%
 	
 .items__block-tabs
-	background: $primary-100
 	margin-bottom: 100px
+	background: #363344
 	@include border-radius-s(0, 0, 0.3125rem, 0.3125rem)
 	.profile__items 
 		min-width: 100%
@@ -330,6 +336,41 @@
 						color: #fff
 						margin: 4px 5px 0 3px
 						height: .8em
+	//mobile tabs
+	.table
+		margin-bottom: 0
+	.table-striped tbody tr:nth-of-type(odd)
+		background: transparent
+	.panel-group .panel .panel-heading .panel-title
+		margin: 0
+	.panel-group .panel .panel-heading .panel-title a
+		background-image: linear-gradient(to bottom, #32303f 0, #252331 100%)
+		padding: 20px 0
+	.table thead th
+		padding: 10px 10px 12px
+	.table td
+		background: transparent
+		border-bottom: 2px solid #252330
+		padding: 10px
+	.table tr:last-child td
+		border-bottom: 2px solid transparent
+	.table .item__picture
+		width: 20%
+		min-width: 100px
+		height: 80px
+		line-height: 80px
+		text-align: center
+		background: url(../img/case/case-drop-bg.png) center no-repeat /cover
+		margin-right: 20px
+	.table td.item__price
+		font-size: 18px
+		.fa-ruble-sign
+			transform: translateY(2px)
+	.panel-body
+		padding: 20px
+	
+
+
 #items__noactive1 .iteamblock .stbtns
 	top: 0
 	transform: translateY(0)

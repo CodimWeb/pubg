@@ -145,18 +145,19 @@
                 <li><a href="#" class="social-links__twitter">Twitter</a></li>
                 <li><a href="#" class="social-links__telegram">Telegram</a></li>
             </ul>
-
+        
             <!-- Statistics -->
             <div id="stat" class="footer__stat">
-                <div class="footer__stat-users"><span id="users2">13324345</span>
+                <div class="footer__stat-users"><span id="users2">45 678</span>
                     <p>зарегистрированных</p>
                 </div>
-                <div class="footer__stat-opened"><span id="opened2">456567</span>
+                <div class="footer__stat-opened"><span id="opened2">455 678</span>
                     <p>открытых кейсов</p>
                 </div>
                 <div class="footer__stat-createcases"><span id="createcases">343</span>
                     <p>созданных кейсов</p>
                 </div>
+                <div class="w-100 d-md-none d-sm-block"></div>
                 <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span>
                     <p>PVP-битв</p>
                 </div>
@@ -250,9 +251,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-
-
         </div>
 
         <!-- Сontent -->
@@ -362,120 +360,193 @@
                                     role="tab" aria-controls="items__event1" aria-selected="false">Вещи с ивентов (0)</a>
                             </li>
                         </ul>
-                        <div class="panel-group visible-xs" id="profile__item-tabs-accordion"></div>
-
                         <!-- Tab content  -->
                         <div class="tab-content hidden-xs">
 
                             <!-- Tabs NOACTIVE  -->
                             <div class="tab-pane fade" id="items__noactive1" role="tabpanel" aria-labelledby="items__noactive1-tab">
-                                <div class="items profile__items">
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
-                                
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                <div id="all_items-mobile" class="all_items-mobile">
+                                    <table id="" class="table all_items-table table-striped sortable">
+                                        <thead>
+                                            <tr>
+                                                <th class="item__name" data-defaultsign="AZ">Предмет</th>
+                                                <th class="item__price" data-defaultsign="_1900">Цена</th>
+                                                <th class="item__status" data-defaultsign="АЯ">Статус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-id="35423442">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop1.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423442">Lycosidae's Spiderling</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="12">12 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423442">
+                                                    <div class="selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">Продано</div>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423442">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop2.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423442">Lycosidae's Spiderling</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="12">12 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423442">
+                                                    <div class="selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">Продано</div>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423442">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop3.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423442">Lycosidae's Spiderling</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="12">12 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423442">
+                                                    <div class="selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">Продано</div>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423442">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop4.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423442">Lycosidae's Spiderling</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="12">12 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423442">
+                                                    <div class="selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">Продано</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="all_items-desctop" class="all_items-desctop">
+                                    <div class="items profile__items">
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
-                                        </div>
-                                    </div>
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
                                     
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
+                                        
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
-                                    
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
+                                        
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
-                                    
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
+                                        
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
-                                    
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
+                                        
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="iteamblock" target="_blank" data-item="35423442">
-                                        <div class="picture Immortal">
-                                            <img src="img/drops/drop1.png" alt="Дроп">
-                                            <img src="img/drops/drop2.png" class="case-image">
-                                        </div>
-                                        <div class="name Immortal">
-                                            <span>Lycosidae's Spiderling</span>
-                                        </div>
-                                        <span class="price">
-                                            12 <i class="fas fa-ruble-sign"></i>
-                                        </span>
-                                    
-                                        <div class="stbtns">
-                                            <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
-                                                <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                        <div class="iteamblock" target="_blank" data-item="35423442">
+                                            <div class="picture Immortal">
+                                                <img src="img/drops/drop1.png" alt="Дроп">
+                                                <img src="img/drops/drop2.png" class="case-image">
+                                            </div>
+                                            <div class="name Immortal">
+                                                <span>Lycosidae's Spiderling</span>
+                                            </div>
+                                            <span class="price">
+                                                12 <i class="fas fa-ruble-sign"></i>
                                             </span>
+                                        
+                                            <div class="stbtns">
+                                                <span class="status selled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продано">
+                                                    <i class="fas fa-ruble-sign" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -483,8 +554,6 @@
 
                             <!-- Tabs ACTIVE  -->
                             <div class="tab-pane active show" id="items__active1" role="tabpanel" aria-labelledby="items__active1-tab">
-
-
                                 <div id="all_items-mobile_act" class="all_items-mobile">
                                     <table id="" class="table all_items-table table-striped sortable">
                                         <thead>
@@ -496,18 +565,104 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td colspan="4">
-                                                    <h4>Вещей нет</h4>
+                                            <tr data-id="35423441">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop2.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423441">Sentinels of the Urushin Huntsman</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="2">2 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423441">
+                                                    <div data-id="35423441" class="sell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продать за 2 P">
+                                                        <span>Продать за 2 P</span>
+                                                    </div>
+                                                </td>
+                                                <td class="item__actions">
+                                                    <a data-id="35423441" class="btn btn-pickup btn-item sends status sd35423441" ids="35423441">Забрать</a>
+                                                    <a class="btn btn-sale btn-item sell sl35423441" data-id="35423441">
+                                                        <span id="capsell35423441">Продать за 2 P</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423441">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop3.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423441">Sentinels of the Urushin Huntsman</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="2">2 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423441">
+                                                    <div data-id="35423441" class="sell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продать за 2 P">
+                                                        <span>Продать за 2 P</span>
+                                                    </div>
+                                                </td>
+                                                <td class="item__actions">
+                                                    <a data-id="35423441" class="btn btn-pickup btn-item sends status sd35423441" ids="35423441">Забрать</a>
+                                                    <a class="btn btn-sale btn-item sell sl35423441" data-id="35423441">
+                                                        <span id="capsell35423441">Продать за 2 P</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423441">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop4.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423441">Sentinels of the Urushin Huntsman</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="2">2 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423441">
+                                                    <div data-id="35423441" class="sell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продать за 2 P">
+                                                        <span>Продать за 2 P</span>
+                                                    </div>
+                                                </td>
+                                                <td class="item__actions">
+                                                    <a data-id="35423441" class="btn btn-pickup btn-item sends status sd35423441" ids="35423441">Забрать</a>
+                                                    <a class="btn btn-sale btn-item sell sl35423441" data-id="35423441">
+                                                        <span id="capsell35423441">Продать за 2 P</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr data-id="35423441">
+                                                <td class="item__name">
+                                                    <div class="item__name-block">
+                                                        <div class="item__picture">
+                                                            <img src="img/drops/drop1.png" alt="Дроп">
+                                                        </div>
+                                                        <a href="" data-item="35423441">Sentinels of the Urushin Huntsman</a>
+                                                    </div>
+                                                </td>
+                                                <td class="item__price" data-value="4">2 <i class="fas fa-ruble-sign"></i>
+                                                </td>
+                                                <td class="item__status st35423441">
+                                                    <div data-id="35423441" class="sell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Продать за 2 P">
+                                                        <span>Продать за 2 P</span>
+                                                    </div>
+                                                </td>
+                                                <td class="item__actions">
+                                                    <a data-id="35423441" class="btn btn-pickup btn-item sends status sd35423441" ids="35423441">Забрать</a>
+                                                    <a class="btn btn-sale btn-item sell sl35423441" data-id="35423441">
+                                                        <span id="capsell35423441">Продать за 2 P</span>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-
-
-                                <div class="items-banner"><img src="img/profile/profile-item-baner.jpg"
-                                        class="img-fluid"></div>
+                                <div class="items-banner">
+                                    <img src="img/profile/profile-item-baner.jpg" class="img-fluid">
+                                </div>
                                 <a href="#" class="profile-sale-items">Продать все за 1760 Р + 12000 <span><img src="/img/coinmania/coin-new2.png"
                                             alt=""></span></a>
                                 <div id="all_items-desctop_act" class="all_items-desctop">
@@ -659,7 +814,6 @@
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
