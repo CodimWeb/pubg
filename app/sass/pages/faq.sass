@@ -2,7 +2,7 @@
 	background: url("../img/faq/faq-bg.jpg") no-repeat
 	padding: 136px 0 0 0
 	background-attachment: fixed
-	background-size: 100%
+	background-size: cover
 	.content__wrap
 		background: rgba(0, 0, 0, 0.7)
 		height: auto
@@ -23,6 +23,8 @@
 			padding: 0
 			background: transparent
 			border: none
+			position: relative
+			z-index: 2
 		.card-header__title
 			background: #212121
 			color: #fff
@@ -48,6 +50,9 @@
 			font-size: 20px
 			margin-top: -9px
 			color: #fff
+	.collapse
+		position: relative
+		z-index: 2
 	.card-shadow
 		position: absolute
 		bottom: 0
@@ -55,7 +60,7 @@
 		left: 4px
 		right: 4px
 		border-radius: 4px
-		box-shadow: 0 0 6px 4px #835e1a
+		box-shadow: 0 0 37px 9px #835e1a
 		pointer-events: none
 	.collapse + .card-shadow 
 		display: none

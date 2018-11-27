@@ -49,47 +49,59 @@
     
     <!-- START HEADER -->
     <header>
-
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-toggle="slide-collapse" data-target="#slide-navbar-collapse" aria-expanded="false">
-
+    
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-toggle="slide-collapse" data-target="#slide-navbar-collapse"
+        aria-expanded="false">
+    
         <!-- logo-->
         <!-- <a href="/" title="Главная" class="logo navbar-brand">PUBG SOME DOMAIN</a> -->
-        <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-        <div class="collapse navbar-collapse" id="slide-navbar-collapse">
-          <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob">PUBG SOME DOMAIN</a>
-          <button class="navbar-toggler__mobile" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon__mobile"></span></button>
+        <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt="logo"></a>
+        <div class="header__login">
+          <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+          <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+        </div>
+        <button class="offcanvas-btn-open d-xl-none" type="button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+    
+        <div class="offcanvas" id="offcanvas">
+          <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob"><img src="img/logo.png" alt="logo"></a>
+          <button class="offcanvas-btn-close d-xl-none" type="button"></span></button>
           <!-- profile header card -->
           <div class="header__profile header__profile-card card">
             <div class="card-body">
-
+    
               <div class="header__profile-data">
                 <a href="//profile.html" class="header__profile-ava">
-                  <img src="img/profile/no-avatar.png" class="" alt="Аватар"/>
+                  <img src="img/profile/no-avatar.png" class="" alt="Аватар" />
                 </a>
                 <a href="/profile.html" class="header__profile-username">UsernameLadyMdfsdf</a>
                 <a href="logout" class="header__logout">Выйти</a>
                 <a href="" class="header__noty"><span>4</span></a>
               </div>
-
+    
               <div class="header__profile-balance">
-                <div class="balance__rub"><span class="balance">1235445 $</span></div>
-                <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить балас</a>
+                <div class="balance__rub"><span class="balance">1235445 <i class="fa fa-ruble-sign"></i></span></div>
+                <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить
+                  балас</a>
               </div>
-
-              <!--<div class="header__author">-->
-                <!--<div class="header__author-info">Доступ к кейсам и личному кабинету </div>-->
-                <!--<a href="#" data-toggle="modal" data-target="#" class="btn btn-primary ">Войти через Steam</a>-->
-              <!--</div>-->
-
+    
+              <!-- <div class="header__author">
+                    <div class="header__author-info">Доступ к кейсам и личному кабинету </div>
+                    <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+                    <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+                  </div> -->
+    
             </div>
           </div>
+    
+          <!-- header menu-->
           <div class="header__munu__container">
-            <!-- header menu-->
             <ul class="header__menu navbar-nav">
               <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link home" href="/topweek">Главная страница</a>
+                <a class="header__menu-link nav-link home" href="/topweek">ГЛАВНАЯ СТРАНИЦА</a>
               </li>
               <li class="header__menu-item nav-item">
                 <a class="header__menu-link nav-link pvp" href="/topweek">PVP-РЕЖИМ</a>
@@ -110,8 +122,8 @@
                 <a class="header__menu-link nav-link faq" href="/faq">F.A.Q</a>
               </li>
             </ul>
-
-           <!-- footer menu-->
+    
+            <!-- footer menu-->
             <ul class="footer__menu list-unstyled">
               <li><a href="#">Контакты</a></li>
               <li><a href="#">Пользовательское<br>соглашение</a></li>
@@ -119,7 +131,7 @@
             </ul>
           </div>
         </div>
-
+    
       </nav>
     </header>
     <!-- END HEADER -->
@@ -135,14 +147,25 @@
           <li><a href="#" class="social-links__twitter">Twitter</a></li>
           <li><a href="#" class="social-links__telegram">Telegram</a></li>
         </ul>
-
+      
         <!-- Statistics -->
         <div id="stat" class="footer__stat">
-            <div class="footer__stat-users"><span id="users2">13324345</span><p>зарегистрированных</p></div>
-            <div class="footer__stat-opened"><span id="opened2">456567</span><p>открытых кейсов</p></div>
-            <div class="footer__stat-createcases"><span id="createcases">343</span><p>созданных кейсов</p></div>
-            <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span><p>PVP-битв</p></div>
-            <div class="footer__stat-online"><span id="online2">89</span><p>online</p></div>
+          <div class="footer__stat-users"><span id="users2">45 678</span>
+            <p>зарегистрированных</p>
+          </div>
+          <div class="footer__stat-opened"><span id="opened2">455 678</span>
+            <p>открытых кейсов</p>
+          </div>
+          <div class="footer__stat-createcases"><span id="createcases">343</span>
+            <p>созданных кейсов</p>
+          </div>
+          <div class="w-100 d-md-none d-sm-block"></div>
+          <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span>
+            <p>PVP-битв</p>
+          </div>
+          <div class="footer__stat-online"><span id="online2">89</span>
+            <p>online</p>
+          </div>
         </div>
       </div>
 
@@ -257,7 +280,7 @@
                     <div>Уровень</div>
                     <div>Сумма для перехода</div>
                     <div>Процент с пополнения</div>
-                    <div>Вознаграждение за нового игрока</div>
+                    <div>Вознаграждение за <span class="new-player">нового</span> игрока</div>
                   </div>
                   <div class="free-coins__table__body">
                     <div class="free-coins__table__row">
@@ -330,26 +353,34 @@
 
     <!-- START FOOTER -->
     <footer>
-
+    
       <!-- Footer Info -->
       <div class="footer__info">
-          <div class="row">
-            <div class="col-md-7">
-              <p class="footer__info-copyright">BROCASE © 2018</p>
-              <p>Уникальный сервис открытия кейсов CS:GO  по лучшим ценам.</br>Все операции работают в автоматическом режиме с помощью Steam ботов.</p>
-              <p class="footer__info-ssl">Подключен сертификат безопасности (SSL)</p>
-            </div>
-
-            <div class="col-md-5" id="footer__pay">
-              <div class="footer__pay">
-                <h5>Мы принимаем</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
-              </div>
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-6 col-lg-7 footer-mobile-flex">
+            <p class="footer__info-copyright">BROCASE © 2018</p>
+            <p>Уникальный сервис открытия кейсов CS:GO по лучшим ценам.</br>Все операции работают в автоматическом режиме с
+              помощью Steam ботов.</p>
+            <p class="footer__info-ssl">Подключен сертификат безопасности (SSL)</p>
+          </div>
+          <div class="col-12 d-block d-md-none">
+            <ul class="footer__menu list-unstyled">
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Техподдержка</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-5" id="footer__pay">
+            <div class="footer__pay">
+              <h5>Принимаем к оплате</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
             </div>
           </div>
-
-          <!-- Back to top -->
-          <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
+        </div>
+    
+        <!-- Back to top -->
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
       </div>
+    
     </footer>
     <!-- END FOOTER -->
 

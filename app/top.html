@@ -9,18 +9,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
-  <title>TastyDrop.ru - Кейсы Dota 2</title>
+  <title>PUBG - Кейсы Dota 2</title>
   <meta property="vk:title" content="TastyDrop - Кейсы Dota 2">
   <meta property="vk:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
   <meta property="vk:text" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
-  <meta property="vk:url" content="http://tastydrop.ru/">
-  <meta property="vk:image" content="http://tastydrop.ru/img/logo.jpg">
+  <meta property="vk:url" content="http://pubg.ru/">
+  <meta property="vk:image" content="http://pubg.ru/img/logo.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="TastyDrop - Кейсы Dota 2">
+  <meta property="og:title" content="pubg - Кейсы Dota 2">
   <meta property="og:description" content="Хочешь проверить свою удачу? Открывай самые разные сундуки Dota 2 по самым лучшим ценам! Гарантированная доставка.">
-  <meta property="og:site_name" content="TastyDrop.ru">
-  <meta property="og:url" content="http://tastydrop.ru">
-  <meta property="og:image" content="http://tastydrop.ru/img/logo.jpg" />
+  <meta property="og:site_name" content="pubg.ru">
+  <meta property="og:url" content="http://pubg.ru">
+  <meta property="og:image" content="http://pubg.ru/img/logo.jpg" />
   <meta name="keywords" content="cундуки дота 2,открытие сундуков дота 2,бесплатные сундуки дота 2,дешевые сундуки дота 2,магазин сундуков дота 2,дота сундуки на сайте,сундуки дота 2 купить,выгодные сундуки в дота 2,dota2 drop,кейсы dota2,opencase dota2,dota2 open case,открытие кейсов дота2" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="yandex-verification" content="5677850f9eee42e3" />
@@ -44,13 +44,10 @@
 
   <!-- Common Styles -->
   <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
   <!--<link rel="stylesheet" href="css/mobile.css">-->
 
 </head>
-
 <body>
 
   <!-- START HEADER -->
@@ -61,14 +58,20 @@
 
       <!-- logo-->
       <!-- <a href="/" title="Главная" class="logo navbar-brand">PUBG SOME DOMAIN</a> -->
-      <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt="logo"></a>
+      <div class="header__login">
+        <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+        <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+      </div>
+      <button class="offcanvas-btn-open d-xl-none" type="button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
 
-      <div class="collapse navbar-collapse" id="slide-navbar-collapse">
-        <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob">PUBG SOME DOMAIN</a>
-        <button class="navbar-toggler__mobile" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon__mobile"></span></button>
+      <div class="offcanvas" id="offcanvas">
+        <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob"><img src="img/logo.png" alt="logo"></a>
+        <button class="offcanvas-btn-close d-xl-none" type="button"></span></button>
         <!-- profile header card -->
         <div class="header__profile header__profile-card card">
           <div class="card-body">
@@ -83,23 +86,25 @@
             </div>
 
             <div class="header__profile-balance">
-              <div class="balance__rub"><span class="balance">1235445 $</span></div>
+              <div class="balance__rub"><span class="balance">1235445 <i class="fa fa-ruble-sign"></i></span></div>
               <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить
                 балас</a>
             </div>
 
-            <!--<div class="header__author">-->
-            <!--<div class="header__author-info">Доступ к кейсам и личному кабинету </div>-->
-            <!--<a href="#" data-toggle="modal" data-target="#" class="btn btn-primary ">Войти через Steam</a>-->
-            <!--</div>-->
+            <!-- <div class="header__author">
+                        <div class="header__author-info">Доступ к кейсам и личному кабинету </div>
+                        <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+                        <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+                      </div> -->
 
           </div>
         </div>
+
+        <!-- header menu-->
         <div class="header__munu__container">
-          <!-- header menu-->
           <ul class="header__menu navbar-nav">
             <li class="header__menu-item nav-item">
-              <a class="header__menu-link nav-link home" href="/topweek">Главная страница</a>
+              <a class="header__menu-link nav-link home" href="/topweek">ГЛАВНАЯ СТРАНИЦА</a>
             </li>
             <li class="header__menu-item nav-item">
               <a class="header__menu-link nav-link pvp" href="/topweek">PVP-РЕЖИМ</a>
@@ -144,18 +149,19 @@
         <li><a href="#" class="social-links__twitter">Twitter</a></li>
         <li><a href="#" class="social-links__telegram">Telegram</a></li>
       </ul>
-
+    
       <!-- Statistics -->
       <div id="stat" class="footer__stat">
-        <div class="footer__stat-users"><span id="users2">13324345</span>
+        <div class="footer__stat-users"><span id="users2">45 678</span>
           <p>зарегистрированных</p>
         </div>
-        <div class="footer__stat-opened"><span id="opened2">456567</span>
+        <div class="footer__stat-opened"><span id="opened2">455 678</span>
           <p>открытых кейсов</p>
         </div>
         <div class="footer__stat-createcases"><span id="createcases">343</span>
           <p>созданных кейсов</p>
         </div>
+        <div class="w-100 d-md-none d-sm-block"></div>
         <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span>
           <p>PVP-битв</p>
         </div>
@@ -254,36 +260,35 @@
       <div class="page__case page__topweek">
         <div class="content__wrap">
           <h1 class="topweek__title">Топ-20 игроков</h1>
-          <div class="top__select-wrap">
-            <div class="top__select">
-              <h4>Выберите неделю</h4>
-              <select name="" class="custom-select" id="single_select">
-                <option value="1">26.02.2018 - 04.03.2018</option>
-                <option value="2">26.02.2018 - 04.03.2018</option>
-                <option value="3">26.056.2018 - 04.03.2018</option>
-                <option value="4">26.02.2018 - 04.03.2018</option>
-                <option value="5">26.02.2018 - 04.03.2018</option>
-                <option value="6">26.02.2018 - 04.03.2018</option>
-                <option value="7">26.02.2018 - 04.03.2018</option>
-                <option value="8">26.02.2018 - 04.03.2018</option>
-              </select>
-            </div>
-          </div>
-          <div class="case__header">
-            <a href="#" class="btn btn-secondary">Открыть пробный</a>
-
-            <div class="top__counter">
-              <div class="top__counter__label">До завершения:</div>
-              <div class="top__counter-timer">
-                <span id="days">5</span> <span>дней</span>
-                <span id="hours">9</span> <span>часов</span>
-                <span id="minutes">30</span> <span>минут</span>
+          <div class="topweek__header-panel">
+            <div class="top__select-wrap">
+              <div class="top__select">
+                <h4>Выберите неделю</h4>
+                <select name="" class="custom-select" id="single_select">
+                  <option value="1">26.02.2018 - 04.03.2018</option>
+                  <option value="2">26.02.2018 - 04.03.2018</option>
+                  <option value="3">26.056.2018 - 04.03.2018</option>
+                  <option value="4">26.02.2018 - 04.03.2018</option>
+                  <option value="5">26.02.2018 - 04.03.2018</option>
+                  <option value="6">26.02.2018 - 04.03.2018</option>
+                  <option value="7">26.02.2018 - 04.03.2018</option>
+                  <option value="8">26.02.2018 - 04.03.2018</option>
+                </select>
               </div>
             </div>
-            <button class="btn btn-secondary btn-secondary--lg">Отключить звук</button>
+            <div class="case__header">
+              <div class="top__counter">
+                <div class="top__counter__label">До завершения:</div>
+                <div class="top__counter-timer">
+                  <span id="days">5</span> <span>дней</span>
+                  <span id="hours">9</span> <span>часов</span>
+                  <span id="minutes">30</span> <span>минут</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="top__rate">
-            <div class="top__week-table top__week-table--self">
+            <!-- <div class="top__week-table top__week-table--self">
               <div class="top__week-table__tr">
                 <div class="top__week-table__td">
                   <div class="top__week-user">
@@ -314,8 +319,38 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="top__week-table">
+              <div class="top__week-table__tr top__week-table--self">
+                <div class="top__week-table__td">
+                  <div class="top__week-user">
+                    <a class="top__week-ava" href=""><img src="img/profile/no-avatar.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="top__week-table__td">
+                  <a href="" class="top__week-name">SomeVeryLongNameSomeVeryLongName</a>
+                  <p class="top__week__place">#1</p>
+                </div>
+                <div class="top__week-table__td">
+                  <p class="top__week-coins">566 456 coins</p>
+                </div>
+                <div class="top__week-table__td">
+                  <div class="review__block-items">
+                    <div class="reviews__item">
+                      <a href="#" class="iteamblock" target="_blank">
+                        <div class="picture Mythical">
+                          <img src="img/drops/drop1.png">
+                        </div>
+                      </a>
+                      <div class="reviews__item-info Immortal">
+                        <span class="reviews__item-category Immortal">Редкий</span>
+                        <span class="reviews__item-name">TRUSTNO1</span>
+                        <span class="reviews__item-seria">серия</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="top__week-table__tr top__week-table__tr--label">
                 <div class="top__week-table__td">
                   Пользователь
@@ -520,26 +555,34 @@
 
   <!-- START FOOTER -->
   <footer>
+  
     <!-- Footer Info -->
     <div class="footer__info">
-      <div class="row">
-        <div class="col-md-7">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-6 col-lg-7 footer-mobile-flex">
           <p class="footer__info-copyright">BROCASE © 2018</p>
-          <p>Уникальный сервис открытия кейсов CS:GO по лучшим ценам.</br>Все операции работают в автоматическом режиме
-            с помощью Steam ботов.</p>
+          <p>Уникальный сервис открытия кейсов CS:GO по лучшим ценам.</br>Все операции работают в автоматическом режиме с
+            помощью Steam ботов.</p>
           <p class="footer__info-ssl">Подключен сертификат безопасности (SSL)</p>
         </div>
-
-        <div class="col-md-5" id="footer__pay">
+        <div class="col-12 d-block d-md-none">
+          <ul class="footer__menu list-unstyled">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-5" id="footer__pay">
           <div class="footer__pay">
-            <h5>Мы принимаем</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
+            <h5>Принимаем к оплате</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
           </div>
         </div>
       </div>
-
+  
       <!-- Back to top -->
       <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
     </div>
+  
   </footer>
   <!-- END FOOTER -->
 

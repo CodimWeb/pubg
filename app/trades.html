@@ -51,368 +51,400 @@
   </head>
   <body>
     
-    <!-- START HEADER -->
-    <header>
+  <!-- START HEADER -->
+  <header>
 
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-toggle="slide-collapse" data-target="#slide-navbar-collapse"
-        aria-expanded="false">
-  
-        <!-- logo-->
-        <!-- <a href="/" title="Главная" class="logo navbar-brand">PUBG SOME DOMAIN</a> -->
-        <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-  
-        <div class="collapse navbar-collapse" id="slide-navbar-collapse">
-          <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob">PUBG SOME DOMAIN</a>
-          <button class="navbar-toggler__mobile" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon__mobile"></span></button>
-          <!-- profile header card -->
-          <div class="header__profile header__profile-card card">
-            <div class="card-body">
-  
-              <div class="header__profile-data">
-                <a href="//profile.html" class="header__profile-ava">
-                  <img src="img/profile/no-avatar.png" class="" alt="Аватар" />
-                </a>
-                <a href="/profile.html" class="header__profile-username">UsernameLadyMdfsdf</a>
-                <a href="logout" class="header__logout">Выйти</a>
-                <a href="" class="header__noty"><span>4</span></a>
-              </div>
-  
-              <div class="header__profile-balance">
-                <div class="balance__rub"><span class="balance">1235445 $</span></div>
-                <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить
-                  балас</a>
-              </div>
-  
-              <!--<div class="header__author">-->
-              <!--<div class="header__author-info">Доступ к кейсам и личному кабинету </div>-->
-              <!--<a href="#" data-toggle="modal" data-target="#" class="btn btn-primary ">Войти через Steam</a>-->
-              <!--</div>-->
-  
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-toggle="slide-collapse" data-target="#slide-navbar-collapse"
+      aria-expanded="false">
+
+      <!-- logo-->
+      <!-- <a href="/" title="Главная" class="logo navbar-brand">PUBG SOME DOMAIN</a> -->
+      <a href="/" title="Главная" class="logo navbar-brand"><img src="img/logo.png" alt="logo"></a>
+      <div class="header__login">
+        <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+        <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+      </div>
+      <button class="offcanvas-btn-open d-xl-none" type="button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <div class="offcanvas" id="offcanvas">
+        <a href="/" title="Главная" class="logo navbar-brand navbar-brand__mob"><img src="img/logo.png" alt="logo"></a>
+        <button class="offcanvas-btn-close d-xl-none" type="button"></span></button>
+        <!-- profile header card -->
+        <div class="header__profile header__profile-card card">
+          <div class="card-body">
+
+            <div class="header__profile-data">
+              <a href="//profile.html" class="header__profile-ava">
+                <img src="img/profile/no-avatar.png" class="" alt="Аватар" />
+              </a>
+              <a href="/profile.html" class="header__profile-username">UsernameLadyMdfsdf</a>
+              <a href="logout" class="header__logout">Выйти</a>
+              <a href="" class="header__noty"><span>4</span></a>
             </div>
-          </div>
-          <div class="header__munu__container">
-            <!-- header menu-->
-            <ul class="header__menu navbar-nav">
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link home" href="/topweek">Главная страница</a>
-              </li>
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link pvp" href="/topweek">PVP-РЕЖИМ</a>
-              </li>
-              <li class="header__menu-item nav-item active">
-                <a class="header__menu-link nav-link bro" href="/faq">BRO ИНВЕНТАРЬ</a>
-              </li>
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link top" href="/faq">ТОП-20 ИГРОКОВ</a>
-              </li>
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link trades" href="/faq">ТРЕЙДЫ БОТОВ</a>
-              </li>
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link coins" href="">FREE COINS</a>
-              </li>
-              <li class="header__menu-item nav-item">
-                <a class="header__menu-link nav-link faq" href="/faq">F.A.Q</a>
-              </li>
-            </ul>
-  
-            <!-- footer menu-->
-            <ul class="footer__menu list-unstyled">
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">Пользовательское<br>соглашение</a></li>
-              <li><a href="#">Техподдержка</a></li>
-            </ul>
+
+            <div class="header__profile-balance">
+              <div class="balance__rub"><span class="balance">1235445 <i class="fa fa-ruble-sign"></i></span></div>
+              <a href="#pay" data-toggle="modal" data-target="#pay" class="balance-btn btn btn-primary btn-sm">Пополнить
+                балас</a>
+            </div>
+
+            <!-- <div class="header__author">
+                  <div class="header__author-info">Доступ к кейсам и личному кабинету </div>
+                  <a href="/login/vk" class="btn-vklogin btn btn-primary"><i class="fab fa-vk"></i> Войти через VK </a>
+                  <a href="/login/steam" class="btn-steamlogin btn btn-primary"><i class="fab fa-steam"></i> Войти через Steam </a>
+                </div> -->
+
           </div>
         </div>
-  
-      </nav>
-    </header>
-    <!-- END HEADER -->
+
+        <!-- header menu-->
+        <div class="header__munu__container">
+          <ul class="header__menu navbar-nav">
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link home" href="/topweek">ГЛАВНАЯ СТРАНИЦА</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link pvp" href="/topweek">PVP-РЕЖИМ</a>
+            </li>
+            <li class="header__menu-item nav-item active">
+              <a class="header__menu-link nav-link bro" href="/faq">BRO ИНВЕНТАРЬ</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link top" href="/faq">ТОП-20 ИГРОКОВ</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link trades" href="/faq">ТРЕЙДЫ БОТОВ</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link coins" href="">FREE COINS</a>
+            </li>
+            <li class="header__menu-item nav-item">
+              <a class="header__menu-link nav-link faq" href="/faq">F.A.Q</a>
+            </li>
+          </ul>
+
+          <!-- footer menu-->
+          <ul class="footer__menu list-unstyled">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Пользовательское<br>соглашение</a></li>
+            <li><a href="#">Техподдержка</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <!-- END HEADER -->
     
-    <!-- START MAIN -->
-    <main role="main">
-      <div class="main-top">
-        <!-- Social -->
-        <ul class="social-links list-unstyled">
-          <li><a href="#" class="social-links__vk">VK</a></li>
-          <li><a href="#" class="social-links__youtube">YouTube</a></li>
-          <li><a href="#" class="social-links__twitter">Twitter</a></li>
-          <li><a href="#" class="social-links__telegram">Telegram</a></li>
-        </ul>
-  
-        <!-- Statistics -->
-        <div id="stat" class="footer__stat">
-          <div class="footer__stat-users"><span id="users2">13324345</span>
-            <p>зарегистрированных</p>
-          </div>
-          <div class="footer__stat-opened"><span id="opened2">456567</span>
-            <p>открытых кейсов</p>
-          </div>
-          <div class="footer__stat-createcases"><span id="createcases">343</span>
-            <p>созданных кейсов</p>
-          </div>
-          <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span>
-            <p>PVP-битв</p>
-          </div>
-          <div class="footer__stat-online"><span id="online2">89</span>
-            <p>online</p>
-          </div>
+  <!-- START MAIN -->
+  <main role="main">
+    <div class="main-top">
+      <!-- Social -->
+      <ul class="social-links list-unstyled">
+        <li><a href="#" class="social-links__vk">VK</a></li>
+        <li><a href="#" class="social-links__youtube">YouTube</a></li>
+        <li><a href="#" class="social-links__twitter">Twitter</a></li>
+        <li><a href="#" class="social-links__telegram">Telegram</a></li>
+      </ul>
+    
+      <!-- Statistics -->
+      <div id="stat" class="footer__stat">
+        <div class="footer__stat-users"><span id="users2">45 678</span>
+          <p>зарегистрированных</p>
+        </div>
+        <div class="footer__stat-opened"><span id="opened2">455 678</span>
+          <p>открытых кейсов</p>
+        </div>
+        <div class="footer__stat-createcases"><span id="createcases">343</span>
+          <p>созданных кейсов</p>
+        </div>
+        <div class="w-100 d-md-none d-sm-block"></div>
+        <div class="footer__stat-pvpbattles"><span id="PVPbattles">89</span>
+          <p>PVP-битв</p>
+        </div>
+        <div class="footer__stat-online"><span id="online2">89</span>
+          <p>online</p>
         </div>
       </div>
-      <!-- DropHistory -->
-      <div class="drophistory">
-        <div class="items ">
-          <div id='toplivedrop' class="container-fluid  items-inner">
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop1.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity Green"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category Immortal">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+    </div>
+    <!-- DropHistory -->
+    <div class="drophistory">
+      <div class="items ">
+        <div id='toplivedrop' class="container-fluid  items-inner">
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop1.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity Green"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category Immortal">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop2.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity Blue"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category Blue">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop2.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity Blue"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category Blue">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop3.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity Purple"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category Purple">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop3.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity Purple"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category Purple">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop4.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity Immortal"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop4.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity Immortal"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop5.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop5.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-            <a href="#" class="item-history">
-              <img class="" src="img/drops/drop6.png" class="item-history-pic" alt="Дроп">
-              <div class="rarity Immortal"></div>
-              <div class="history-weapon-hover">
-                <div class="item-history__desc">
-                  <span class="item-history__category">Редкий</span>
-                  <span class="item-history__name">TRUSTNO1</span>
-                  <span class="item-history__seria">серия</span>
-                  <span class="item-history__user">tastydrop.ru</span>
-                </div>
-                <div class="item-history__img"><img src="img/temp-1.png"></div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
+          <a href="#" class="item-history">
+            <img class="" src="img/drops/drop6.png" class="item-history-pic" alt="Дроп">
+            <div class="rarity Immortal"></div>
+            <div class="history-weapon-hover">
+              <div class="item-history__desc">
+                <span class="item-history__category">Редкий</span>
+                <span class="item-history__name">TRUSTNO1</span>
+                <span class="item-history__seria">серия</span>
+                <span class="item-history__user">tastydrop.ru</span>
               </div>
-            </a>
-          </div>
+              <div class="item-history__img"><img src="img/temp-1.png"></div>
+            </div>
+          </a>
         </div>
       </div>
-      <!-- Сontent -->
-      <div class="main-content">
-        <div class="page__case page__trades">
-          <div class="content__wrap">
-            <!-- Live trades table -->
-            <h1>Трейды ботов</h1>
-            <div class="trades">
-              <div class="trades__table">
-                <div class="trades__table__row trades__table__row--label">
-                  <div class="trades__table__td">
-                      <p>ID  трейда</p>
-                  </div>
-                  <div class="trades__table__td">
-                    <p>Бот</p>
-                  </div>
-                  <div class="trades__table__td">
-                    <p>Пользователь</p>
-                  </div>
-                  <div class="trades__table__td">
-                    <p>Предмет</p>
-                  </div>
-                  <div class="trades__table__td">
-                    <p>Время</p>
+    </div>
+    <!-- Сontent -->
+    <div class="main-content">
+      <div class="page__case page__trades">
+        <div class="content__wrap">
+          <!-- Live trades table -->
+          <h1>Трейды ботов</h1>
+          <div class="trades">
+            <div class="trades__table">
+              <div class="trades__table__row trades__table__row--label">
+                <div class="trades__table__td">
+                    <p>ID  трейда</p>
+                </div>
+                <div class="trades__table__td">
+                  <p>Бот</p>
+                </div>
+                <div class="trades__table__td">
+                  <p>Пользователь</p>
+                </div>
+                <div class="trades__table__td">
+                  <p>Предмет</p>
+                </div>
+                <div class="trades__table__td">
+                  <p>Время</p>
+                </div>
+              </div>
+              <div class="trades__table__row">
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">ID трейда</span>
+                  <span class="trades__table-id">7570611</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Бот</span>
+                  <span class="trades__table-bot">75245656528172289</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Пользователь</span>
+                  <a class="trades__table-user" href="">
+                    <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
+                    <span class="trades__table-name">skrylkovs</span>
+                  </a>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Предмет</span>
+                  <div class="trades__table__item">
+                    <div class="review__block-items">
+                      <div class="reviews__item">
+                        <a href="#" class="iteamblock" target="_blank">
+                          <div class="picture Mythical">
+                            <img src="img/drops/drop1.png">
+                          </div>
+                        </a>
+                        <div class="reviews__item-info Immortal">
+                          <span class="reviews__item-category Immortal">Редкий</span>
+                          <span class="reviews__item-name">TRUSTNO1</span>
+                          <span class="reviews__item-seria">серия</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trades__table__item__name">Название предмета</div>
                   </div>
                 </div>
-                <div class="trades__table__row">
-                  <div class="trades__table__td">
-                    <span class="trades__table-id">7570611</span>
-                  </div>
-                  <div class="trades__table__td">
-                    <span class="trades__table-bot">75245656528172289</span>
-                  </div>
-                  <div class="trades__table__td">
-                    <a class="trades__table-user" href="">
-                      <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
-                      <span class="trades__table-name">skrylkovs</span>
-                    </a>
-                  </div>
-                  <div class="trades__table__td">
-                    <div class="trades__table__item">
-                      <div class="review__block-items">
-                        <div class="reviews__item">
-                          <a href="#" class="iteamblock" target="_blank">
-                            <div class="picture Mythical">
-                              <img src="img/drops/drop1.png">
-                            </div>
-                          </a>
-                          <div class="reviews__item-info Immortal">
-                            <span class="reviews__item-category Immortal">Редкий</span>
-                            <span class="reviews__item-name">TRUSTNO1</span>
-                            <span class="reviews__item-seria">серия</span>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Время</span>
+                  <span>Только что</span>
+                </div>
+              </div>
+              <div class="trades__table__row">
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">ID трейда</span>
+                  <span class="trades__table-id">7570611</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Бот</span>
+                  <span class="trades__table-bot">75245656528172289</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Пользователь</span>
+                  <a class="trades__table-user" href="">
+                    <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
+                    <span class="trades__table-name">skrylkovs</span>
+                  </a>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Предмет</span>
+                  <div class="trades__table__item">
+                    <div class="review__block-items">
+                      <div class="reviews__item">
+                        <a href="#" class="iteamblock" target="_blank">
+                          <div class="picture Mythical">
+                            <img src="img/drops/drop1.png">
                           </div>
+                        </a>
+                        <div class="reviews__item-info Immortal">
+                          <span class="reviews__item-category Immortal">Редкий</span>
+                          <span class="reviews__item-name">TRUSTNO1</span>
+                          <span class="reviews__item-seria">серия</span>
                         </div>
                       </div>
-                      <div class="trades__table__item__name">Название предмета</div>
                     </div>
-                  </div>
-                  <div class="trades__table__td">
-                    <span>Только что</span>
+                    <div class="trades__table__item__name">Название предмета</div>
                   </div>
                 </div>
-                <div class="trades__table__row">
-                    <div class="trades__table__td">
-                      <span class="trades__table-id">7570611</span>
-                    </div>
-                    <div class="trades__table__td">
-                      <span class="trades__table-bot">75245656528172289</span>
-                    </div>
-                    <div class="trades__table__td">
-                      <a class="trades__table-user" href="">
-                        <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
-                        <span class="trades__table-name">skrylkovs</span>
-                      </a>
-                    </div>
-                    <div class="trades__table__td">
-                      <div class="trades__table__item">
-                        <div class="review__block-items">
-                          <div class="reviews__item">
-                            <a href="#" class="iteamblock" target="_blank">
-                              <div class="picture Mythical">
-                                <img src="img/drops/drop1.png">
-                              </div>
-                            </a>
-                            <div class="reviews__item-info Immortal">
-                              <span class="reviews__item-category Immortal">Редкий</span>
-                              <span class="reviews__item-name">TRUSTNO1</span>
-                              <span class="reviews__item-seria">серия</span>
-                            </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Время</span>
+                  <span>Только что</span>
+                </div>
+              </div>
+              <div class="trades__table__row">
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">ID трейда</span>
+                  <span class="trades__table-id">7570611</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Бот</span>
+                  <span class="trades__table-bot">75245656528172289</span>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Пользователь</span>
+                  <a class="trades__table-user" href="">
+                    <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
+                    <span class="trades__table-name">skrylkovs</span>
+                  </a>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Предмет</span>
+                  <div class="trades__table__item">
+                    <div class="review__block-items">
+                      <div class="reviews__item">
+                        <a href="#" class="iteamblock" target="_blank">
+                          <div class="picture Mythical">
+                            <img src="img/drops/drop1.png">
                           </div>
-                        </div>
-                        <div class="trades__table__item__name">Название предмета</div>
-                      </div>
-                    </div>
-                    <div class="trades__table__td">
-                      <span>Только что</span>
-                    </div>
-                  </div>
-                  <div class="trades__table__row">
-                  <div class="trades__table__td">
-                    <span class="trades__table-id">7570611</span>
-                  </div>
-                  <div class="trades__table__td">
-                    <span class="trades__table-bot">75245656528172289</span>
-                  </div>
-                  <div class="trades__table__td">
-                    <a class="trades__table-user" href="">
-                      <div class="trades__table-ava"><img src="img/profile/no-avatar.png" alt="Аватар"></div>
-                      <span class="trades__table-name">skrylkovs</span>
-                    </a>
-                  </div>
-                  <div class="trades__table__td">
-                    <div class="trades__table__item">
-                      <div class="review__block-items">
-                        <div class="reviews__item">
-                          <a href="#" class="iteamblock" target="_blank">
-                            <div class="picture Mythical">
-                              <img src="img/drops/drop1.png">
-                            </div>
-                          </a>
-                          <div class="reviews__item-info Immortal">
-                            <span class="reviews__item-category Immortal">Редкий</span>
-                            <span class="reviews__item-name">TRUSTNO1</span>
-                            <span class="reviews__item-seria">серия</span>
-                          </div>
+                        </a>
+                        <div class="reviews__item-info Immortal">
+                          <span class="reviews__item-category Immortal">Редкий</span>
+                          <span class="reviews__item-name">TRUSTNO1</span>
+                          <span class="reviews__item-seria">серия</span>
                         </div>
                       </div>
-                      <div class="trades__table__item__name">Название предмета</div>
                     </div>
+                    <div class="trades__table__item__name">Название предмета</div>
                   </div>
-                  <div class="trades__table__td">
-                    <span>Только что</span>
-                  </div>
+                </div>
+                <div class="trades__table__td">
+                  <span class="trade-mobile-label">Время</span>
+                  <span>Только что</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- END MAIN -->
+  <!-- END MAIN -->
 
-    <!-- START FOOTER -->
-    <footer>
-      <!-- Footer Info -->
-      <div class="footer__info">
-        <div class="row">
-          <div class="col-md-7">
-            <p class="footer__info-copyright">BROCASE © 2018</p>
-            <p>Уникальный сервис открытия кейсов CS:GO по лучшим ценам.</br>Все операции работают в автоматическом режиме
-              с помощью Steam ботов.</p>
-            <p class="footer__info-ssl">Подключен сертификат безопасности (SSL)</p>
-          </div>
+  <!-- START FOOTER -->
+  <footer>
   
-          <div class="col-md-5" id="footer__pay">
-            <div class="footer__pay">
-              <h5>Мы принимаем</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
-            </div>
+    <!-- Footer Info -->
+    <div class="footer__info">
+      <div class="row flex-column-reverse flex-md-row">
+        <div class="col-md-6 col-lg-7 footer-mobile-flex">
+          <p class="footer__info-copyright">BROCASE © 2018</p>
+          <p>Уникальный сервис открытия кейсов CS:GO по лучшим ценам.</br>Все операции работают в автоматическом режиме с
+            помощью Steam ботов.</p>
+          <p class="footer__info-ssl">Подключен сертификат безопасности (SSL)</p>
+        </div>
+        <div class="col-12 d-block d-md-none">
+          <ul class="footer__menu list-unstyled">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Техподдержка</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-5" id="footer__pay">
+          <div class="footer__pay">
+            <h5>Принимаем к оплате</h5><img class="img-fluid" src="img/footer/pay.png" alt="Мы принимаем">
           </div>
         </div>
-  
-        <!-- Back to top -->
-        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
       </div>
-    </footer>
-    <!-- END FOOTER -->
+  
+      <!-- Back to top -->
+      <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+  
+  </footer>
+  <!-- END FOOTER -->
 
 <!-- START MODALS -->
 <div class="modal form__balance fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -1,4 +1,23 @@
-
+@media (max-width: 1830px)
+	//freecoins
+	.free-coins__table
+		margin-right: 20px
+	.free-coins__table__header > div
+		font-size: 18px
+	//trades 
+	.trades__table__row
+		font-size: 20px
+	.trades__table__row--label .trades__table__td
+		font-size: 16px
+	.trades__table .reviews__item .iteamblock
+		max-width: 120px
+		min-width: 120px
+		width: 120px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 200px
+		height: 94px
+		top: 10px
+	
 @include breakpoint(1700-max)
 	.carousel__opencase .rulwith
 		padding: 15px 10px
@@ -7,12 +26,16 @@
 
 //1670px		
 @media (max-width: 1670px)
+	.footer__stat
+		margin-right: 0
 	.footer__stat div
 		margin-right: 25px
+		&:last-child
+			margin-right: 0
 		span
 			font-size: 36px
 		p
-			font-size: 16px
+			font-size: 15px
 	main .cases
 		margin-top: -6rem
 	main .opencase-dropss
@@ -59,6 +82,75 @@
 	.items__opencase .row .iteamblock
 		max-width: calc(20% - 26px)
 		min-width: calc(20% - 26px)
+	//topweek
+	.top__counter
+		margin: 0 30px
+		padding: 5px 30px
+	.top__counter__label
+		font-size: 26px
+	.top__counter-timer span
+		font-size: 26px
+	//freecoins
+	.free-coins__partners
+		margin-bottom: 70px
+		padding-left: 0
+	.free-coins__partners__label
+		font-size: 28px
+	.free-coins__table
+		padding-left: 0
+	.new-player
+		display: none
+	.free-coins__table__row > div .free-coins__level
+		max-width: 120px
+		height: 86px
+		line-height: 86px
+		font-size: 79px
+	.free-coins__table__row > div
+		font-size: 28px
+	.free-coins__table__row > div:nth-child(1)
+		width: 17%
+		min-width: 17%
+	.free-coins__table__row > div:nth-child(3)
+		width: 30%
+		min-width: 30%
+	.free-coins__table__row > div:nth-child(4)
+		width: 30%
+		min-width: 30%
+	.free-coins__table__header > div
+		font-size: 18px
+	.free-coins__user
+		width: 27%
+		min-width: 27%
+		padding: 7px 20px 15px 20px
+	.free-coins__user__header
+		padding-bottom: 28px
+	.free-coins__user__row
+		margin-bottom: 25px
+		padding-left: 0
+	.free-coins__user__cell:nth-child(1)
+		font-size: 20px
+		line-height: 24px
+	.free-coins__user__cell:nth-child(2)
+		font-size: 24px
+		line-height: 24px
+		.fa-ruble-sign
+			font-size: 16px
+			transform: translateY(2px)
+	//trades
+	.trades__table .review__block-items .reviews__item .iteamblock .picture img
+		max-width: 100%
+	.trades__table .trades__table-ava
+		width: 84px
+		min-width: 84px
+		max-width: 84px
+		height: 84px
+	.trades__table .trades__table-ava img
+		width: 84px	
+	.trades__table .reviews__item:hover .reviews__item-info
+		margin: 80px 0 0
+	.trades__table .trades__table__item
+		margin-left: 0
+
 //1536px	
 @media (max-width: 1536px)
 	main .cases
@@ -175,6 +267,28 @@
 		max-width: 24.3%
 	.profile__steps .profile__steps-skins:before
 		left: 18px
+	//referal
+	.referal .profile-card .card-body .profile__user
+		margin-right: 15px
+	.referal .profile-card .card-body .profile__tradelink
+		padding: 0
+	.referal .profile-card .card-body .profile__steamlogin
+		padding: 15px 0 0
+	//topweek
+	.page__topweek .case__header
+		padding: 32px 35px 12px 35px
+	.top__counter
+		padding: 5px 25px
+	//freecoins
+	.free-coins__action .btn-primary
+		width: 215px
+	//trades
+	.trades__table__row
+		font-size: 18px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 190px
+		left: -54px
+
 //1440px	
 @media (max-width: 1440px)
 	#reviews .review__block-items .reviews__case img
@@ -330,6 +444,113 @@
 	.items__block-tabs .profile__items .iteamblock
 		min-width: 23%
 		max-width: 23%
+	//referal
+	.referal .profile-card .card-body
+		padding: 0 10px 0 0
+	.referal .profile-card .card-body .profile__user
+		width: 26%
+		min-width: 26%
+		padding: 40px 20px
+	.profile-card .card-body .profile__blocks
+		width: auto
+		min-width: 0
+	.referal .profile-card .card-body .profile__blocks,
+	.referal .profile-card .card-body .profile_block2
+		padding: 15px 10px
+	.referal .profile-card .card-body .profile__steamlogin .profile__steamlogin-title h3,
+	.referal .profile-card .card-body .profile__tradelink .profile__tradelink-title h3 
+		font-size: 17px
+	.referal .profile-card .card-body .profile__steamlogin ul
+		margin: 20px 0 26px
+	//topweek
+	.top__week-table__td:nth-child(1)
+		width: 15%
+		min-width: 15%
+	.top__week-table .top__week-ava
+		width: 110px
+		height: 110px
+	.top__week-table .top__week-ava img
+		width: 110px
+	.top__week-table .top__week-name
+		margin: 21px 0 0
+	.top__week-table .top__week-coins
+		margin: 21px 0 0
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture img
+		max-width: 140px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture::before
+		left: -80px
+	.page__topweek
+		background-size: cover
+	//freecoins
+	.free-coins__header
+		margin-bottom: 65px
+	.free-coins__partners
+		margin-bottom: 50px
+	.free-coins__partners__label
+		font-size: 25px
+	.free-coins__action .btn-primary
+		width: 190px
+	.free-coins__table
+		margin-top: -7px
+	.free-coins__table__row
+		padding: 18px 0
+	.free-coins__table__row > div
+		font-size: 26px
+		text-align: center
+	.free-coins__table__header > div
+		font-size: 16px
+		text-align: left
+	.free-coins__table__row > div:nth-child(1)
+		width: 20%
+		min-width: 20%
+	.free-coins__table__row > div:nth-child(3)
+		width: 28%
+		min-width: 28%
+	.free-coins__table__row > div:nth-child(4)
+		width: 29%
+		min-width: 29%
+	.free-coins__table__row > div .free-coins__level
+		height: 78px
+		line-height: 76px
+		font-size: 70px
+	.free-coins__user__header
+		font-size: 26px
+		text-align: center
+		padding-bottom: 22px
+	.free-coins__user__row
+		margin-bottom: 20px
+	.free-coins__user__cell:nth-child(1)
+		width: 145px
+		font-size: 18px
+		line-height: 22px
+	//trades
+	.page__trades .content__wrap
+		padding: 34px 20px 160px
+	.page__trades h1
+		margin-bottom: 45px
+	.trades__table__row
+		font-size: 17px
+	.trades__table .reviews__item .iteamblock
+		max-width: 100px
+		min-width: 100px
+		width: 100px
+		padding-bottom: 0
+	.trades__table .trades__table-ava
+		width: 78px
+		min-width: 78px
+		max-width: 78px
+		height: 78px
+		margin-right: 10px
+	.trades__table .trades__table-ava img
+		width: 78px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 160px
+		height: 76px
+		left: -46px
+		top: 8px
+	//faq
+	.page__faq .content__wrap
+		padding: 16px 20px 190px
 	
 
 //1300px 
@@ -421,7 +642,68 @@
 		font-size: 24px
 	.banner__text
 		font-size: 18px
-				
+	//freecoins
+	.free-coins .content__wrap
+		padding: 0 15px 170px
+	.free-coins__header
+		margin-bottom: 45px
+	.free-coins__partners
+		margin-bottom: 40px
+	.free-coins__partners__label
+		font-size: 24px
+	.free-coins__link
+		font-size: 18px
+	.free-coins__action .btn-primary
+		font-size: 20px
+		width: 150px
+		padding: 8px 0
+	.free-coins__table__row
+		padding: 15px 0
+	.free-coins__table__row > div:nth-child(1)
+		width: 18%
+		min-width: 18%
+	.free-coins__table__row > div .free-coins__level
+		max-width: 190px
+		height: 70px
+		line-height: 68px
+		font-size: 62px
+	.free-coins__table__row > div:nth-child(2)
+		width: 24%
+		min-width: 24%
+	.free-coins__table__row > div:nth-child(4)
+		width: 30%
+		min-width: 30%
+	.free-coins__table__header > div
+		font-size: 15px
+	.free-coins__user
+		width: 30%
+		min-width: 30%
+		padding: 7px 15px 15px 15px
+	//trades
+	.trades__table__row
+		font-size: 16px
+	.trades__table .trades__table-ava
+		width: 70px
+		min-width: 70px
+		max-width: 70px
+		height: 70px
+	.trades__table .trades__table-ava img
+		width: 70px
+	.trades__table .reviews__item .iteamblock
+		max-width: 90px
+		min-width: 90px
+		width: 90px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 140px
+		height: 66px
+		left: -36px
+		top: 5px
+	.trades__table .trades__table__item__name
+		margin-left: 13px
+	.trades__table .reviews__item .reviews__item-info
+		margin-left: -17px
+	.trades__table .reviews__item:hover .reviews__item-info
+		margin: 53px 0 0 -17px
 //1210px
 @media (max-width: 1210px)
 
@@ -652,6 +934,12 @@
 		height: 40px
 		background-size: 500px
 		background-position: -309px -52px
+	//referal
+	.page__referal .content__wrap
+		padding-top: 10px
+	.referal .profile-card .card-body .profile__user
+		min-width: 28%
+		width: 28%
 //1152px
 @media (max-width: 1152px)
 
@@ -998,6 +1286,128 @@
 		margin: 0 9px 24px
 	.items__opencase .row .iteamblock img
 		max-width: 120px
+	//referal
+	.referal .profile-card .card-body
+		flex-direction: row
+		flex-wrap: wrap
+		padding-right: 0
+	.referal .profile-card .card-body .profile__user
+		padding: 20px
+		margin-bottom: 0
+		border-radius: 14px
+	.referal .profile-card .card-body .profile_block2
+		width: 100%
+	.referal .card-body .profile__blocks
+		width: auto
+		min-width: 0
+	.profile-card .card-body .profile__steamlogin .profile__steamlogin-title
+		justify-content: center
+	.referal .profile-card .card-body .profile__steamlogin .profile__steamlogin-title h3
+		text-align: center
+	.referal .profile-card .card-body .profile__steamlogin ul
+		justify-content: center
+	.referal .profile-card .card-body .profile__steamlogin li:last-child
+		margin-right: 0
+	.referal__faq-cards
+		padding: 0
+		margin-bottom: 80px
+	.reheral__header,
+	.reheral__header h1
+		font-size: 30px
+	//topweek
+	.top__week-table__td:nth-child(1)
+		width: 17%
+		min-width: 17%
+	.top__week-table .top__week-ava
+		width: 90px
+		height: 90px
+	.top__week-table .top__week-ava img
+		width: 90px
+	.top__week-table .top__week-name
+		margin: 18px 0 0 !important
+		font-size: 24px
+	.top__week-table .top__week-coins
+		margin: 18px 0 0 !important
+		font-size: 24px
+	.top__week-table__td:nth-child(4)
+		width: 21%
+		min-width: 21%
+		padding-right: 15px
+	.top__week-table .reviews__item .iteamblock
+		max-width: 110px
+		min-width: 110px
+		width: 110px
+		padding-bottom: 5px
+	.top__week-table .reviews__item .iteamblock .picture
+		max-height: 100px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture::before
+		width: 180px
+		height: 86px
+		left: -63px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture img
+		max-width: 100px
+	.top__week-table__tr--label .top__week-table__td
+		font-size: 23px
+	.top__week-table__tr--label .top__week-table__td:last-child
+		text-align: right
+	.top__week-table__tr
+		padding: 15px 0
+	.top__week-table--self
+		margin-bottom: 10px
+	//trades
+	.page__trades .content__wrap
+		padding: 34px 15px 160px
+	.page__trades h1
+		margin-bottom: 35px
+	.trades__table__row
+		font-size: 15px
+		padding: 5px 0
+	.trades__table__row--label
+		margin-bottom: 10px
+		padding-bottom: 10px
+	.trades__table__td:nth-child(2)
+		width: 20.3%
+		min-width: 20.3%
+	.trades__table__td:nth-child(3)
+		width: 21.5%
+		min-width: 21.5%
+	.trades__table__td:nth-child(4)
+		width: 33.7%
+		min-width: 33.7%
+	.trades__table__td:nth-child(5)
+		width: 11%
+		min-width: 11%
+	.trades__table .trades__table-ava
+		display: none
+	.trades__table .reviews__item .iteamblock
+		max-width: 80px
+		min-width: 80px
+		width: 80px
+		margin: 0
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 130px
+		height: 60px
+		left: -39px
+	.review__block-items .reviews__item .reviews__item-info
+		margin: 0
+		left: 50%
+		transform: translate3d(-50%,0,0)
+		top: 30px
+	.trades__table .reviews__item:hover .reviews__item-info
+		margin: 0
+		transform: translate3d(-50%,50px,0)
+	//faq
+	.page__faq h1
+		margin-bottom: 25px
+	.faq-cards .card .card-header__title
+		font-size: 26px
+		padding: 10px 20px 20px
+	.faq-cards .card .card-header__title.collapsed
+		padding: 10px 20px 20px
+	.faq-cards .card .card-body
+		font-size: 18px
+
+
 		
 //767px					
 @media (max-width: 767px)
@@ -1346,7 +1756,7 @@
 		opacity: 1
 		margin-top: 105px
 	footer::before
-		top: -76px
+		top: -96px
 		height: 170px
 	footer .footer__info
 		padding-top: 0
@@ -1419,7 +1829,185 @@
 	.iteamblock .name span
 		font-size: 14px
 		line-height: 20px
-	
+	//referal
+	.page__referal .content__wrap
+		padding: 1px 15px
+	.reheral__header, .reheral__header h1
+		font-size: 24px
+		margin: 30px 0
+	.referal .profile-card .card-body
+		padding: 15px
+	.referal .profile-card .card-body .profile__info
+		margin-right: 0
+	.referal .profile-card .card-body .profile__user
+		width: 100%
+		margin: 0
+		text-align: center
+		background: transparent
+		padding-bottom: 0
+	.referal .card-body .profile__user .profile__username
+		margin: 0 0 10px
+	.referal .profile-card .card-body .profile__tradelink
+		margin-bottom: 0
+	.referal .card-body .profile__tradelink .profile__tradelink-title
+		justify-content: center
+	.referal .card-body .profile__tradelink .input-group
+		margin-bottom: 0
+	.referal .profile-card .card-body .profile__steamlogin
+		padding-top: 0
+	.referal__faq-cards
+		margin-bottom: 55px
+	.referal__faq-cards .card .card-header__title
+		font-size: 18px
+	.referal__faq-cards .card .card-body
+		padding: 5px 20px 20px 40px
+		font-size: 17px
+	.description li
+		font-size: 17px
+		margin-bottom: 10px
+	//topweek
+	.page__topweek .content__wrap
+		padding-bottom: 80px
+	.top__counter
+		flex-direction: column
+		padding: 8px 25px
+	.top__counter .top__counter__label
+		font-size: 24px
+		line-height: 24px
+		margin: 0
+	.top__counter .top__counter-timer
+		font-size: 24px
+		line-height: 24px
+		margin: 0
+	.topweek__header-panel
+		display: flex
+		flex-direction: column-reverse
+	.topweek__title
+		padding: 5px 0 0
+	.top__select
+		margin: 15px 0
+	.top__select h4
+		display: none
+	.page__case .case__header
+		padding-top: 10px
+		margin-bottom: 0
+	.top__week-table__tr
+		padding: 5px 0
+	.top__week-table__td:nth-child(1)
+		display: none
+	.top__week-table__tr--label .top__week-table__td:nth-child(1)
+		display: block
+	.top__week-table__tr--label .top__week-table__td:last-child
+		text-align: center
+		padding: 0
+	.top__week-table__td:nth-child(2)
+		width: 45%
+		min-width: 45%
+		padding-left: 15px
+	.top__week-table__td:nth-child(3)
+		width: 30%
+		min-width: 30%
+	.top__week-table__td:nth-child(4)
+		width: 25%
+		min-width: 25%
+	.top__week-table .top__week-name
+		font-size: 18px
+	.top__week-table .top__week__place
+		font-size: 18px
+	.top__week-table .top__week-coins
+		font-size: 18px
+	.top__week-table__tr--label .top__week-table__td
+		font-size: 18px
+	.top__week-table__tr--label .top__week-table__td:nth-child(1)
+		width: 45%
+		min-width: 45%
+	.top__week-table__tr--label .top__week-table__td:nth-child(2)
+		padding: 0
+	.top__week-table .reviews__item .iteamblock
+		width: 70px
+		min-width: 70px
+		max-width: 70px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture::before
+		width: 130px
+		height: 60px
+		left: -43px
+		top: 2px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture img
+		width: 100%
+	//trades
+	.page__trades .content__wrap
+		padding: 34px 40px 160px 20px
+	.trades__table__row
+		flex-wrap: wrap
+		font-size: 18px
+		border-bottom: 1px solid #fff
+		margin-bottom: 15px
+		padding-bottom: 15px
+	.trades__table__row--label
+		display: none
+	.trades__table__td
+		width: 100% !important
+		display: flex
+		align-items: center
+		margin-bottom: 5px
+	.trade-mobile-label
+		color: #b6b5b5
+		width: 33%
+	.trades__table .trades__table-ava
+		display: block
+	.trades__table-user
+		flex-direction: row-reverse
+		width: 67%
+	.trades__table-name
+		flex: 1
+	.trades__table .trades__table-ava
+		margin-right: 0
+		margin-left: 10px
+		width: 84px
+		min-width: 84px
+		max-width: 84px
+		height: 84px
+	.trades__table .trades__table-ava img
+		width: 84px
+	.trades__table .trades__table__item
+		width: 67%
+		flex-direction: row-reverse
+	.trades__table .trades__table__item__name
+		margin-left: 0
+		margin-right: 20px
+	.trades__table .reviews__item .iteamblock
+		max-width: 100px
+		min-width: 100px
+		width: 100px
+	.trades__table .reviews__item .iteamblock .picture
+		margin-top: 10px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 170px
+		height: 80px
+		left: -52px
+	.trades__table .review__block-items .reviews__item:hover .reviews__item-info
+		opacity: 1
+	.trades__table .review__block-items .reviews__item-info::before
+		left: 50%
+		right: 50%
+		margin: 0 0 0 -8px
+	.trades__table .reviews__item:hover .reviews__item-info
+		transform: translate3d(-50%, 65px, 0)
+	//faq
+	.page__faq
+		background-position: center
+	.faq-cards .card .card-header__title
+		color: #e7b85d
+		font-family: $font-bold
+	.faq-cards .card .card-header__title.collapsed
+		color: #e7b85d
+		font-family: $font-bold
+	.faq-cards .card .card-header__title
+		font-size: 24px
+	.faq-cards .card .card-body
+		font-size: 16px
+
+
 
 //680px								
 @media (max-width: 680px)
@@ -1490,6 +2078,9 @@
 		height: 70px
 		line-height: 70px
 		margin-right: 12px
+	//trades
+	.page__trades .content__wrap
+		padding: 34px 30px 160px 20px
 
 //560px
 @media (max-width: 560px)
@@ -1605,7 +2196,18 @@
 	//page profile
 	.page__profile
 		padding-top: 125px
-
+	//trades
+	.trades__table .reviews__item .iteamblock
+		max-width: 80px
+		min-width: 80px
+		width: 80px
+	.trades__table .reviews__item .iteamblock .picture
+		margin-top: 10px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 160px
+		height: 70px
+		left: -49px
+		top: 0
 
 //520px								
 @media (max-width: 520px)
@@ -2116,6 +2718,161 @@
 		padding: 10px
 	.items__block-tabs #items__active1-collapse .item__status
 		display: none
+	//topweek
+	.page__topweek
+		padding: 100px 10px 0
+	.page__topweek .content__wrap
+		width: 100%
+	.topweek__title
+		font-size: 25px
+		padding: 2px 0 0
+	.page__topweek .case__header
+		padding: 0
+	.top__counter
+		padding: 5px 18px
+		margin: 0 0 11px
+	.top__counter .top__counter__label
+		font-size: 22px
+		line-height: 22px
+	.top__counter .top__counter-timer
+		font-size: 22px
+		line-height: 22px
+	.top__select-wrap .btn.multiselect.btn-outline-primary.dropdown-toggle
+		font-size: 18px
+		min-width: 220px
+	.top__select-wrap .btn.multiselect.btn-outline-primary.dropdown-toggle:after
+		top: 17px
+	.top__select .multiselect-container.dropdown-menu[x-placement="bottom-start"]
+		margin-top: 6px
+	.top__select .multiselect-container.dropdown-menu
+		height: 131px
+	.top__select .multiselect-container.dropdown-menu li
+		font-size: 18px
+	.top__week-table
+		display: flex
+		flex-direction: column
+	.top__week-table__tr
+		background: #000
+		margin-bottom: 15px
+		padding: 8px 0
+		border-bottom: 1px solid #fff
+		align-items: center
+		min-height: 81px
+	.top__week-table__tr--label
+		order: -1
+		background: transparent
+		margin-bottom: 0
+		min-height: 0
+	.top__week-table--self
+		border-bottom: 2px solid #000
+		position: relative
+	.top__week-table--self::after
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		height: 2px
+		background: #fff
+		box-shadow: 0 0 6px 4px #835e1a
+	.top__week-table__td
+		min-height: 0
+	.top__week-table__tr--label .top__week-table__td
+		font-size: 15px
+		font-family: $font-regular
+	.top__week-table__tr--label .top__week-table__td:nth-child(1)
+		padding: 0 0 0 5px
+		width: 40%
+		min-width: 40%
+	.top__week-table__tr--label .top__week-table__td:nth-child(3)
+		width: 33%
+		min-width: 33%
+	.top__week-table__tr--label .top__week-table__td:nth-child(4)
+		width: 27%
+		min-width: 27%
+	.top__week-table__td:nth-child(2)
+		padding-left: 8px
+		width: 39%
+		min-width: 39%
+	.top__week-table__td:nth-child(3)
+		width: 33%
+		min-width: 33%
+	.top__week-table__td:nth-child(4)
+		width: 28%
+		min-width: 28%
+	.top__week-table .top__week-name
+		margin: -9px 0 0px !important
+	.top__week-table .top__week-coins
+		margin: -9px 0 0px !important
+	.top__week-table .top__week__place
+		font-size: 14px
+	.top__week-table .review__block-items .reviews__item .iteamblock
+		min-height: 0
+		padding-bottom: 0
+	.top__week-table .iteamblock .picture
+		margin-top: 0
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture img
+		max-width: 50px
+	.top__week-table .review__block-items .reviews__item .iteamblock .picture::before
+		width: 100px
+		height: 48px
+		left: 50%
+		top: 50%
+		transform: translate3d(-54%, -54%, 0)
+	//trades
+	.page__trades
+		padding: 101px 11px 0 11px
+	.page__trades .content__wrap
+		width: 100%
+		padding: 4px 19px 90px 5px
+	.page__trades h1
+		margin-bottom: 10px
+	.trades__table__row
+		line-height: 21px
+		margin-bottom: 28px
+		padding-bottom: 16px
+	.trade-mobile-label
+		font-size: 12px
+		width: 30%
+	.trades__table__td
+		margin-bottom: 10px
+	.trades__table .trades__table-ava
+		margin-top: -6px
+		margin-right: -9px
+	.trades__table__td:nth-child(3)
+		margin-top: -10px
+	.trades__table__td:nth-child(4)
+		margin-top: -17px
+	.trades__table .review__block-items
+		transform: translateY(7px)
+	.trades__table .reviews__item .iteamblock
+		max-width: 90px
+		min-width: 90px
+		width: 90px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 163px
+		height: 76px
+		left: -48px
+		top: -3px
+	.trades__table__td:nth-child(5)
+		margin-top: -20px
+	//faq
+	.page__faq
+		padding: 104px 11px 0 
+	.page__faq .content__wrap
+		padding: 6px 15px 190px
+		width: 100%
+	.page__faq h1
+		font-size: 25px
+		margin-bottom: 20px
+	.faq-cards .card .card-header__title
+		padding: 10px 15px 17px
+		font-size: 20px
+	.faq-cards .card .card-header__title.collapsed
+		padding: 10px 15px 17px
+		font-size: 20px
+	.faq-cards .card .card-body
+		padding: 0 15px 25px
 //360							
 @media (max-width: 360px)
 	.main-top .footer__stat div p
@@ -2165,8 +2922,32 @@
 		display: none
 	.selled
 		font-size: 15px
+	//trades
+	.page__trades .content__wrap
+		padding: 4px 10px 70px 5px
+	.trades__table__row
+		font-size: 16px
 	.profile-sale-items
 		font-size: 17px
 		margin: 25px 0
 		padding: 15px 5px
+	.trades__table__td:nth-child(3)
+		margin-top: 0
+	.trades__table .trades__table-ava
+		width: 74px
+		min-width: 74px
+		max-width: 74px
+		height: 74px
+		margin-top: 0
+	.trades__table .trades__table-ava img
+		width: 74px
+	.trades__table .reviews__item .iteamblock
+		max-width: 80px
+		min-width: 80px
+		width: 80px
+	.trades__table .reviews__item .iteamblock .picture:before
+		width: 133px
+		height: 62px
+		left: -40px
+		top: 2px
 	
