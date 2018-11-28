@@ -495,7 +495,9 @@
             Войдите, чтобы играть
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
           </div>
-          <img src="img/modals/modal-auth.png" alt="" class="modal-banner">
+          <div class="modal-baner-wrap">
+            <img src="img/modals/modal-auth.png" alt="" class="modal-banner">
+          </div>
           <div class="modal-btn-wrap text-center offset-top-5">
             <button class="btn btn-modal">Войти через Steam</button>
           </div>
@@ -510,11 +512,13 @@
       <div class="modal-content">
         <div class="modal-bg"></div>
         <div class="modal-body">
-          <div class="modal-title">
-              Упс! Недостаточно средств на балансе
+          <div class="modal-title modal-title-balance">
+              <span>Упс! Недостаточно средств на балансе</span>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
           </div>
-          <img src="img/modals/modal-pay.png" alt="" class="modal-banner">
+          <div class="modal-baner-wrap">
+            <img src="img/modals/modal-pay.png" alt="" class="modal-banner">
+          </div>
           <div class="modal-btn-wrap text-center">
             <button class="btn btn-modal">Пополнить баланс</button>
           </div>
@@ -692,7 +696,7 @@
                   <button class="btn btn-modal btn-sm btn-modal-light">Деактивировать</button>
                 </div>
               </div>
-              <div class="">
+              <div class="btn-pay-wrap">
                 <button class="btn btn-modal btn-pay">Перейти к оплате</button>
               </div>
             </div>

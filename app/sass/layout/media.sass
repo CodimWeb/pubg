@@ -2006,7 +2006,38 @@
 		font-size: 24px
 	.faq-cards .card .card-body
 		font-size: 16px
-
+	//modals
+	.modal-dialog
+		padding: 15px
+	.modal-content
+		padding: 40px 25px 40px
+	//modal-casewin-group
+	.modal-casewin-group .modal-content
+		padding: 48px 25px 48px 25px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item:nth-child(odd)
+		padding-right: 7px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item:nth-child(even)
+		padding-left: 7px
+	//modal-balance
+	.modal-balance .modal-content
+		padding: 48px 20px 0
+	.form-balance__select
+		flex-direction: column
+		justify-content: center
+	.form-balance__select__title
+		margin-bottom: 15px
+	.form-balance__select__list
+		padding-left: 0
+		flex-wrap: wrap
+		justify-content: center
+	.form-balance__select__item.btn.btn-modal
+		margin: 0 4px 8px
+	.form-balance__promocode__deactivate .btn.btn-modal
+		min-width: 240px
+	.form-balance__promocode__status
+		min-width: 300px
+	.modal-balance .modal-footer
+		margin: 0 -20px
 
 
 //680px								
@@ -2081,7 +2112,65 @@
 	//trades
 	.page__trades .content__wrap
 		padding: 34px 30px 160px 20px
-
+	//modal
+	.modal-title
+		font-size: 28px
+		margin-bottom: 12px
+	.btn.btn-modal
+		font-size: 22px
+		padding: 12px 40px
+	//modal casewin
+	.modal-casewin__item
+		margin: 35px 0 44px
+	.modal-casewin__item__desc
+		padding-left: 20px
+	.modal-casewin__item__name
+		font-size: 26px
+	.btn.btn-modal.btn-md
+		padding: 6px 40px 11px 40px
+	//modal casewin-group
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__picture
+		height: 70px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__name
+		font-size: 17px
+		line-height: 20px
+		min-height: 40px
+		margin: 4px 0 5px 0px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__desc .btn-modal
+		font-size: 13px
+		padding: 8px 7px 9px 7px
+		min-width: 100px
+		width: 100%
+	.modal-casewin-group .btn.btn-modal.btn-sell-all
+		font-size: 18px
+		margin-top: 40px
+	// modal balance
+	.form-balance__promocode__header
+		display: flex
+		justify-content: center
+	.form-balance__promocode__body.active
+		flex-direction: column
+		align-items: center
+	.form-balance__promocode__status-desc
+		margin: 10px 0
+		text-align: center
+	.form-balance__promocode__deactivate
+		padding-left: 0
+		margin-bottom: 20px
+	.form-balance__promocode__deactivate .btn.btn-modal
+		min-width: 300px
+	.btn-pay-wrap
+		text-align: center
+	.form-balance__promocode .btn-pay
+		min-width: 300px
+		margin: 0 auto
+	.form-balance__panel
+		padding: 13px 15px 9px 10px
+	.form-balance__field-wrap
+		max-width: 160px
+	.form-balance__field
+		max-width: 160px
+	
 //560px
 @media (max-width: 560px)
 	header .navbar-brand
@@ -2208,6 +2297,70 @@
 		height: 70px
 		left: -49px
 		top: 0
+	//modal
+	.modal-btn-wrap.offset-top-5
+		margin-top: -38px
+	.btn.btn-modal
+		font-size: 20px
+		padding: 10px 35px 12px
+	.modal-casewin__item__media
+		padding-right: 15px
+	.modal-casewin__item__picture
+		height: 130px
+	.modal-casewin__item__desc
+		padding-left: 0
+	.btn.btn-modal.btn-md
+		padding: 6px 0 11px
+		min-width: 200px
+	.modal-casewin .offset-bottom-6
+		margin-bottom: 40px
+	//modal casewin-group
+	.modal-casewin-group .modal-casewin__list
+		max-width: 300px
+		margin: 0 auto
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item
+		width: 100%
+		min-width: 100%
+		margin: 15px 0 10px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item:nth-child(odd)
+		padding-right: 0
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item:nth-child(even)
+		padding-left: 0
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__picture
+		height: 90px
+	//modal balance
+	.form-balance__field-width
+		min-width: 50px
+	.form-balance__field
+		width: 50px
+		height: 60px
+		font-size: 40px
+		padding: 0 23px 0 5px
+		max-width: 140px
+	.form-balance__field-wrap .balance-field-rouble
+		font-size: 24px
+	.form-balance__field-text
+		height: 60px
+		font-size: 40px
+		padding: 0 23px 0 5px
+	.form-balance__info__title
+		font-size: 14px
+		margin-bottom: 2px
+	.form-balance__info__calc
+		font-size: 23px
+	.modal-balance .modal-footer
+		padding: 17px 20px
+	.exchange-skin__desc
+		margin-left: -6px
+	//modal-success-pay
+	.pay-report__row
+		font-size: 24px
+	.pay-report__row .fa-ruble-sign
+		font-size: 14px
+	.pay-report__row > div:nth-child(3) .coin
+		img
+			width: 30px
+
 
 //520px								
 @media (max-width: 520px)
@@ -2873,6 +3026,231 @@
 		font-size: 20px
 	.faq-cards .card .card-body
 		padding: 0 15px 25px
+	//modal
+	.modal-dialog
+		padding: 15px 20px 15px 20px
+	.modal-content
+		padding: 48px 10px
+	.modal-title
+		font-size: 21px
+		margin-bottom: 17px
+		padding-right: 25px
+	.modal .close
+		right: 1px
+		top: 4px
+		width: 15px
+		height: 15px
+	.modal-baner-wrap
+		overflow: hidden
+	.modal-banner
+		width: 120%
+		margin-left: -10%
+	.btn.btn-modal
+		font-size: 17px
+		padding: 8px 25px 10px
+	.modal-btn-wrap.offset-top-5
+		margin-top: -24px
+	.modal-pay .modal-content
+		padding: 36px 10px 50px
+	.modal-title-balance
+		margin-bottom: 11px
+		span
+			display: inline-block
+			max-width: 230px
+			line-height: 20px
+			font-size: 20px
+	//modal-casewin
+	.modal-casewin .modal-content
+		padding: 48px 10px 38px 17px
+	.modal-casewin__item
+		margin: 22px 0 21px
+	.modal-casewin__item__media
+		padding-right: 5px
+	.modal-casewin__item__picture
+		height: 90px
+	.modal-casewin__item__picture img
+		max-width: 72%
+		transform: translateX(-56%)
+	.modal-casewin__item__desc
+		padding-left: 3px
+	.modal-casewin__item__name
+		font-size: 17px
+		margin: 0 0 7px
+	.modal-casewin__item__desc .btn.btn-modal.btn-md
+		min-width: 150px
+		font-size: 13px
+		padding: 6px 0
+	.modal-hint
+		font-size: 14px
+	.modal-casewin .offset-bottom-6
+		margin-bottom: 25px
+	.modal-casewin .btn.btn-modal
+		min-width: 210px
+	//modal casewin-group
+	.modal-casewin-group .modal-casewin__list
+		max-width: 200px
+	.modal-casewin-group .modal-content
+		padding: 17px 25px 17px 25px
+	.modal-casewin-group .modal-title
+		margin-bottom: 15px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item
+		margin: 0 0 14px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__media
+		padding-right: 10px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__picture
+		height: 54px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__desc
+		padding-left: 0
+		margin-left: -3px
+	.modal-casewin-group .modal-casewin__list .modal-casewin__item__name
+		font-size: 17px
+		line-height: 17px
+		min-height: 17px
+		margin: 2px 0 5px 0px
+	.modal-casewin-group .modal-casewin__item__desc .btn.btn-modal.btn-md
+		min-width: 105px
+		font-size: 13px
+		padding: 6px 0
+		margin: 0
+	.modal-casewin-group .btn.btn-modal.btn-sell-all
+		font-size: 16px
+		margin-top: 14px
+		margin-bottom: 11px
+		min-width: 180px
+		padding: 5px 10px 5px
+	.modal-casewin-group .modal-hint.offset-bottom-4
+		margin-bottom: 18px
+	.modal-casewin-group .modal-btn-wrap .btn.btn-modal
+		padding: 8px 10px 8px
+		min-width: 216px
+	//modal balance
+	.modal-balance .modal-dialog
+		padding: 15px 10px
+	.modal-balance .modal-content
+		padding: 21px 14px 0
+	.form-balance__title
+		font-size: 18px
+	.modal-balance .modal-title
+		margin-bottom: 13px
+	.form-balance__title
+		margin-bottom: 12px
+	.form-balance__panel
+		padding: 9px 15px 9px 7px
+		overflow: hidden
+		margin-bottom: 14px
+	.form-balance__field
+		height: 42px
+	.form-balance__field-wrap
+		max-width: 105px
+	.form-balance__field
+		max-width: 105px
+	.form-balance__field-text
+		max-width: 105px
+	.form-balance__info__title
+		font-size: 11px
+	.form-balance__info__calc
+		font-size: 19px
+	.form-balance__info__calc .fa-ruble-sign
+		font-size: 12px
+	.form-balance__panel .tooltip
+		position: absolute
+		right: 0
+		top: 11px
+	.form-balance__panel .tooltip img
+		width: 24px
+	.form-balance__select
+		padding-bottom: 2px
+	.form-balance__select__title
+		width: 100%
+		font-size: 18px
+		margin-bottom: 9px
+	.form-balance__select__item.btn.btn-modal
+		margin: 0 4px 10px
+		font-size: 22px
+	.form-balance__promocode
+		padding-bottom: 13px
+	.form-balance__promocode__label
+		margin: 9px 0 0
+		padding-left: 39px
+	.form-balance__promocode__label:before
+		left: 9px
+		top: 0
+	.form-balance__promocode__tooltip
+		margin-left: 35px
+		transform: translateY(6px)
+	.form-balance__promocode__title	
+		display: flex
+		align-items: center
+		margin-bottom: 11px
+	.form-balance__promocode__status
+		min-width: 276px
+		font-size: 17px
+		padding: 6px 10px
+	.form-balance__promocode__status-desc
+		margin: 11px
+	.form-balance__promocode__deactivate .btn.btn-modal
+		font-size: 20px
+		padding: 3px 10px 4px
+		min-width: 268px
+	.form-balance__promocode .btn-pay
+		min-width: 268px
+		font-size: 22px
+		padding: 10px 18px 10px
+	.modal-balance .modal-footer
+		margin: 0 -14px
+		padding: 7px 13px
+	.modal-footer__title
+		font-size: 20px
+		margin-bottom: 10px
+	.exchange-skin
+		position: relative
+		padding-bottom: 30px
+	.exchange-skin__photo img
+		max-width: 100px
+		margin-top: 13px
+	.exchange-skin__desc p
+		font-size: 16px
+		margin-bottom: 6px
+	.exchange-skin__desc .btn.btn-modal.btn-md
+		min-width: 200px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+	//modal success pay
+	.modal-success-pay .modal-dialog
+		padding: 15px 10px 15px 10px
+	.modal-success-pay .modal-content
+		padding-top: 39px
+		padding-bottom: 37px
+	.modal-success-pay .success-pay-icon
+		margin: 0 3px
+		img 
+			width: 24px
+	.pay-report
+		padding-top: 30px
+		margin-bottom: 74px
+	.pay-report__body
+		padding: 6px 0 10px
+		margin-bottom: 20px
+	.pay-report__row
+		font-size: 20px
+		padding-left: 11px
+		margin-bottom: 10px
+	.pay-report__row > div:nth-child(2)
+		width: 67px
+		min-width: 67px
+	.pay-report__row > div:nth-child(3) .coin
+		margin-left: -20px
+		transform: translateY(6px)
+	.pay-report__row > div:nth-child(3) .coin img
+		width: 26px
+	.pay-report__footer .pay-report__row > div:nth-child(3) .coin
+		transform: translateY(1px)
+	.modal-success-pay .btn.btn-modal
+		min-width: 220px
+	
+
 //360							
 @media (max-width: 360px)
 	.main-top .footer__stat div p
@@ -2950,4 +3328,14 @@
 		height: 62px
 		left: -40px
 		top: 2px
+	//modal success pay
+	.modal-success-pay .modal-title
+		font-size: 18px
+		margin-bottom: 0
+	.pay-report__row
+		padding-left: 0
+		font-size: 17px
+	.pay-report__row > div:nth-child(2)
+		width: 57px
+		min-width: 57px
 	
