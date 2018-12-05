@@ -128,13 +128,6 @@
 	&__week-table
 		max-width: 1010px
 		margin: 0 auto
-		&--self
-			margin-bottom: 25px
-			border-bottom: 2px solid transparent
-			.top__week-name
-				margin: 23px 0 0 !important
-			.top__week-coins
-				margin: 23px 0 0 !important
 		&__tr
 			display: flex
 			border-bottom: 2px solid #fff
@@ -167,6 +160,26 @@
 					box-shadow: 0 0 6px 4px #835e1a
 			&:last-child
 				border-bottom: none
+		&--self
+			margin-bottom: 25px
+			border-bottom: 2px solid transparent
+			.top__week-name
+				margin: 23px 0 0 !important
+			.top__week-coins
+				margin: 23px 0 0 !important
+			.top__week-progress
+				height: 100%
+				display: flex
+				align-items: center
+				p
+					font-size: 24px
+					text-align: center
+					margin-bottom: 0
+					margin-top: -12px
+					line-height: 24px
+					span
+						font-family: $font-bold
+						color: $secondary-100
 		&__td
 			min-height: 70px
 			&:nth-child(1)
@@ -238,7 +251,7 @@
 						background-size: contain
 			&:hover
 				.reviews__item-info
-					margin: 100px 0 0
+					margin: 50px 0 0
 			
 	// Top Rarity
 	.Immortal, .Immortal_casetopflakes

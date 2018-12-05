@@ -21,7 +21,7 @@
 @include breakpoint(1700-max)
 	.carousel__opencase .rulwith
 		padding: 15px 10px
-	.carousel__opencase #casesCarusel .iteamblock
+	.carousel__opencase .casesCarusel .iteamblock
 		padding: 0 20px
 
 //1670px		
@@ -64,6 +64,8 @@
 	.review__block-items .reviews__case img
 		width: 200px
 		max-width: 200px
+	.review__block-items .reviews__case .btn-show-detail img
+		width: auto
 	.review__block-items .reviews__case::before
 		width: 290px
 		height: 90px
@@ -155,18 +157,14 @@
 @media (max-width: 1536px)
 	main .cases
 		margin-top: -8rem
-	.main-top
-		flex-direction: column
-		align-items: center
 	.social-links
 		margin-bottom: 25px
 	.social-links li a
 		margin: 0 10px
 	.footer__stat
-		justify-content: center
 		div
 			width: auto
-			margin-right: 45px
+			margin-right: 65px
 			p
 				font-size: 1rem
 	.main-top .footer__stat div span
@@ -297,9 +295,6 @@
 	  height: auto
 	#reviews .review__block-ava
 		display: none
-
-	.footer__stat
-		justify-content: center
 	.cases__header
 		flex-direction: column
 	.drophistory .items .items-inner .item-history
@@ -391,6 +386,8 @@
 	.review__block-items h4
 		font-size: 17px
 	// page case
+	.carousel__opencase .rulwith::before
+		bottom: -10px
 	.btns__opencase .btn
 		padding: 15px 75px
 		font-size: 22px
@@ -593,7 +590,7 @@
 		#main-banner
 			flex-direction: column
 	//page case
-	.carousel__opencase #casesCarusel .iteamblock
+	.carousel__opencase .casesCarusel .iteamblock
 		padding: 0 15px
 	.items__opencase .row .iteamblock
 		max-width: calc(25% - 26px)
@@ -704,6 +701,10 @@
 		margin-left: -17px
 	.trades__table .reviews__item:hover .reviews__item-info
 		margin: 53px 0 0 -17px
+	//topweek
+	.top__week-table--self .top__week-progress p
+		font-size: 22px
+		margin-top: -11px
 //1210px
 @media (max-width: 1210px)
 
@@ -915,6 +916,9 @@
 		top: 94px
 	.review__block-items h4
 		margin-bottom: 0
+	.review__block-items .reviews__item:hover .reviews__item-info,
+	.review__block-items .reviews__case:hover .reviews__case-info
+		margin: 70px auto 0 0
 	footer
 		margin-left: 0
 	footer .footer__info
@@ -940,16 +944,19 @@
 	.referal .profile-card .card-body .profile__user
 		min-width: 28%
 		width: 28%
+	//topweek
+	.top__week-table .review__block-items .reviews__item:hover .reviews__item-info
+		margin: 40px auto 0 0
 //1152px
 @media (max-width: 1152px)
 
 	// Main
 	main
-		.main-top
-			flex-direction: column
-			justify-content: center
-			.social-links
-				justify-content: center
+		// .main-top
+		// 	flex-direction: column
+		// 	justify-content: center
+		// 	.social-links
+		// 		justify-content: center
 		// Profile page	
 		.card.banner
 			margin-bottom: 2.5rem
@@ -1087,7 +1094,7 @@
 	.footer__stat div
 		margin-right: 35px
 		&:last-child
-			margin-right: 0
+			margin-right: 10px
 	.footer__stat div p
 		font-size: 14px
 		white-space: nowrap
@@ -1231,16 +1238,15 @@
 		left: -44px
 	.review__block-items .reviews__item .iteamblock .picture img
 		max-width: 130px
-	.review__block-items .reviews__item:hover .reviews__item-info
-		margin: 105px auto 0 0
 	.review__block-items .reviews__case
 		margin-left: 45px
 	#reviews .review__block-items .reviews__case h4
 		margin-bottom: 10px
 	#reviews .review__block-items .reviews__case img
 		max-width: 140px
+	.review__block-items .reviews__item:hover .reviews__item-info,
 	.review__block-items .reviews__case:hover .reviews__case-info
-		margin-top: 105px
+		margin: 50px auto 0 0
 	
 	// Profile page
 	.profile__steps
@@ -1272,12 +1278,16 @@
 		flex-direction: column-reverse
 	.page__case .case__header .btn.btn-secondary:last-child
 		display: none
-	.carousel__opencase #casesCarusel .iteamblock
+	.carousel__opencase .rulwith::before
+		bottom: 10px
+	.carousel__opencase .casesCarusel .iteamblock
 		min-width: 33.333%
 		max-width: 33.333%
 		padding: 0 20px
-	.carousel__opencase #casesCarusel
+	.carousel__opencase .casesCarusel
 		transform: translateX(-33.333%)
+	.carousel__opencase .casesCarusel.rolling
+		transform: translate3d(-3167%, 0, 0)
 	.desc__opecase
 		margin-bottom: 120px
 	.items__opencase .row .iteamblock
@@ -1329,6 +1339,10 @@
 	.top__week-table .top__week-coins
 		margin: 18px 0 0 !important
 		font-size: 24px
+	.top__week-table--self .top__week-progress p
+		font-size: 20px
+		margin-top: -10px
+		font-family: $font-bold
 	.top__week-table__td:nth-child(4)
 		width: 21%
 		min-width: 21%
@@ -1346,6 +1360,8 @@
 		left: -63px
 	.top__week-table .review__block-items .reviews__item .iteamblock .picture img
 		max-width: 100px
+	.top__week-table .review__block-items .reviews__item:hover .reviews__item-info
+		margin: 20px auto 0 0
 	.top__week-table__tr--label .top__week-table__td
 		font-size: 23px
 	.top__week-table__tr--label .top__week-table__td:last-child
@@ -1388,7 +1404,7 @@
 		width: 130px
 		height: 60px
 		left: -39px
-	.review__block-items .reviews__item .reviews__item-info
+	.trades__table .review__block-items .reviews__item .reviews__item-info
 		margin: 0
 		left: 50%
 		transform: translate3d(-50%,0,0)
@@ -1739,6 +1755,8 @@
 	#reviews .review__block-items .btn.btn-show-detail img
 		width: auto
 		height: auto
+	#reviews .review__block-items .reviews__item .btn.btn-show-detail
+		right: -40px
 	.review__block-items .reviews__item-info
 		width: 162px
 	.review__block-items .reviews__item-info::before
@@ -1747,14 +1765,14 @@
 		right: 7px
 	.review__block-items .btn-show-detail:hover + .reviews__item-info
 		opacity: 1
-		margin-top: 105px
+		margin-top: 60px
 	.review__block-items .reviews__case-info::before
 		margin-left: 0
 		left: auto
 		right: 11px
 	.review__block-items .btn-show-detail:hover + .reviews__case-info
 		opacity: 1
-		margin-top: 105px
+		margin-top: 60px
 	footer::before
 		top: -96px
 		height: 170px
@@ -1792,10 +1810,13 @@
 	.page__case .case__header h1
 		font-size: 30px
 		margin-bottom: 5px
-	.carousel__opencase::before
+	.carousel__opencase .rulwith::before
 		width: 120%
 		transform: translateX(-10%)
-		bottom: -8px
+		bottom: 10px
+	.carousel__opencase .casesCarusel .iteamblock .picture
+		height: 145px
+		line-height: 145px
 	.btns__opencase-select
 		margin-bottom: 15px
 	.content::before
@@ -1916,6 +1937,10 @@
 		font-size: 18px
 	.top__week-table .top__week-coins
 		font-size: 18px
+	.top__week-table--self .top__week-progress p
+		font-size: 14px
+		line-height: 16px
+		margin-top: -8px
 	.top__week-table__tr--label .top__week-table__td
 		font-size: 18px
 	.top__week-table__tr--label .top__week-table__td:nth-child(1)
@@ -2258,6 +2283,8 @@
 	main .content .content__header .heading
 		font-size: 40px
 		line-height: 43px
+		margin-top: 0
+	main .content .content__header .heading.top
 		margin-top: -35px
 	main .content .content__header .cases__action
 		flex-direction: column
@@ -2272,7 +2299,7 @@
 	//page case
 	.carousel__opencase .rulwith
 		padding: 15px 0
-	.carousel__opencase #casesCarusel .iteamblock
+	.carousel__opencase .casesCarusel .iteamblock
 		padding: 0 15px
 	.desc__opecase p
 		font-size: 18px
@@ -2569,7 +2596,7 @@
 		margin-left: 0
 		margin-top: -2px
 	.footer__stat div:last-child
-		margin-right: 22px
+		margin-right: 10px
 		margin-left: 9px
 	.main-banner::before
 		height: 105px
@@ -2640,6 +2667,8 @@
 	main .content .content__header .heading
 		font-size: 24px
 		line-height: 28px
+		margin-top: 0
+	main .content .content__header .heading.top
 		margin-top: -51px
 	main .content .content__header .cases__action
 		flex-direction: column
@@ -2721,7 +2750,7 @@
 	#reviews .review__block-items .reviews__case img
 		max-width: 131px
 		transform: translateX(4px)
-	#reviews .review__block-items .btn.btn-show-detail
+	#reviews .review__block-items .reviews__item .btn.btn-show-detail
 		right: -4px
 		bottom: 8px
 	#reviews .review__block-items .reviews__case .btn.btn-show-detail
@@ -2730,11 +2759,11 @@
 	.review__block-items .reviews__item-info
 		width: 130px
 	.review__block-items .btn-show-detail:hover + .reviews__item-info
-		margin-top: 85px
+		margin-top: 35px
 	.review__block-items .reviews__case-info
 		width: 188px
 	.review__block-items .btn-show-detail:hover + .reviews__case-info
-		margin-top: 85px
+		margin-top: 35px
 	#reviews-slider.carousel .carousel-indicators
 		bottom: -3px
 	#reviews-slider.carousel .carousel-indicators li
@@ -2792,13 +2821,17 @@
 		padding: 9px 32px 10px
 	.carousel__opencase
 		margin: 0 -40px 18px
-	.carousel__opencase #casesCarusel .iteamblock
+	.carousel__opencase .casesCarusel .iteamblock
 		padding: 0 8px
+	.carousel__opencase .casesCarusel .iteamblock .picture
+		margin-top: 0
+		height: 110px
+		line-height: 110px
 	.carousel__opencase #carouselLine
 		top: -2px
-		bottom: -21px
-	.carousel__opencase::before
-		bottom: -13px
+		bottom: -10px
+	.carousel__opencase .rulwith::before
+		bottom: 10px
 	main .btns__opencase
 		margin-bottom: 16px
 	.btns__opencase-title
@@ -2806,6 +2839,8 @@
 	.btns__opencase .btn.multiselect
 		margin-top: 5px
 		margin-left: 24px
+	.multiselect-container.dropdown-menu
+		left: 24px
 	.btns__opencase-select
 		margin-bottom: 18px
 	.desc__opecase

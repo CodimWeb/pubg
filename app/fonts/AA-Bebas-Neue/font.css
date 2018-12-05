@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'AABebasNeue';
+  src: url('AABebasNeue.woff') format('woff'),
+       url('AABebasNeue.ttf') format('truetype'),
+       url('AABebasNeue.svg#AABebasNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AA_bebas-Neue';
+  src: url('AA_bebas-Neue.eot');
+  src: url('AA_bebas-Neue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

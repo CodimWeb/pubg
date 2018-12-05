@@ -164,17 +164,18 @@ input[type=number]
 					border-left: .3em solid transparent
 
 .multiselect-container.dropdown-menu
-		border-radius: 0
-		min-width: 65px
-		text-align: center
-		li a
-			label
-				min-width: 100%
-				display: block
-				margin: 0
-				padding: .15rem .3rem !important
-				&:hover
-					background: $secondary-100
+  border-radius: 0
+  min-width: 62px
+  text-align: center
+  left: 47px
+  li a
+    label
+      min-width: 100%
+      display: block
+      margin: 0
+      padding: .15rem .3rem !important
+      &:hover
+        background: $secondary-100
 
 .show>.btn.multiselect.btn-outline-primary.dropdown-toggle:focus
 		background: #818180
@@ -227,8 +228,7 @@ main
   z-index: 100
   margin-top: -7rem
   .content__header
-    display: flex
-    justify-content: space-between
+    text-align: center
     padding-top: 12px
     .cases__action
       z-index: 100
@@ -244,9 +244,6 @@ main
       color: #151515
       font-size: 42px
       margin: 0
-  .content__header
-  	.heading--indent
-  		text-indent: 27px
   &::after
     @include pseudo
     background: url("../img/content-bg-bott.png") no-repeat
