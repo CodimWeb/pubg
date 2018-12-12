@@ -260,6 +260,7 @@
 	position: relative
 	color: $light-color
 	border-radius: 15px
+	overflow: hidden
 	&::before
 		@include pseudo
 		width: 40%
@@ -292,6 +293,8 @@
   margin-top: -1.25rem     	
 
 // Profile Items
+.items-banner
+	margin-bottom: 25px
 .all_items-desctop, .loadmore-desctop
 	display: flex
 .all_items-mobile, .loadmore-mobile
@@ -374,6 +377,8 @@
 #items__noactive1 .iteamblock .stbtns
 	top: 0
 	transform: translateY(0)
+#items__noactive1 .iteamblock .coins
+	display: none
 
 .profile-sale-items
 	display: flex
@@ -387,6 +392,11 @@
 	color: #fff
 	width: 100%
 	margin: 51px 0 40px
+	border: none
+	.fa-ruble-sign
+		font-size: 15px
+	&:hover
+		background-image: linear-gradient(to right, #fe7574 0, #f9a766 100%)
 .no_content
 	width: 100%
 	text-align: center

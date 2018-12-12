@@ -5,7 +5,7 @@
     max-width: 788px
     display: flex
     height: 100%
-    padding: 15px 0
+    padding: 0
     margin: 0 auto
   &-content
     display: block
@@ -161,7 +161,7 @@
     margin-bottom: 28px
   &__field-wrap
     position: relative
-    max-width: 400px
+    max-width: 300px
     margin-top: -11px
     .balance-field-rouble
       font-size: 34px
@@ -177,7 +177,7 @@
     transition: 0s linear
     color: #fff
     width: 75px
-    max-width: 370px
+    max-width: 270px
     height: 66px
     font-size: 60px
     line-height: 50px
@@ -197,7 +197,7 @@
     max-width: 100%
   &__field-text
     display: inline-block
-    max-width: 370px
+    max-width: 270px
     overflow: hidden
     height: 60px
     line-height: 60px
@@ -214,17 +214,18 @@
     line-height: 1
     margin-bottom: 5px
   &__info__calc
-    font-size: 25px
+    font-size: 15px
     line-height: 1
     margin-bottom: 0
     .fa-ruble-sign
-      font-size: 14px
+      font-size: 12px
     #tooltip
       display: inline-block
       transform: translateY(-7px)
       cursor: pointer
-    .balance-bold
+    .balance-addend
       font-family: $font-bold
+      font-size: 17px
   &__select
     display: flex
     justify-content: space-between
@@ -275,11 +276,16 @@
       display: inline-block
       margin-left: 7px
       transform: translateY(-3px)
-    &__body
+    &__content
       display: none
-      justify-content: space-between
       &.active
-        display: flex
+        display: block
+    &__body
+      display: flex
+      justify-content: space-between
+      &--activated
+        margin-bottom: 27px
+      
     &__info
       padding-right: 10px
       padding-left: 10px
@@ -305,9 +311,67 @@
         padding: 5px 10px
         font-size: 22px
         font-family: $font-regular
+    &__field-wrap
+        min-width: 350px
+    &__field
+      font-size: 22px
+      height: 36px
+      text-align: center
+      color: #fff
+      padding: 5px 10px 8px
+      border-radius: 6px
+      background: #747474
+      &:focus
+        background: #747474 !important
+        color: #fff !important
     .btn-pay
       min-width: 310px
 
+.pay-systems
+  padding: 0 15px
+  margin-bottom: 25px
+  .pay_method
+    position: relative
+    width: 23%
+    height: 76px
+    margin: 1%
+    border-radius: 6px
+    background: linear-gradient(0deg, #c7c1fe 20%, #ffffff 100%)
+    box-shadow: 0 0 5px 1px #150c26
+    transition: all .2s
+    cursor: pointer
+    span
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      img
+        max-width: 90%
+        max-height: 90%
+    &.clicked
+      box-shadow: inset 1px 6px 14px 3px rgba(40, 24, 71, 0.9)
+      span
+        transform: scale(.96)
+    //   background-position: center center
+    //   background-repeat: no-repeat
+    // .cards
+    //   background-image: url(../img/modals/pay-system/cards.png)
+    // .qiwi_wallet
+    //   background-image: url(../img/modals/pay-system/qiwi_wallet.png)
+    // .ya
+    //   background-image: url(../img/modals/pay-system/ya.png)
+    // .qiwi
+    //   background-image: url(../img/modals/pay-system/qiwi.png)
+    // .wm
+    //   background-image: url(../img/modals/pay-system/webmoney.png)
+    // .cards_ua
+    //   background-image: url(../img/modals/pay-system/cards_ua.png)
+    // .other
+    //   background-image: url(../img/modals/pay-system/other.png)
 .exchange-skin
   display: flex
   align-items: flex-start
@@ -519,71 +583,71 @@
 //       filter: saturate(2)
 //       background: url(../img/modals/modal__win/modal__win-vkmin.png) 0 0 no-repeat
 
-// .noty
-//   position: fixed
-//   z-index: 1030
-//   &--sm
-//     left: 282px
-//     top: 23px
-//     width: 392px
-//     min-height: 200px
-//     background-image: url(../img/modals/noty-bg.jpg)
-//     padding: 25px
-//     box-shadow: 4px 7px 8px 2px rgba(0, 0, 0, 0.8);
-//   &__body--sm
-//     padding-right: 12px
-//   &__item
-//     border-bottom: 1px solid #fff
-//     padding: 0 20px 22px 20px
-//     margin-bottom: 33px
-//     &:last-child
-//       border-bottom: 1px solid transparent
-//   &__title
-//     font-size: 10px
-//     color: #fff
-//     margin: 0
-//     line-height: 12px
-//   &__subtitle
-//     font-size: 15px
-//     color: #fff
-//     margin: 0
-//   &__close
-//     position: absolute
-//     top: 29px
-//     right: 21px
-//     width: 12px
-//     height: 10px
-//     background-image: url(../img/modals/noty-close.png)
-//     cursor: pointer
-//   &--lg
-//     top: 0
-//     left: 260px
-//     z-index: 1031
-//     width: 414px
-//     height: 100%
-//     background-image: url(../img/modals/noty-lg-bg.jpg)
-//     padding: 47px 27px 5px 26px
-//   &__body--lg
-//     padding-right: 36px
-//     height: 100%
-//     width: 100%
-//     overflow-y: auto
-//     &::-webkit-scrollbar-track
-//       width: 7px
-//       background: transparent
-//     &::-webkit-scrollbar-thumb
-//       background: #9a9a9a
-//       width: 7px
-//   &__close--lg
-//     background-image: url(../img/modals/noty-close-lg.png)
-//     width: 21px
-//     height: 21px
-//     top: 12px
-//     right: 12px
-//   &__title--lg
-//     font-size: 14px
-//     line-height: 16px
-//     color: #bcbcbc
-//   &__message--lg
-//     font-size: 22px
-//     margin-bottom: 0
+.noty
+  position: fixed
+  z-index: 1030
+  &--sm
+    left: 282px
+    top: 23px
+    width: 392px
+    min-height: 200px
+    background-image: url(../img/modals/noty-bg.jpg)
+    padding: 25px
+    box-shadow: 4px 7px 8px 2px rgba(0, 0, 0, 0.8);
+  &__body--sm
+    padding-right: 12px
+  &__item
+    border-bottom: 1px solid #fff
+    padding: 0 20px 22px 20px
+    margin-bottom: 33px
+    &:last-child
+      border-bottom: 1px solid transparent
+  &__title
+    font-size: 10px
+    color: #fff
+    margin: 0
+    line-height: 12px
+  &__subtitle
+    font-size: 15px
+    color: #fff
+    margin: 0
+  &__close
+    position: absolute
+    top: 29px
+    right: 21px
+    width: 12px
+    height: 10px
+    background-image: url(../img/modals/noty-close.png)
+    cursor: pointer
+  &--lg
+    top: 0
+    left: 260px
+    z-index: 1031
+    width: 414px
+    height: 100%
+    background-image: url(../img/modals/noty-lg-bg.jpg)
+    padding: 47px 27px 5px 26px
+  &__body--lg
+    padding-right: 36px
+    height: 100%
+    width: 100%
+    overflow-y: auto
+    &::-webkit-scrollbar-track
+      width: 7px
+      background: transparent
+    &::-webkit-scrollbar-thumb
+      background: #9a9a9a
+      width: 7px
+  &__close--lg
+    background-image: url(../img/modals/noty-close-lg.png)
+    width: 21px
+    height: 21px
+    top: 12px
+    right: 12px
+  &__title--lg
+    font-size: 14px
+    line-height: 16px
+    color: #bcbcbc
+  &__message--lg
+    font-size: 22px
+    margin-bottom: 0

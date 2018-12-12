@@ -659,9 +659,10 @@
               <div class="form-balance__info">
                 <p class="form-balance__info__title">Получите на баланс</p>
                 <p class="form-balance__info__calc">
-                  <span id="balance-amount" class="balance-bold">20 <i class="fa fa-ruble-sign"></i></span>
-                  <span id="balance-bonus"> + бонус <span class="balance-bold">3</span> <i class="fa fa-ruble-sign"></i></span>
-                  <span id="balance-total"> = <span class="balance-bold">25</span> <i class="fa fa-ruble-sign"></i></span>
+                  <span id="balance-amount" class="balance-addend">1000 <i class="fa fa-ruble-sign"></i></span>
+                  <span id="balance-bonus"> + бонус <span class="balance-addend">50</span> <i class="fa fa-ruble-sign"></i></span>
+                  <span id="balance-promocode"> + промокод <span class="balance-addend">100</span> <i class="fa fa-ruble-sign"></i></span>
+                  <span id="balance-total"> = <span class="balance-addend">1150</span> <i class="fa fa-ruble-sign"></i></span>
                   <span id="tooltip"><img src="img/modals/tooltip-white.png" alt=""></span>
                 </p>
               </div>
@@ -684,16 +685,71 @@
                   <span class="form-balance__promocode__tooltip"><img src="img/modals/tooltip-black.png" alt=""></span>
                 </div>   
               </div>
-              <div class="form-balance__promocode__body">
-                <div class="form-balance__promocode__info">
-                  <div class="form-balance__promocode__status">
-                    <span>C4R9031</span> 
-                    <span>(активирован)</span>
+              <div class="form-balance__promocode__content">
+                <div class="form-balance__promocode__body form-balance__promocode__body--active">
+                  <div class="form-balance__promocode__info">
+                    <div class="form-balance__promocode__status">
+                      <span>C4R9031</span> 
+                      <span>(активирован)</span>
+                    </div>
+                    <p class="form-balance__promocode__status-desc">Дополнительные 35 к пополнению</p>
                   </div>
-                  <p class="form-balance__promocode__status-desc">Дополнительные 35 к пополнению</p>
+                  <div class="form-balance__promocode__deactivate">
+                    <button class="btn btn-modal btn-sm btn-modal-light">Деактивировать</button>
+                  </div>
                 </div>
-                <div class="form-balance__promocode__deactivate">
-                  <button class="btn btn-modal btn-sm btn-modal-light">Деактивировать</button>
+                <div class="form-balance__promocode__body form-balance__promocode__body--activated">
+                  <div class="form-balance__promocode__info">
+                    <div class="form-balance__promocode__field-wrap">
+                      <input type="text" class="form-control form-balance__promocode__field">
+                    </div>
+                  </div>
+                  <div class="form-balance__promocode__deactivate">
+                    <button class="btn btn-modal btn-sm btn-modal-light">Применить промокод</button>
+                  </div>
+                </div>
+              </div>
+              <div class="pay-systems">
+                <div class="row justify-content-center">
+                  <div class="pay_method" data-method="card" data-type="gamemoney">
+                    <span class="cards">
+                      <img src="img/modals/pay-system/cards.png" alt="">
+                    </span>
+                 </div>
+                  <!--<div class="pay_method" data-method="sberbank" data-type="gamemoney"><span class="sber"></span></div>-->
+                  <div class="pay_method" data-method="qiwi" data-type="gamemoney">
+                    <span class="qiwi_wallet">
+                      <img src="img/modals/pay-system/qiwi_wallet.png" alt="">
+                    </span>
+                  </div>
+                  <div class="pay_method" data-method="yandex" data-type="gamemoney">
+                    <span class="ya">
+                      <img src="img/modals/pay-system/ya.png" alt="">
+                    </span>
+                  </div>
+                  <div class="pay_method" data-method="qiwi_qiwi_merchantPsp_rub" data-type="interkassa">
+                    <span class="qiwi">
+                      <img src="img/modals/pay-system/qiwi.png" alt="">
+                    </span>
+                    <!-- <div class="ok"></div> -->
+                  </div>
+                  <div class="pay_method" data-method="webmoney_webmoney_merchant_wmr" data-type="interkassa">
+                    <span class="wm">
+                      <img src="img/modals/pay-system/webmoney.png" alt="">
+                    </span>
+                  </div>
+                  <div class="pay_method" data-method="card_ukr" data-type="gamemoney">
+                    <span class="cards_ua">
+                      <img src="img/modals/pay-system/cards_ua.png" alt="">
+                    </span>
+                  </div>
+                  <div class="pay_method" data-method="false" data-type="interkassa">
+                    <span class="other">
+                      <img src="img/modals/pay-system/other.png" alt="">
+                    </span>
+                  </div>
+                  <input type="hidden" name="pay_type">
+                  <input type="hidden" name="pay_method">
                 </div>
               </div>
               <div class="btn-pay-wrap">
@@ -1082,7 +1138,7 @@
     </div>
   </div> -->
   <!-- noty large -->
-  <!-- <div class="noty noty--lg" id="noty-lg">
+  <div class="noty noty--lg" id="noty-lg">
     <span class="noty__close noty__close--lg"></span>
     <div class="noty__body noty__body--lg">
       <div class="noty__item">
@@ -1130,7 +1186,86 @@
         <p class="noty__message noty__message--lg">Текст уведомления</p>
       </div>
     </div>
-  </div> -->
+  </div>
+  <div id="toast-container">
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-progress"></div>
+      <button class="toast-close-button"></button>
+      <div class="toast-message">
+        Выберите метод оплаты перед оплатой
+      </div>
+    </div>
+  </div>
 
   <!-- Preloader -->
   <div class="loader">

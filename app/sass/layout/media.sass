@@ -1310,7 +1310,7 @@
 	.referal .card-body .profile__blocks
 		width: auto
 		min-width: 0
-	.profile-card .card-body .profile__steamlogin .profile__steamlogin-title
+	.page__referal .profile-card .card-body .profile__steamlogin .profile__steamlogin-title
 		justify-content: center
 	.referal .profile-card .card-body .profile__steamlogin .profile__steamlogin-title h3
 		text-align: center
@@ -2057,12 +2057,25 @@
 		justify-content: center
 	.form-balance__select__item.btn.btn-modal
 		margin: 0 4px 8px
+	.form-balance__panel
+		padding: 13px 15px 9px 10px
+	.form-balance__field-wrap
+		max-width: 230px
+	.form-balance__field
+		max-width: 230px
+	.form-balance__field-text
+		max-width: 230px
 	.form-balance__promocode__deactivate .btn.btn-modal
 		min-width: 240px
+	.form-balance__promocode__info
+		flex: 1
 	.form-balance__promocode__status
+		min-width: 300px
+	.form-balance__promocode__field-wrap
 		min-width: 300px
 	.modal-balance .modal-footer
 		margin: 0 -20px
+	
 
 
 //680px								
@@ -2173,7 +2186,7 @@
 	.form-balance__promocode__header
 		display: flex
 		justify-content: center
-	.form-balance__promocode__body.active
+	.form-balance__promocode__body
 		flex-direction: column
 		align-items: center
 	.form-balance__promocode__status-desc
@@ -2190,11 +2203,20 @@
 		min-width: 300px
 		margin: 0 auto
 	.form-balance__panel
-		padding: 13px 15px 9px 10px
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		padding: 13px 10px 9px 10px
+	.form-balance__info
+		padding-left: 10px
 	.form-balance__field-wrap
-		max-width: 160px
+		max-width: 100%
 	.form-balance__field
-		max-width: 160px
+		max-width: 100%
+	.form-balance__field-text
+		max-width: fit-content
+	.form-balance__promocode__field-wrap
+		margin-bottom: 20px
 	
 //560px
 @media (max-width: 560px)
@@ -2363,22 +2385,26 @@
 		height: 60px
 		font-size: 40px
 		padding: 0 23px 0 5px
-		max-width: 140px
 	.form-balance__field-wrap .balance-field-rouble
 		font-size: 24px
 	.form-balance__field-text
 		height: 60px
 		font-size: 40px
 		padding: 0 23px 0 5px
+	.form-balance__info
+		padding-left: 6px
 	.form-balance__info__title
 		font-size: 14px
 		margin-bottom: 2px
 	.form-balance__info__calc
-		font-size: 23px
+		font-size: 16px
 	.modal-balance .modal-footer
 		padding: 17px 20px
 	.exchange-skin__desc
 		margin-left: -6px
+	.pay-systems .pay_method
+		width: 31%
+		height: 70px
 	//modal-success-pay
 	.pay-report__row
 		font-size: 24px
@@ -3170,23 +3196,21 @@
 	.form-balance__title
 		margin-bottom: 12px
 	.form-balance__panel
-		padding: 9px 15px 9px 7px
+		padding: 9px 7px
 		overflow: hidden
 		margin-bottom: 14px
 	.form-balance__field
 		height: 42px
-	.form-balance__field-wrap
-		max-width: 105px
-	.form-balance__field
-		max-width: 105px
-	.form-balance__field-text
-		max-width: 105px
 	.form-balance__info__title
 		font-size: 11px
 	.form-balance__info__calc
-		font-size: 19px
+		font-size: 13px
+	.form-balance__info__calc .balance-addend
+		font-size: 13px
 	.form-balance__info__calc .fa-ruble-sign
-		font-size: 12px
+		font-size: 9px
+	.form-balance__info__calc #tooltip img
+		width: 15px
 	.form-balance__panel .tooltip
 		position: absolute
 		right: 0
@@ -3373,4 +3397,21 @@
 	.pay-report__row > div:nth-child(2)
 		width: 57px
 		min-width: 57px
-	
+	//modal-balance
+	.pay-systems .pay_method
+		width: 48%
+	.form-balance__panel
+		padding-left: 2px
+	.form-balance__info__calc
+		font-size: 11px
+	.form-balance__info__calc #tooltip
+		display: none
+	.form-balance__promocode__label
+		padding-left: 35px
+	.form-balance__select__title
+		font-size: 16px
+	.form-balance__select__item.btn.btn-modal
+		width: 80px
+		min-width: 80px
+	.form-balance__promocode__field-wrap
+		min-width: 270px
